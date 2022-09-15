@@ -1,0 +1,77 @@
+.presentation {
+    background-color: #DBDBDB;
+    display: flex;
+    justify-content: space-around;
+}
+
+.FrontDesk h2 {
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 113px;
+    margin-left: 60px;
+
+}
+
+
+
+.whatwedoComp{
+    display: flex;
+    flex-direction: column;
+}
+
+.whatwedoComp .gradientBar{
+    width: 20%;
+    height: 2%;
+    justify-self: center;
+    align-self: center;
+}
+
+.whatwedoIcons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.whatwedoComp h3 {
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 85px;
+    text-align: center;
+    color: #001830;
+    margin-bottom: 5px;
+}
+
+.aboutUsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutProjects {
+    border: 3px solid #FD6300;
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 47px;
+    text-align: center;
+    width: 500px;
+    height: 110px;
+    color: #FD6300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    border-bottom: 0px;
+}
+
+.whatwedoMec {
+    margin-top: 70px;
+
+
+}

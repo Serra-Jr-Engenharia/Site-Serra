@@ -5,7 +5,7 @@ import facebookIcon from '../../assets/facebook.png'
 import instagramIcon from '../../assets/instagram.png'
 import linkedinIcon from '../../assets/linkedin.png'
 
-const Footer = props =>{
+const Footer = () =>{
 
     return(
         <>

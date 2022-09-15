@@ -1,14 +1,21 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import Contents from "../Contents/Contents";
 
-const Layout = props =>{
+import { BrowserRouter } from "react-router-dom";
+
+import FrontDesk from '../FrontDesk/FrontDesk'
+
+
+
+const Layout = () =>{
     return(
         <>
             <Header></Header>
-            
-                {props.children}
-        
+
+            <FrontDesk />
+
             <Footer></Footer>
         </>
     )
