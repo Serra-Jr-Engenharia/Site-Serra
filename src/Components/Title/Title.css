@@ -1,0 +1,17 @@
+.Title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title h3{
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 85px;
+    text-align: center;
+    color: #001830;
+    margin-bottom: 5px;
+}

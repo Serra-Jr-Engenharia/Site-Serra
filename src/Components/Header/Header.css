@@ -1,14 +1,20 @@
-.header li{
+
+.header-ul-li a{
     text-decoration: none;
     color: white;
+    list-style: none;
+    
+}
 
+.header-ul-li a:hover {
+    color: lightgray;
 }
 
 .header {
-    width: 100vw;
+    width: 100%;
     height: 12vh;
+    min-height: 110px;
     background-color: #001830;
-   
     display: flex;
 }
 
@@ -29,13 +35,9 @@
    
 }
 
-.header ul li:hover{
-    color: lightgray;
-}
-
 .header .logo{ 
     margin-left: 10%;
-    margin-top: 0px;
+    margin-top: 1%;
 }
 
 .header img{ 

@@ -1,0 +1,26 @@
+.presentation-aboutus {
+    background-color: #FF7400;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0px 0px 0px 100px;
+    height: 35vh;
+}
+
+.presentation-aboutus p {
+    margin: 0px;
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 113px;
+    text-align: center;
+    margin-top: 5%;
+    color: #FFFFFF;
+    
+}
+
+.presentation-aboutus img {
+    max-width: 700px;
+    max-height: 700px;
+}
+

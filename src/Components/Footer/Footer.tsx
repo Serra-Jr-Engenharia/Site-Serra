@@ -5,18 +5,37 @@ import facebookIcon from '../../assets/facebook.png'
 import instagramIcon from '../../assets/instagram.png'
 import linkedinIcon from '../../assets/linkedin.png'
 
+
+import voittoIcon from '../../assets/apoiadores/voitto.png'
+import iprjIcon from '../../assets/apoiadores/iprj.png'
+import inovafriIcon from '../../assets/apoiadores/inovafri.png'
+import wiseupIcon from '../../assets/apoiadores/wiseup.png'
+import ligajrIcon from '../../assets/apoiadores/ligajr.png'
+
+
 const Footer = () =>{
 
     return(
         <>
             <footer id="Footer">
+            <div className="parceiros">
+                <span>Parceiros</span>
+                <div className="images">
+                    <img src={voittoIcon} alt="" />
+                    <img src={iprjIcon} alt="" />
+                    <img src={inovafriIcon} alt="" />
+                    <img src={wiseupIcon} alt="" />
+                    <img src={ligajrIcon} alt="" />
+                </div>
+            </div>
                 <div className="content-container">
                     <div className="row">
                         <div className="socialmedia-container">
-                            <img src={facebookIcon} alt="" />
-                            <img src={instagramIcon} alt="" />
-                            <img src={linkedinIcon} alt="" />
-                        </div>  
+                            <a href="https://pt-br.facebook.com/pg/serrajreng/posts/" target="_blank"> <img src={facebookIcon}  alt="" /></a>
+                            <a href="https://www.instagram.com/serrajreng/" target="_blank"> <img src={instagramIcon} alt="" /></a>
+                            <a href="https://www.linkedin.com/company/serrajreng/?originalSubdomain=br" target="_blank"> <img src={linkedinIcon} alt="" /> </a>
+                        </div> 
+                         
                         <div className="links-container">
                             <div>
                                 <span>Institucional</span>
