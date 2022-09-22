@@ -1,31 +1,33 @@
-import './Card.css'
+import {CardStyle} from './CardStyle'
 
 interface CardProps{
     children: any
     title: string
     buttonUrl: string
     buttonTitle: string
-    // height: string
+    cor?: string
 }
 
-export default function Card(props: CardProps){
+const Card: React.FC<CardProps> = ({title, children, buttonUrl, buttonTitle, cor}) => {
     return (
-        <div className="Card" >
-            <div className="card-title">
-                {props.title}
+        <CardStyle>
+            <div style={{backgroundColor: cor}} className="card-title">
+                {title}
             </div>
 
             <div className="card-body">
                 <div className="card-content">
-                    {props.children}
+                    {children}
 
                 </div>
 
-                <a className='card-link' href={props.buttonUrl}>
-                    <button>{props.buttonTitle}</button>
+                <a className='card-link' href={buttonUrl}>
+                    <button style={{backgroundColor: cor}}>{buttonTitle}</button>
                 </a>
                 
             </div>
-        </div>
+        </CardStyle>
     )
 }
+
+export default Card;

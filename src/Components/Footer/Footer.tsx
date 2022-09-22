@@ -1,5 +1,15 @@
 import React from "react";
-import './Footer.css'
+import {
+    FooterStyle,
+    Row,
+    Parceiros,
+    Start,
+    End,
+    FooterBottomRow,
+    ContentContainer,
+    SocialMediaContainer,
+    LinksContainer
+} from './FooterStyle';
 
 import facebookIcon from '../../assets/facebook.png'
 import instagramIcon from '../../assets/instagram.png'
@@ -17,26 +27,26 @@ const Footer = () =>{
 
     return(
         <>
-            <footer id="Footer">
-            <div className="parceiros">
-                <span>Parceiros</span>
-                <div className="images">
-                    <img src={voittoIcon} alt="" />
-                    <img src={iprjIcon} alt="" />
-                    <img src={inovafriIcon} alt="" />
-                    <img src={wiseupIcon} alt="" />
-                    <img src={ligajrIcon} alt="" />
-                </div>
-            </div>
-                <div className="content-container">
-                    <div className="row">
-                        <div className="socialmedia-container">
+            <FooterStyle>
+                <Parceiros>
+                    <span>Parceiros</span>
+                    <div>
+                        <img src={voittoIcon} alt="" />
+                        <img src={iprjIcon} alt="" />
+                        <img src={inovafriIcon} alt="" />
+                        <img src={wiseupIcon} alt="" />
+                        <img src={ligajrIcon} alt="" />
+                    </div>
+                </Parceiros>
+                <ContentContainer>
+                    <Row>
+                        <SocialMediaContainer>
                             <a href="https://pt-br.facebook.com/pg/serrajreng/posts/" target="_blank"> <img src={facebookIcon}  alt="" /></a>
                             <a href="https://www.instagram.com/serrajreng/" target="_blank"> <img src={instagramIcon} alt="" /></a>
                             <a href="https://www.linkedin.com/company/serrajreng/?originalSubdomain=br" target="_blank"> <img src={linkedinIcon} alt="" /> </a>
-                        </div> 
-                         
-                        <div className="links-container">
+                        </SocialMediaContainer> 
+                        
+                        <LinksContainer>
                             <div>
                                 <span>Institucional</span>
                                 <p>Serra Jr Engenharia</p>
@@ -50,20 +60,19 @@ const Footer = () =>{
                                 <span>Contato</span>
                                 <p>serrajr@iprj.uerj.br </p>
                             </div>
-                        </div>
-                    </div>
+                        </LinksContainer>
+                    </Row>
                     <hr />
-                    <div className="row footer-bottom-row">
-                        <div className="start">
+                    <FooterBottomRow>
+                        <Start>
                             <span>© Serra Jr. Engenharia 2022</span>
-                        </div>
-                        <div className="end">
+                        </Start>
+                        <End>
                             <span>Todos os direitos reservados</span>
-                        </div>
-                    </div>
-                </div>
-
-            </footer>
+                        </End>
+                    </FooterBottomRow>
+                </ContentContainer>
+            </FooterStyle>
         </>
     )
 }

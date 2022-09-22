@@ -1,16 +1,18 @@
-import './FrontDeskIcons.css'
+import { FrontDeskIconsStyle } from './FrontDeskIconsStyle'
 
 interface IconsProp{
     image: string;
-    alt: string;
+    alt?: string;
     text: string;
 }
 
-export default function FrontDeskIcons(props: IconsProp){
+export const FrontDeskIcons: React.FC<IconsProp> = ({image, text, alt}) =>{
     return (
-        <div className="FrontDeskIcons">
-            <img src={props.image} alt={props.alt} />
-            <p>{props.text}</p>
-        </div>
+        <FrontDeskIconsStyle>
+            <img src={image} alt={alt} />
+            <p>{text}</p>
+        </FrontDeskIconsStyle>
     )
 }
+
+export default FrontDeskIcons

@@ -1,15 +1,20 @@
 import gradientBar from '../../assets/FrontDeskAssets/barra.png'
-import './Title.css'
+import {TitleStyle} from './TitleStyle'
+import React from 'react'
+
 
 interface TitleProps{
     text: string
+    fontSize?: string
 }
 
-export default function Title(props: TitleProps){
+const Title: React.FC<TitleProps> = ({text, fontSize}) => { 
     return(
-        <div className="Title">
-            <h3>{props.text}</h3>
+        <TitleStyle>
+            <p style={{fontSize}}>{text}</p>
             <img className='gradientBar' src={gradientBar} alt="gradientBar" />
-        </div>
+        </TitleStyle>
     )
 }
+
+export default Title

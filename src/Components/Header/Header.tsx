@@ -1,13 +1,11 @@
-import React from "react";
-import "./Header.css"
 import LogoSerraJr from "../../assets/LogoSiteSerraJr.png"
-import ArrowServices from "../../assets/seta.png"
 
-import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
+import { HeaderStyle } from "./HeaderStyle";
+import { Link } from "react-router-dom";
 
 const Header = () =>{
     return(
-        <>
+        <HeaderStyle>
             <header className="header">
 
                 <div className="logo">
@@ -34,7 +32,7 @@ const Header = () =>{
                 </div>
                 
             </header>
-        </>
+        </HeaderStyle>
     )
 }
  
