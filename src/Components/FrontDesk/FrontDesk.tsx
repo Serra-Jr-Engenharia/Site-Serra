@@ -10,7 +10,7 @@ import nossaHistoria from '../../assets/FrontDeskAssets/nossa-historia.png'
 import FrontDeskIcons from "./FrontDeskIcons/FrontDeskIcons";
 import Card from "../Card/Card";
 import Title from "../Title/Title";
-import { FrontDeskStyle } from './FrontDeskStyle'
+import { FrontDeskStyle,CardAboutUs,ourHistory } from './FrontDeskStyle'
 
 const FrontDesk = () =>{
     return(
@@ -60,23 +60,17 @@ const FrontDesk = () =>{
                     <div style={{width: '60vw'}}>
                         <Card title="Nossa História" buttonTitle="Saiba Mais" buttonUrl="/"cor='#001830'>
 
-                            <div className='Card-AboutUs'>
+                            <CardAboutUs>
                                 <p>A Serra Jr. Engenharia, criada em 08 de maio de 2002, é uma empresa formada exclusivamente por alunos do curso de graduação de Engenharia Mecânica e de Engenharia de Computação do Instituto Politécnico da Universidade do Estado do Rio de Janeiro – IPRJ/UERJ e tem como objetivo central o incentivo à inserção e desenvolvimento dos alunos na prática empresarial. Teve suas atividades paradas no ano de 2011 devido a tragédia climática que abalou Nova Friburgo. Em 2013, retomou com força total seus projetos. Hoje, está melhor do que nunca oferecendo soluções em engenharia mecânica e computação para todo o mercado.</p>
-
                                 <img src={nossaHistoria} alt="Imagem com os membros da Serra Jr. Engenharia" />
-                            </div>
-                            
+                            </CardAboutUs>
                             
                         </Card>
                     </div>
                 </div>
             <div className="history">
-                    
-
                 {/* <hr style={{background: '#FD6300', height: '3px', width: '100%', margin: '0', border: '0px'}}/> */}
-                
             </div>
-
         </FrontDeskStyle>    
     )
 }

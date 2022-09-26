@@ -6,13 +6,14 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 import FrontDesk from '../FrontDesk/FrontDesk'
 import AboutUs from "../AboutUs/AboutUs";
+import Contact from "../Contact/Contact"
 
 
 
 const Layout = () =>{
     return(
         <>
-            <Router>
+            <Router basename="/Site-Serra">
                 <Header></Header>
             
                 <Routes>
@@ -20,6 +21,9 @@ const Layout = () =>{
                 </Routes>
                 <Routes>
                     <Route path="/quemSomos" element={<AboutUs />} />
+                </Routes>
+                <Routes>
+                    <Route path="/contatos" element={<Contact />} />
                 </Routes>
             
                 <Footer></Footer>

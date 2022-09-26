@@ -73,16 +73,39 @@ export const FrontDeskStyle = styled.div`
         font-size: 25px;
         text-align: justify;
         padding: 40px;
-    }
-    
-    .Card-AboutUs {
-        display: flex;
-        justify-content: center;
-        justify-content: space-around;
-        margin-bottom: 5%;
+    }  
+`;
+
+export const ourHistory = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #E6E6E5;
+    margin-top: 40px;
+
+    img {
+        width: 30%;
     }
 
-    .Card-AboutUs p {
+    p {
+        color: black;
+        background-color: #E6E6E5;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        text-align: justify;
+        padding: 40px;
+    }  
+`;
+
+export const CardAboutUs = styled.div`
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 5%;
+
+    p {
         color: black;
         font-style: normal;
         font-weight: 400;
@@ -92,11 +115,10 @@ export const FrontDeskStyle = styled.div`
         margin-top: 5%;
     }
 
-    .Card-AboutUs img {
+    img {
         width: 40%;
         height: 40%;
         border-radius: 20px;
         margin-top: 5%;
     }
 `;
-

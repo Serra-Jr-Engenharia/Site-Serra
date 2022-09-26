@@ -16,7 +16,7 @@ export const AboutUsCardStyle = styled.div`
     line-height: 32px;
 
     p{
-        width: 70%;
+        width: 95%;
     }
 
     img{
