@@ -11,8 +11,8 @@ interface AboutUsCardProps{
 export const AboutUsCard: React.FC<AboutUsCardProps> = ({image, titleText, imageAlt, children}) => {
     return (
         <AboutUsCardStyle >
-            <img src={image} alt={imageAlt}/>
-            <Title fontSize='30px' text={titleText}/>
+            <img className="AboutUsCardImg" src={image} alt={imageAlt}/>
+            <Title titleWidth="200px" fontSize='30px' text={titleText}/>
             {children}
         </AboutUsCardStyle>
     )

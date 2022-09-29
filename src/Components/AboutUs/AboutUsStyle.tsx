@@ -35,11 +35,14 @@ export const AboutUsContent = styled.div`
     margin-top: 5%;
     margin-bottom: 5%;
 
+    
+
 `;
 
 export const AboutUsContentDivision = styled.div`
     border: 1px solid #001830;
     height: 60vh;
+    
 `;
 
 
@@ -50,6 +53,7 @@ export const WhoWeAre = styled.div`
     background-color: #E6E6E5;
     width: 100vw;
     margin-top: 5vh;
+    
 `;
 
 export const WhoWeAreCard = styled.div`
@@ -57,6 +61,7 @@ export const WhoWeAreCard = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
     p {
         color: black;
@@ -74,9 +79,11 @@ export const WhoWeAreImg = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: 40px;
+    
     img {
         width: 100%;
         height: 100%;
+        border-radius: 1rem;
     }
 `;

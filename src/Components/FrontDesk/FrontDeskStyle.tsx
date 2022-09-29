@@ -1,6 +1,11 @@
 import styled from "styled-components";
+import BackgroundIMG from '../../assets/FrontDeskAssets/background-image.png'
 
 export const FrontDeskStyle = styled.div`
+
+    background-image: url(${BackgroundIMG});
+    
+
     .FrontDeskContent{
         display: flex;
         align-items: center;

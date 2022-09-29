@@ -31,11 +31,11 @@ const Footer = () =>{
                 <Parceiros>
                     <span>Parceiros</span>
                     <div>
-                        <img src={voittoIcon} alt="" />
-                        <img src={iprjIcon} alt="" />
-                        <img src={inovafriIcon} alt="" />
-                        <img src={wiseupIcon} alt="" />
-                        <img src={ligajrIcon} alt="" />
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.voitto.com.br"><img src={voittoIcon} alt="" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="http://www.iprj.uerj.br/"><img src={iprjIcon} alt="" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://inovafri.com.br/"><img src={inovafriIcon} alt="" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://wiseup.com/"><img src={wiseupIcon} alt="" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ligajuniornf/"><img src={ligajrIcon} alt="" /></a>
                     </div>
                 </Parceiros>
                 <ContentContainer>

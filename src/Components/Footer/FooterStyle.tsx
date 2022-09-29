@@ -10,7 +10,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-margin-top: 1rem;
 
 padding-bottom: 1%;
 
@@ -119,8 +118,12 @@ export const Parceiros = styled.div`
         justify-content: space-evenly;
         align-items: center;
     
-        img{ 
+        a, img{ 
             height: 90%;
+        }
+
+        a:hover {
+            opacity: 0.8;
         }
     }
 `;

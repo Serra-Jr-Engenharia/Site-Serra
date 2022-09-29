@@ -14,13 +14,15 @@ export const AboutUsCardStyle = styled.div`
     font-weight: 400;
     font-size: 28px;
     line-height: 32px;
+    
 
     p{
         width: 95%;
     }
 
-    img{
+    .AboutUsCardImg{
         width: 150px;
+        height: 140px;
     }
 
     ul li{

@@ -1,18 +1,24 @@
 import styled from "styled-components";
 
-export const CardStyle = styled.div`
-    width: 100%;
-    height: 100%;
+export const BottomCardStyle = styled.div`
     margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: #E6E6E5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     .card-body{
-        border-bottom-right-radius: 1rem;
-        border-bottom-left-radius: 1rem;
+        border-radius: 1rem;
         background-color: #EDEDED;
         height: 100%;
-        width: 100%;
+        width: 60vw;
         border-bottom: 5px solid #cccccc;
+        background-color: #fff;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .card-body .card-content{
@@ -23,17 +29,16 @@ export const CardStyle = styled.div`
 
     .card-title{
         width: 100%;
-        height: 4rem;
+        height: 6rem;
         min-height: 30px;
         background-color: #FD6300;
-        border-top-right-radius: 1rem;
-        border-top-left-radius: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
         font-size: 1.6rem;
         font-weight: 600;
+        margin-bottom: 20px;
     }
 
     .card-link{
@@ -72,3 +77,4 @@ export const CardStyle = styled.div`
         justify-content: center;
     }
 `;
+

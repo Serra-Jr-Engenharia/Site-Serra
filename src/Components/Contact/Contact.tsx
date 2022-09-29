@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
     return(
         <>
             <div>
-                <Title text="Entre em contato conosco!" />  
+                <Title titleWidth="600px" text="Entre em contato conosco!" />  
             </div>
             <All>
                 <Inform>
@@ -42,19 +42,19 @@ const Contact: React.FC = () => {
                 <Formul>
                     <Inps>
                         <p>Nome</p>
-                        <input type="text" />
+                        <input type="text" placeholder="Insira seu nome"/>
 
                         <p>Email</p>
-                        <input type="text" />
+                        <input type="text" placeholder="Insira seu email"/>
 
                         <p>Telefone</p>
-                        <input type="text" />
+                        <input type="text" placeholder="(XX) XXXXX-XXXX"/>
 
                         <p>Assunto</p>
-                        <input type="text" />
+                        <input type="text"placeholder="Digite o assunto da mensagem"/>
 
                         <p>Mensagem</p>
-                        <input type="text" className="mensagem"/>
+                        <input type="text" className="mensagem" placeholder="Digite a mensagem"/>
                         <br />
                         <button>Enviar</button>
                     </Inps>

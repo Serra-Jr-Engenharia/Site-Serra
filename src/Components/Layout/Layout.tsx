@@ -7,6 +7,7 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import FrontDesk from '../FrontDesk/FrontDesk'
 import AboutUs from "../AboutUs/AboutUs";
 import Contact from "../Contact/Contact"
+import Comp from "../Comp/Comp"
 
 
 
@@ -18,6 +19,9 @@ const Layout = () =>{
             
                 <Routes>
                     <Route path="/" element={<FrontDesk />} />
+                </Routes>
+                <Routes>
+                    <Route path="/computacao" element={<Comp />} />
                 </Routes>
                 <Routes>
                     <Route path="/quemSomos" element={<AboutUs />} />

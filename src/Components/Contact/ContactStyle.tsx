@@ -24,7 +24,7 @@ export const Inform = styled.div`
 
 export const All = styled.div`
     display: flex;
-    margin-top: 10%;
+    margin-top: 7%;
     justify-content: space-between;
     margin-left: 15%;
     margin-right: 15%;
@@ -33,27 +33,27 @@ export const All = styled.div`
 
 export const Ag = styled.div`
    display: flex;
-   margin-bottom: 10%;
-   width: 30%;
+   margin-bottom: 8%;
+   width: 35rem;
 
 `;
 
 export const Em = styled.div`
     display: flex;
-    margin-bottom: 10%;
-    width: 30%;
+    margin-bottom: 8%;
+    width: 35rem;
 `;
 
 export const Local = styled.div`
     display: flex;
-    margin-bottom: 10%;
-    width: 30%;
+    margin-bottom: 8%;
+    width: 35rem;
 `;
 
 export const Tel = styled.div`
     display: flex;
     margin-bottom: 10%;
-    width: 30%;
+    width: 35rem;
 `;
 
 export const Formul = styled.div`
@@ -77,8 +77,8 @@ export const Inps = styled.div`
     input {
         border-radius: 10px;
         border: 1px;
-        width: 90%;
-        height: 2rem;
+        width: calc(90% - 30px);
+        height: 2.5rem;
         background: #EEEEEE;
     }
 
@@ -95,5 +95,16 @@ export const Inps = styled.div`
 
     .mensagem {
         height: 10rem;
+    }
+
+
+    input::placeholder {
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+
+    input {
+        padding-left: 30px;
     }
 `;
