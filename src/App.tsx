@@ -1,9 +1,9 @@
-import Layout from './Components/Layout/Layout'
+import Content from './Components/Content'
 
 function App() {
   return (
     <div className='App'>
-      <Layout />
+      <Content />
     </div>
   )
 }
