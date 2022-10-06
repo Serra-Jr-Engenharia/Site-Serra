@@ -1,5 +1,4 @@
-import gradientBar from '../../assets/FrontDeskAssets/barra.svg'
-import {TitleStyle, TitleText, GradientBar} from './style'
+import {TitleStyle, TitleText, GradientBar, TitleContainer} from './style'
 import React from 'react'
 
 
@@ -12,8 +11,10 @@ interface TitleProps{
 const Title: React.FC<TitleProps> = ({text, fontSize, titleWidth}) => { 
     return(
         <TitleStyle>
-            <TitleText style={{fontSize}}>{text}</TitleText>
-            <GradientBar gradientWidth={titleWidth} src={gradientBar} alt="gradientBar" />
+            <TitleContainer>
+                <TitleText style={{fontSize}} >{text}</TitleText>
+                <GradientBar  gradientWidth={titleWidth}/>
+            </TitleContainer>
         </TitleStyle>
     )
 }

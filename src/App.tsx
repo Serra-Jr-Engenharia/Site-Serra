@@ -1,9 +1,9 @@
-import Content from './Components/Content'
+import ContentRoutes from './components/ContentRoutes'
 
 function App() {
   return (
     <div className='App'>
-      <Content />
+      <ContentRoutes />
     </div>
   )
 }

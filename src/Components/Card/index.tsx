@@ -1,4 +1,7 @@
-import FrontDeskIcons from '../Pages/FrontDesk/FrontDeskIcons'
+import React from 'react'
+
+import FrontDeskIcons from '../../pages/FrontDesk/FrontDeskIcons'
+
 import {
     CardBody,
     CardStyle,
@@ -26,7 +29,7 @@ const Card: React.FC<CardProps> = ({title, buttonUrl, buttonTitle, color, images
 
             <CardBody>
                 <BodyContents>
-                    {images.map((image, key) => <FrontDeskIcons icon={image} text={texts[key]} alt={texts[key]} />)}
+                    {images.map((image, key) => <FrontDeskIcons key={key} icon={image} text={texts[key]} alt={texts[key]} />)}
                 </BodyContents>
 
                 <ButtonContainer href={buttonUrl}>
