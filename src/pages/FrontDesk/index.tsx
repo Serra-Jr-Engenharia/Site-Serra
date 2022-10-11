@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 import Card from "../../components/Card"
 import Title from "../../components/Title"
 import BottomCard from '../../components/BottomCard'
+
+// @ts-ignore
+import TypeWriterEffect from 'react-typewriter-effect';
+
+
 
 import presentationImage from '../../assets/presentation-image.svg'
 import monitorIcon from '../../assets/FrontDeskAssets/Sites.svg'
@@ -16,27 +21,47 @@ import ourHistory from '../../assets/FrontDeskAssets/nossa-historia.svg'
 import { 
     FrontDeskStyle, 
     Presentation, 
-    Slogan, 
-    SloganText, 
+    Slogan,  
     FrontDeskContent,
     CardContainer,
     PresentationImg, 
-    Teste
 } from './style'
 
 
 const FrontDesk: React.FC = () =>{
+    // const [phrase, setPhrase] = useState("");
+    // const TextArray = "texto em questao";
+    // const texto = ['t','e','x','t','o']
+        
+    // useEffect(() =>{
+    //     function typeWritter(){
+    //         texto.forEach((letter:any, i:any ) =>{
+    //             setTimeout(() => (setPhrase(phrase + letter), 95 * i);
+    //         });
+            
+    //     }
+    // },[])
+
     return(
         <FrontDeskStyle>
             <Presentation>
                 <Slogan>
-                    <SloganText>
-                        <p>Engrenando</p>
-                        <p>ideias,</p>
-                        <p>inovando o</p>
-                        <p>mercado.</p>
-                    </SloganText>
-    
+                    <TypeWriterEffect
+                        textStyle={{ 
+                            fontFamily: 'Courier Prime', 
+                            fontSize: "70px", 
+                            color: "#001830", 
+                            fontWeight: "700" 
+                        }}
+                        startDelay={100}
+                        cursorColor="orange"
+                        multiText={[
+                            'Engrenando ideias, inovando o mercado.',
+                            'Engrenando ideias, inovando o mercado.'
+                        ]}
+                        multiTextDelay={3000}
+                        eraseSpeed={400}
+                    />
                 </Slogan>
                 <PresentationImg src={presentationImage} alt="apresentação" />
             </Presentation>

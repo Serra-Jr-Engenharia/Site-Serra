@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const MapsWrapper = styled.div`
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,6 +52,8 @@ export const MapsDescription = styled.div`
 
 export const MapsContent = styled.div`
     border-radius: 20px;
+    width: 100%;
+    height: 100%;
 
     @media screen and (max-width: 700px) {
         width: 100%;
@@ -80,7 +83,8 @@ export const MapsDescriptionTitle = styled.h2`
 `;
 
 export const MapaContent = styled.div`
-    width: 50vw;
+    width: 100%;
+    height: 100%;
 
     @media screen and (max-width: 700px) {
         width: 100%;

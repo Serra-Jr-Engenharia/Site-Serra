@@ -4,7 +4,8 @@ import {
     AboutUsCardStyle, 
     AboutUsCardImg, 
     Content, 
-    List 
+    List, 
+    AboutUsCardUl
 } from './style'
 
 interface AboutUsCardProps{
@@ -18,15 +19,15 @@ interface AboutUsCardProps{
 
 export const AboutUsCard: React.FC<AboutUsCardProps> = ({image, titleText, imageAlt, hasList, content, list}) => {
     return (
-        <AboutUsCardStyle  >
+        <AboutUsCardStyle>
             <AboutUsCardImg src={image} alt={imageAlt} />
             
             <Title titleWidth="50%" fontSize='30px' text={titleText}/>
             
             {hasList ?
-                <ul>
+                <AboutUsCardUl>
                     {list ? list.map((listElement, key) => <List key={key}>{listElement}</List>) : null}
-                </ul>
+                </AboutUsCardUl>
                 :
                 <Content>{content}</Content>
             }

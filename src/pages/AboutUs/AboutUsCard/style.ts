@@ -20,6 +20,10 @@ export const Content = styled.p`
     width: 95%;
 `;
 
+export const AboutUsCardUl = styled.ul`
+
+`;
+
 export const List = styled.li`
     list-style-type: none;
 

@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "../../components/Title";
+import Mapa from "./Components/Map";
 
 import ScheduleIMG from "../../assets/ContactAssets/agenda.svg"; 
 import Email from "../../assets/ContactAssets/email.svg"; 
@@ -10,6 +11,7 @@ import { Information,
      Schedule, 
      EmailStyle, 
      Local, 
+     MapBox,
      Telephone, 
      Form, 
      Inputs, 
@@ -21,6 +23,7 @@ import { Information,
      InformationImg,
      InformationSpan
 } from './style';
+
 
 
 const Contact: React.FC = () => {
@@ -47,8 +50,11 @@ const Contact: React.FC = () => {
                         Segunda a Sexta, das 09hrs <br />
                         às 17hrs.</InformationSpan>
                     </Telephone>  
-                    
+                    <MapBox>
+                        <Mapa />
+                    </MapBox>
                 </Information>
+
 
                 <Form>
                     <Inputs>
@@ -70,6 +76,8 @@ const Contact: React.FC = () => {
                         <Button>Enviar</Button>
                     </Inputs>
                 </Form>
+
+                
 
             </All>
             

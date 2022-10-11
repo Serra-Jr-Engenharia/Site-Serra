@@ -20,6 +20,10 @@ export const PresentationAboutUsP = styled.p`
     align-items: center;
 `;
 
+export const PresentationAboutUsImg = styled.img`
+   
+`;
+
 export const AboutUsContent = styled.div`
     display: flex;
     justify-content: center;

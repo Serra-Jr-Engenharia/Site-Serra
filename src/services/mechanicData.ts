@@ -12,7 +12,7 @@ export const mechanicData = {
         },
         {
             title:"Projeto Lar Abrigo Amor a Jesus",
-            image: amorJesusImage,
+            image: 'https://cdn.discordapp.com/attachments/816415993680625714/1029096504603967578/mec-rodas.PNG',
             content: "O problema enfrentado foi em relação a utilização das cadeiras de rodas presente no abrigo, o qual foi constatado alto índice de oxidação e/ou rompimentos de suas peças. Após a realização de testes em laboratório, quanto a oxidação e análise estrutral e testes no próprio equipamento foi desenvolvido um manual de uso com a especificação de cada cadeira com o objetivo de aumento da durabilidade."
         }
     ]

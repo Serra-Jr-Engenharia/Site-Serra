@@ -11,6 +11,7 @@ import {
     PresentationAboutUsP,
     AboutUsContent,
     AboutUsContentDivision,
+    PresentationAboutUsImg
 } from './style'
 
 const AboutUs: React.FC = () => {
@@ -18,7 +19,7 @@ const AboutUs: React.FC = () => {
         <>
             <PresentationMain>
                 <PresentationAboutUsP>Sobre Nós</PresentationAboutUsP>
-                <img src={imageAboutUs} alt='imagem sobre nós' />
+                <PresentationAboutUsImg src={imageAboutUs} alt='imagem sobre nós' />
             </PresentationMain>
             
             <AboutUsContent>

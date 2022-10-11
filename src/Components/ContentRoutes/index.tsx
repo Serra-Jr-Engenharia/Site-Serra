@@ -16,8 +16,8 @@ const ContentRoutes: React.FC = () =>{
     return(
         <>
             <Router basename="/Site-Serra">
-                <Header></Header>
-            
+
+                <Header />
                 <Routes>
                     <Route path="/" element={<FrontDesk />} />
                 </Routes>
@@ -33,8 +33,8 @@ const ContentRoutes: React.FC = () =>{
                 <Routes>
                     <Route path="/contatos" element={<Contact />} />
                 </Routes>
-            
-                <Footer></Footer>
+
+                <Footer />
             </Router>
         </>
     )

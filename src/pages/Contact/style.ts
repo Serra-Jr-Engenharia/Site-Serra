@@ -21,6 +21,11 @@ export const Information = styled.div`
 
 `;
 
+export const MapBox = styled.div`
+    width: 80%;
+    height: 50vh;
+`;
+
 export const All = styled.div`
     display: flex;
     margin-top: 7%;
