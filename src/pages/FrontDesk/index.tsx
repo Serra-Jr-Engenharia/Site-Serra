@@ -4,7 +4,6 @@ import Card from "../../components/Card"
 import Title from "../../components/Title"
 import BottomCard from '../../components/BottomCard'
 
-// @ts-ignore
 import TypeWriterEffect from 'react-typewriter-effect';
 
 
