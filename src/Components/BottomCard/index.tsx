@@ -1,5 +1,5 @@
 import Carousel from '../Carousel'
-import { aboutUsData } from '../../services/aboutUsData'
+import { aboutUsData } from '../../Services/aboutUsData'
 
 import { 
     BottomCardStyle, 

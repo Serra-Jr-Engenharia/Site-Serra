@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ContentRoutes from './components/ContentRoutes'
+import ContentRoutes from './Components/ContentRoutes'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {

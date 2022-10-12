@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../Footer"
 import Header from "../Header";
 
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import FrontDesk from '../../Screens/FrontDesk/Page';
 import AboutUs from "../../Screens/AboutUs/Page";
