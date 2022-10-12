@@ -1,5 +1,5 @@
-import friburguenseImage from '../assets/CompAssets/friburguense.svg'
-import tmfImage from '../assets/CompAssets/projeto-tmf.svg'
+import friburguenseImage from '../Assets/CompPage/friburguense.svg'
+import tmfImage from '../Assets/CompPage/projeto-tmf.svg'
 
 export const compData = {
 

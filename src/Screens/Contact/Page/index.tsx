@@ -1,11 +1,11 @@
 import React from "react";
-import Title from "../../components/Title";
-import Mapa from "./Components/Map";
+import Title from "../../../Components/Title";
+import Mapa from "../Templates/Map";
 
-import ScheduleIMG from "../../assets/ContactAssets/agenda.svg"; 
-import Email from "../../assets/ContactAssets/email.svg"; 
-import Localization from "../../assets/ContactAssets/localizacao.svg"; 
-import Phone from "../../assets/ContactAssets/telefone.svg"; 
+import ScheduleIMG from "../../../Assets/Contact/agenda.svg"; 
+import Email from "../../../Assets/Contact/email.svg"; 
+import Localization from "../../../Assets/Contact/localizacao.svg"; 
+import Phone from "../../../Assets/Contact/telefone.svg"; 
 
 import { Information,
      Schedule, 

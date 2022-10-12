@@ -1,6 +1,6 @@
 import React from 'react'
 
-import FrontDeskIcons from '../../pages/FrontDesk/FrontDeskIcons'
+import FrontDeskIcons from '../../Screens/FrontDesk/Templates/FrontDeskIcons'
 
 import {
     CardBody,

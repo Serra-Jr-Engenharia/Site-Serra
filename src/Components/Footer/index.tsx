@@ -20,16 +20,16 @@ import {
     ContentDivision
 } from './style';
 
-import facebookIcon from '../../assets/facebook.svg'
-import instagramIcon from '../../assets/instagram.svg'
-import linkedinIcon from '../../assets/linkedin.svg'
+import facebookIcon from '../../Assets/Global/facebook.svg'
+import instagramIcon from '../../Assets/Global/instagram.svg'
+import linkedinIcon from '../../Assets/Global/linkedin.svg'
 
 
-import voittoIcon from '../../assets/apoiadores/voitto.svg'
-import iprjIcon from '../../assets/apoiadores/iprj.svg'
-import inovafriIcon from '../../assets/apoiadores/inovafri.svg'
-import wiseupIcon from '../../assets/apoiadores/wiseup.svg'
-import ligajrIcon from '../../assets/apoiadores/ligajr.svg'
+import voittoIcon from '../../Assets/Apoiadores/voitto.svg'
+import iprjIcon from '../../Assets/Apoiadores/iprj.svg'
+import inovafriIcon from '../../Assets/Apoiadores/inovafri.svg'
+import wiseupIcon from '../../Assets/Apoiadores/wiseup.svg'
+import ligajrIcon from '../../Assets/Apoiadores/ligajr.svg'
 
 
 const Footer: React.FC = () =>{

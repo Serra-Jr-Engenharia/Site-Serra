@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import LogoSerraJr from "../../assets/LogoSiteSerraJr.svg"
+import LogoSerraJr from "../../Assets/Global/LogoSiteSerraJr.svg"
 
-import ArrowHeader from "../../assets/arrow-header.svg"
-// import useState 
+import ArrowHeader from "../../Assets/Global/arrow-header.svg"
 
 import { 
     HeaderStyle, 
@@ -17,9 +16,8 @@ import {
     SubMenuContainerSon,
     SubMenuLine,
     LinkStyle,
-    // Arrow, 
     
-} from "./style";
+} from './style';
 
 import { Link } from "react-router-dom";
 
@@ -31,7 +29,7 @@ const Header: React.FC = () =>{
         <HeaderStyle>
             <SerraLogo>
                 {/* trocar o link quando tiver a url */}
-                <a href="http://127.0.0.1:5173/"><img src={LogoSerraJr} alt="Logo Serra Jr" /></a>
+                <a href="/"><img src={LogoSerraJr} alt="Logo Serra Jr" /></a>
             </SerraLogo>
             
 

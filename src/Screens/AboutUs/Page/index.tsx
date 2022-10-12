@@ -1,10 +1,10 @@
 import React from 'react'
-import { aboutUsData } from '../../services/aboutUsData'
+import { aboutUsData } from '../../../Services/aboutUsData'
 
-import imageAboutUs from '../../assets/AboutUsAssets/presentation-image.svg'
+import imageAboutUs from '../../../Assets/AboutUs/presentation-image.svg'
 
-import BottomCard from '../../components/BottomCard'
-import AboutUsCard from './AboutUsCard'
+import BottomCard from '../../../Components/BottomCard'
+import AboutUsCard from '../Templates/AboutUsCard'
 
 import { 
     PresentationMain,

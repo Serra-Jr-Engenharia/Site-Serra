@@ -1,8 +1,8 @@
-import membersImage1 from '../assets/AboutUsAssets/membros-1.png'
+import membersImage1 from '../Assets/AboutUs/membros-1.png'
 
-import missionIcon from '../assets/AboutUsAssets/missao-icon.svg'
-import visionIcon from '../assets/AboutUsAssets/visao-icon.svg'
-import valueIcon from '../assets/AboutUsAssets/valores-icon.svg'
+import missionIcon from '../Assets/AboutUs/missao-icon.svg'
+import visionIcon from '../Assets/AboutUs/visao-icon.svg'
+import valueIcon from '../Assets/AboutUs/valores-icon.svg'
 
 export const aboutUsData = {
     // Adiciona novos dados no carrosel da página aboutUs

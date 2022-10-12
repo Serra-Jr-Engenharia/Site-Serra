@@ -1,15 +1,15 @@
 import React from "react"
 
-import Carousel from "../../components/Carousel"
-import { mechanicData } from "../../services/mechanicData"
+import Carousel from "../../../Components/Carousel"
+import { mechanicData } from "../../../Services/mechanicData"
 
-import Arrow from "../../assets/MecAssets/seta.svg"
-import PresentationImg1 from '../../assets/MecAssets/presentation-image.svg'
-import Gear from '../../assets/MecAssets/gear-icon.svg'
-import Piston from '../../assets/MecAssets/piston-icon.svg'
+import Arrow from "../../../Assets/MechanicPage/seta.svg"
+import PresentationImg1 from '../../../Assets/MechanicPage/presentation-image.svg'
+import Gear from '../../../Assets/MechanicPage/gear-icon.svg'
+import Piston from '../../../Assets/MechanicPage/piston-icon.svg'
 
-import WhatsApp from "../../assets/whatsapp.svg"
-import ScrollUp from "../../assets/arrow-up.svg"
+import WhatsApp from "../../../Assets/Global/whatsapp.svg"
+import ScrollUp from "../../../Assets/Global/arrow-up.svg"
 
 import {
     MecStyle,

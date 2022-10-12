@@ -1,5 +1,5 @@
-import marmitexImage from '../assets/MecAssets/marmitex.svg'
-import amorJesusImage from '../assets/MecAssets/amor-jesus.svg'
+import marmitexImage from '../Assets/MechanicPage/marmitex.svg'
+import amorJesusImage from '../Assets/MechanicPage/amor-jesus.svg'
 
 export const mechanicData = {
 

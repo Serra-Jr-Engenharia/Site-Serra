@@ -1,21 +1,21 @@
 import React, {useState, useEffect} from 'react'
 
-import Card from "../../components/Card"
-import Title from "../../components/Title"
-import BottomCard from '../../components/BottomCard'
+import Card from "../../../Components/Card"
+import Title from "../../../Components/Title"
+import BottomCard from '../../../Components/BottomCard'
 
 import TypeWriterEffect from 'react-typewriter-effect';
 
 
 
-import presentationImage from '../../assets/presentation-image.svg'
-import monitorIcon from '../../assets/FrontDeskAssets/Sites.svg'
-import systemsIcon from '../../assets/FrontDeskAssets/sistemas-web.svg'
-import repairIcon from '../../assets/FrontDeskAssets/manutencao.svg'
-import drawIcon from '../../assets/FrontDeskAssets/desenho-tecnico.svg'
-import botIcon from '../../assets/FrontDeskAssets/braco-robo.svg'
-import printerIcon from '../../assets/FrontDeskAssets/impressora-3d.svg'
-import ourHistory from '../../assets/FrontDeskAssets/nossa-historia.svg'
+import presentationImage from '../../../Assets/Global/presentation-image.svg'
+import monitorIcon from '../../../Assets/FrontDesk/Sites.svg'
+import systemsIcon from '../../../Assets/FrontDesk/sistemas-web.svg'
+import repairIcon from '../../../Assets/FrontDesk/manutencao.svg'
+import drawIcon from '../../../Assets/FrontDesk/desenho-tecnico.svg'
+import botIcon from '../../../Assets/FrontDesk/braco-robo.svg'
+import printerIcon from '../../../Assets/FrontDesk/impressora-3d.svg'
+import ourHistory from '../../../Assets/FrontDesk/nossa-historia.svg'
 
 import { 
     FrontDeskStyle, 
@@ -28,19 +28,6 @@ import {
 
 
 const FrontDesk: React.FC = () =>{
-    // const [phrase, setPhrase] = useState("");
-    // const TextArray = "texto em questao";
-    // const texto = ['t','e','x','t','o']
-        
-    // useEffect(() =>{
-    //     function typeWritter(){
-    //         texto.forEach((letter:any, i:any ) =>{
-    //             setTimeout(() => (setPhrase(phrase + letter), 95 * i);
-    //         });
-            
-    //     }
-    // },[])
-
     return(
         <FrontDeskStyle>
             <Presentation>

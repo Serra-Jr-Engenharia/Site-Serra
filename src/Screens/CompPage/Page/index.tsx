@@ -1,21 +1,21 @@
 import React from "react"
 
-import Carousel from "../../components/Carousel"
-import { compData } from "../../services/compData"
+import Carousel from "../../../Components/Carousel"
+import { compData } from "../../../Services/compData"
 
-import IMGComp from "../../assets/CompAssets/presentation-image.svg"
-import Systems from "../../assets/CompAssets/desenvolvimento-sistemas.svg"
-import Sites from "../../assets/CompAssets/desenvolvimento-sites.svg"
-import Arrow from "../../assets/CompAssets/seta.svg"
-import CSS from "../../assets/CompAssets/css-icon.svg"
-import HTML from "../../assets/CompAssets/html-icon.svg"
-import JS from "../../assets/CompAssets/js-icon.svg"
-import REACT from "../../assets/CompAssets/react-icon.svg"
-import TS from "../../assets/CompAssets/ts-icon.svg"
-import Styled from "../../assets/CompAssets/styled-icon.svg"
+import IMGComp from "../../../Assets/CompPage/presentation-image.svg"
+import Systems from "../../../Assets/CompPage/desenvolvimento-sistemas.svg"
+import Sites from "../../../Assets/CompPage/desenvolvimento-sites.svg"
+import Arrow from "../../../Assets/CompPage/seta.svg"
+import CSS from "../../../Assets/CompPage/css-icon.svg"
+import HTML from "../../../Assets/CompPage/html-icon.svg"
+import JS from "../../../Assets/CompPage/js-icon.svg"
+import REACT from "../../../Assets/CompPage/react-icon.svg"
+import TS from "../../../Assets/CompPage/ts-icon.svg"
+import Styled from "../../../Assets/CompPage/styled-icon.svg"
 
-import WhatsApp from "../../assets/whatsapp.svg"
-import ScrollUp from "../../assets/arrow-up.svg"
+import WhatsApp from "../../../Assets/Global/whatsapp.svg"
+import ScrollUp from "../../../Assets/Global/arrow-up.svg"
 
 import {
     CompStyle,

@@ -1,5 +1,5 @@
 import styled, {keyframes} from "styled-components";
-import BackgroundIMG from '../../assets/FrontDeskAssets/background-image.svg'
+import BackgroundIMG from '../../../Assets/FrontDesk/background-image.svg'
 
 export const Presentation = styled.div`
     background-color: #DBDBDB;
