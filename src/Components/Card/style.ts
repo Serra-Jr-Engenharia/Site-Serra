@@ -11,7 +11,8 @@ export const CardBody = styled.div`
     background-color: #EDEDED;
     height: 100%;
     width: 100%;
-    border-bottom: 5px solid #cccccc;
+    -webkit-box-shadow: 7px 7px 16px -3px #000000; 
+    box-shadow: 7px 7px 16px -3px #000000;
 
     display: flex;
     justify-content: space-around;

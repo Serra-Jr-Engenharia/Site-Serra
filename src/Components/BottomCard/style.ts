@@ -24,8 +24,7 @@ export const BottomCardBody = styled.div`
     border-radius: 1rem;
     background-color: #EDEDED;
     height: 100%;
-    width: 60vw;
-    border-bottom: 5px solid #cccccc;
+    width: 80vw;
     background-color: #fff;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -34,7 +33,7 @@ export const BottomCardBody = styled.div`
 export const BottomCardContent = styled.div`
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
 `;
 
 export const BottomCardLink = styled.a`
@@ -67,6 +66,10 @@ export const BottomCardButton = styled.button<Props>`
 `;
 
 export const BottomCardStyle = styled.div<Props>`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 2.5rem;
     padding-bottom: 2.5rem;
     background-color: #E6E6E5;
@@ -82,7 +85,7 @@ export const BottomCardStyle = styled.div<Props>`
     }
 `;
 
-export const HistoryText = styled.p`
+export const HistoryText = styled.span`
     color: black;
     font-style: normal;
     font-weight: 400;

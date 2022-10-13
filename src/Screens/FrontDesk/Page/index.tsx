@@ -1,14 +1,14 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 
 import Card from "../../../Components/Card"
 import Title from "../../../Components/Title"
 import BottomCard from '../../../Components/BottomCard'
 
+// @ts-ignore
 import TypeWriterEffect from 'react-typewriter-effect';
 
 
-
-import presentationImage from '../../../Assets/Global/presentation-image.svg'
+import presentationImage from '../../../Assets/FrontDesk/presentation-image.png'
 import monitorIcon from '../../../Assets/FrontDesk/Sites.svg'
 import systemsIcon from '../../../Assets/FrontDesk/sistemas-web.svg'
 import repairIcon from '../../../Assets/FrontDesk/manutencao.svg'
@@ -32,6 +32,7 @@ const FrontDesk: React.FC = () =>{
         <FrontDeskStyle>
             <Presentation>
                 <Slogan>
+
                     <TypeWriterEffect
                         textStyle={{ 
                             fontFamily: 'Courier Prime', 
@@ -69,7 +70,7 @@ const FrontDesk: React.FC = () =>{
                         buttonUrl="/Site-Serra/mecanica" 
                         color='#04ADD7'
                         images={[repairIcon, drawIcon, botIcon, printerIcon]}
-                        texts={["Projeto e Manutenção de Equipamentos", "Desenho Técnico e Industrial", "Automação Industrial", "Prototipagem"]}
+                        texts={["Projeto e Manutenção de Equipamentos", "Desenho Técnico e Industrial", "Projetos de Automação", "Prototipagem"]}
                     />  
                 </CardContainer>
             

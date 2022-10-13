@@ -29,7 +29,9 @@ import {
     SlCardUp,
     SlCardDown,
     SlLogo,
-    Line,
+    Line1,
+    Line2,
+    Lines,
     ImagesPreFooterContact,
     ImagesPreFooterScrollUp,
     ImagesPreFooter,
@@ -40,7 +42,9 @@ import {
     SlLogoContainer,
     SlCardImg,
     SlCardH3,
-    SlCardP
+    SlCardP,
+    ServiceletterDiv,
+    ContactLink,
 } from "./style";
 
 
@@ -56,51 +60,58 @@ const CompPage: React.FC = () =>{
                 <EngCompImg src={IMGComp} alt="Imagem de Computação" /> 
             </EngComp>
 
+            <ServiceletterDiv>
+                <ServiceletterH1>Carta de Serviços</ServiceletterH1>
+                <ServiceletterH2>Engenharia de Computação</ServiceletterH2>
+                
+                <ServiceletterCard>
+                    <SlCard>
+                        <SlCardUp>
+                            <SlCardImg src={Sites} alt="Imagem Site" />
+                            <SlCardH3>Desenvolvimento de Websites</SlCardH3>
+                        </SlCardUp>
 
-            <ServiceletterH1>Carta de Serviços</ServiceletterH1>
-            <ServiceletterH2>Engenharia de Computação</ServiceletterH2>
+                        <SlCardDown>
+                            <SlCardImg src={Arrow} alt="Seta" />
+                            <SlCardP>Desenvolvemos do zero um site pensado exclusivamente para atender as necessidades do seu negócio. Utilizamos das ferramentas mais modernas do mercado para criar uma solução única que irá alavancar a visibilidade do seu produto!</SlCardP>
+                        </SlCardDown>
+                        
+                    </SlCard>
+
+                    <SlCard>
+                        <SlCardUp>
+                            <SlCardImg src={Systems} alt="Imagem Sistemas" />
+                            <SlCardH3>Desenvolvimento de Sistemas Web</SlCardH3>
+                        </SlCardUp>
+
+                        <SlCardDown>
+                            <SlCardImg src={Arrow} alt="Seta" />
+                            <SlCardP>Com auxílio das mais completas linguagens de programação, fornecemos aplicativos e sistemas próprios para a sua empresa que irão acelerar e auxiliar internamente no gerenciamento e desenvolvimento do seu negócio.</SlCardP>
+                        </SlCardDown>
+                    </SlCard>
+                </ServiceletterCard>
+
+                <SlLogoContainer>
+                    <SlLogo src={HTML} alt="ImagemHtml" />
+                    <SlLogo src={CSS} alt="Imagemcss" />
+                    <SlLogo src={JS} alt="ImagemJS" />
+                    <SlLogo src={TS} alt="ImagemTS" />
+                    <SlLogo src={REACT} alt="ImagemREACT" />
+                    <SlLogo src={Styled} alt="ImagemStyled" />
+                </SlLogoContainer>
+            </ServiceletterDiv>
+
+            <Lines>
+                <Line1 color="#FD6300"/>  
+
+                <BoxContainer>
+                    <ContactLink href="http://127.0.0.1:5173/Site-Serra/contatos"><BoxText>Quer colocar um projeto em prática? &rarr;</BoxText></ContactLink>
+                </BoxContainer>
+
+                <Line2 color="#FD6300"/>
+            </Lines>
+
             
-            <ServiceletterCard>
-                <SlCard>
-                    <SlCardUp>
-                        <SlCardImg src={Sites} alt="Imagem Site" />
-                        <SlCardH3>Desenvolvimento de Websites</SlCardH3>
-                    </SlCardUp>
-
-                    <SlCardDown>
-                        <SlCardImg src={Arrow} alt="Seta" />
-                        <SlCardP>Desenvolvemos do zero um site pensado exclusivamente para atender as necessidades do seu negócio. Utilizamos das ferramentas mais modernas do mercado para criar uma solução única que irá alavancar a visibilidade do seu produto!</SlCardP>
-                    </SlCardDown>
-                    
-                </SlCard>
-
-                <SlCard>
-                    <SlCardUp>
-                        <SlCardImg src={Systems} alt="Imagem Sistemas" />
-                        <SlCardH3>Desenvolvimento de Sistemas Web</SlCardH3>
-                    </SlCardUp>
-
-                    <SlCardDown>
-                        <SlCardImg src={Arrow} alt="Seta" />
-                        <SlCardP>Com auxílio das mais completas linguagens de programação, fornecemos aplicativos e sistemas próprios para a sua empresa que irão acelerar e auxiliar internamente no gerenciamento e desenvolvimento do seu negócio.</SlCardP>
-                    </SlCardDown>
-                </SlCard>
-            </ServiceletterCard>
-
-            <SlLogoContainer>
-                <SlLogo src={HTML} alt="ImagemHtml" />
-                <SlLogo src={CSS} alt="Imagemcss" />
-                <SlLogo src={JS} alt="ImagemJS" />
-                <SlLogo src={TS} alt="ImagemTS" />
-                <SlLogo src={REACT} alt="ImagemREACT" />
-                <SlLogo src={Styled} alt="ImagemStyled" />
-            </SlLogoContainer>
-
-            <Line color="#FD6300"/>     
-          
-            <BoxContainer>
-                <BoxText>Quer colocar um projeto em prática? &rarr;</BoxText>
-            </BoxContainer>
 
             <ProjectsCompAll>
                 <Carousel carouselData={compData.computingProjects} />

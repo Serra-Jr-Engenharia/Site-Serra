@@ -16,16 +16,19 @@
     "@types/styled-components": "^5.1.26",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^2.1.0",
     "react-hook-google-maps": "^0.0.3",
     "react-router-dom": "^6.3.0",
     "react-slick": "^0.29.0",
     "react-typewriter-effect": "^1.1.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "@types/react-google-recaptcha": "^2.1.5",
     "@vitejs/plugin-react": "^2.1.0",
     "gh-pages": "^4.0.0",
     "typescript": "^4.6.4",

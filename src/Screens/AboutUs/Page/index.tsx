@@ -57,7 +57,7 @@ const AboutUs: React.FC = () => {
 
             <BottomCard 
                 title='Quem Somos' 
-                color='#04ADD7' 
+                color='#001830' 
                 hasButton={false} 
                 hasCarousel={true}
             />

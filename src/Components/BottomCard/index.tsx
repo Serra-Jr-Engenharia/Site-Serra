@@ -1,4 +1,4 @@
-import Carousel from '../Carousel'
+import AboutUsCarousel from '../../Screens/AboutUs/Templates/AboutUsCarousel'
 import { aboutUsData } from '../../Services/aboutUsData'
 
 import { 
@@ -10,7 +10,7 @@ import {
     BottomCardButton, 
     HistoryTextContainer, 
     HistoryText, 
-    HistoryImg 
+    HistoryImg,
 } from './style'
 
 
@@ -35,7 +35,14 @@ const BottomCard: React.FC<BottomCardProps> = ({title, buttonUrl, buttonTitle, c
                 
 
             {hasCarousel ?
-                <Carousel carouselData={aboutUsData.members}/>
+                <BottomCardBody>
+                    <BottomCardContent>
+                        <HistoryText>{aboutUsData.membersText}</HistoryText>
+
+                        <AboutUsCarousel width='50%' carouselData={aboutUsData.members}/>
+                    </BottomCardContent>
+
+                </BottomCardBody>
                 :
                 <BottomCardBody>
                     <BottomCardContent>

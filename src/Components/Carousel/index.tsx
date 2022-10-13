@@ -13,9 +13,11 @@ import {
     ContainerSectionContent,
     Logo,
     SectionSpan,
-    SectionButton
+    SectionButton,
+    SliderContainer
 } from "./style"
 import Title from "../Title";
+
 
 interface ObjectProps{
     title: string
@@ -25,6 +27,7 @@ interface ObjectProps{
 
 interface SliderProps{
     carouselData: Array<ObjectProps>
+    width?: string
 }
 
 const Carousel: React.FC<SliderProps> = (props) => {    
@@ -38,31 +41,33 @@ const Carousel: React.FC<SliderProps> = (props) => {
     };
     
     return(
-        <Slider {...settings}>
-            { props.carouselData.map((item, key) => {
-                return (
-                    <Container key={key}>
-                        <Wrapper>
-                            <ContainerSection>
-                                <ContainerSectionTitle>
-                                    <Title text={item.title} fontSize="50px"/>
-                                </ContainerSectionTitle>
+        <SliderContainer containerWidth={props.width}>
+            <Slider {...settings}>
+                { props.carouselData.map((item, key) => {
+                    return (
+                        <Container key={key}>
+                            <Wrapper>
+                                <ContainerSection>
+                                    <ContainerSectionTitle>
+                                        <Title text={item.title} fontSize="50px"/>
+                                    </ContainerSectionTitle>
 
-                                <ContainerSectionContainer>
-                                    <ContainerLogo>
-                                        <Logo src={item.image} alt={item.title} />
-                                    </ContainerLogo>
-                                    <ContainerSectionContent>
-                                        <SectionSpan>{item.content}</SectionSpan>
-                                        <SectionButton>Você pode acessar o site clicando aqui</SectionButton>
-                                    </ContainerSectionContent>
-                                </ContainerSectionContainer>
-                            </ContainerSection>
-                        </Wrapper>
-                    </Container>
-                )
-            })}
-        </Slider>
+                                    <ContainerSectionContainer>
+                                        <ContainerLogo>
+                                            <Logo src={item.image} alt={item.title} />
+                                        </ContainerLogo>
+                                        <ContainerSectionContent>
+                                            <SectionSpan>{item.content}</SectionSpan>
+                                            <SectionButton>Você pode acessar o site clicando aqui</SectionButton>
+                                        </ContainerSectionContent>
+                                    </ContainerSectionContainer>
+                                </ContainerSection>
+                            </Wrapper>
+                        </Container>
+                    )
+                })}
+            </Slider>
+        </SliderContainer>
     )
 }
 

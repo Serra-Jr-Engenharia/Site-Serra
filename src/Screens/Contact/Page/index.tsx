@@ -1,6 +1,8 @@
 import React from "react";
 import Title from "../../../Components/Title";
 import Mapa from "../Templates/Map";
+import ReCAPTCHA from "react-google-recaptcha";
+import { keys } from '../../../../.env'
 
 import ScheduleIMG from "../../../Assets/Contact/agenda.svg"; 
 import Email from "../../../Assets/Contact/email.svg"; 
@@ -72,6 +74,11 @@ const Contact: React.FC = () => {
 
                         <InputsP>Mensagem</InputsP>
                         <InputAreaMensage type="text" placeholder="Digite a mensagem"/>
+
+                        {/* Verificar porque está dando erro */}
+                        {/* <ReCAPTCHA 
+                            sitekey={keys.REACT_APP_SITE_KEY}
+                        /> */}
 
                         <Button>Enviar</Button>
                     </Inputs>

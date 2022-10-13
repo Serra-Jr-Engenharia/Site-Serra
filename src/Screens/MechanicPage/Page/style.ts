@@ -103,7 +103,9 @@ export const BoxText = styled.p`
     margin: 0px;
     padding: 2%;
     border-top: 0px;
-
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 500;
@@ -112,6 +114,12 @@ export const BoxText = styled.p`
     text-align: center;
 
     color: #04ADD7;
+
+    &:hover{
+        background-color: #04ADD7;
+        color: #fff;
+        transition: background-color 0.8s;
+    }
 `;
 
 export const Box = styled.div `

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import MacBook from "../../../Assets/CompPage/macbook.svg"
 
 export const CompStyle = styled.div`
     scroll-behavior: smooth;
@@ -14,6 +15,9 @@ export const EngComp = styled.div`
 
 export const EngCompImg = styled.img`
     width: 40%;
+`;
+
+export const ServiceletterDiv = styled.div`
 `;
 
 export const EngCompP = styled.p`
@@ -106,10 +110,23 @@ export const SlLogo = styled.img`
     margin: 10px; 
 `;
 
-export const Line = styled.hr`
+export const Line1 = styled.hr`
     margin: 0px;   
     height: 1px;
     margin: 0px;
+    width: 100%;
+`;
+
+export const Line2 = styled.hr`
+    margin: 0px;   
+    height: 1px;
+    margin: 0px;
+    width: 100%;
+`;
+
+export const Lines = styled.div`
+    display: flex;
+    justify-content: center;
 `;
 
 export const BoxText = styled.p`
@@ -118,15 +135,25 @@ export const BoxText = styled.p`
     margin: 0px;
     padding: 2%;
     border-top: 0px;
-
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
     line-height: 47px;
     text-align: center;
-
     color: #FD6300;
+
+    &:hover{
+        background-color: #FD6300;
+        color: #fff;
+        transition: background-color 0.8s;
+    }
+`;
+
+export const ContactLink = styled.a`
+    text-decoration: none;
 `;
 
 export const BoxContainer = styled.div`
@@ -134,7 +161,7 @@ export const BoxContainer = styled.div`
     justify-content: center;
     align-items: center;    
     margin: 0px;
-    width: 100%;
+    width: 920px;
     height: 30%;
     
 `;

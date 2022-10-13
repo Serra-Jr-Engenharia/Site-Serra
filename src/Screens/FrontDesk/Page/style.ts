@@ -8,7 +8,7 @@ export const Presentation = styled.div`
 `;
 
 export const PresentationImg = styled.img`
-    width: 40%;
+    width: 45%;
 `;
 
 export const Slogan = styled.div`

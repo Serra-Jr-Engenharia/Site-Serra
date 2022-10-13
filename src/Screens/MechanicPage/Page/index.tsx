@@ -52,7 +52,7 @@ const MechanicPage: React.FC = () =>{
                     <SlCard>
                         <SlCardUp>
                             <SlCardImg src={Piston} alt="Imagem Sistemas" />
-                            <SlCardH3>Desenvolvimento de Websites</SlCardH3>
+                            <SlCardH3>Projeto e Manutenção de Equipamentos</SlCardH3>
                         </SlCardUp>
 
                         <SlCardDown>
@@ -64,7 +64,33 @@ const MechanicPage: React.FC = () =>{
                     <SlCard>
                         <SlCardUp>
                             <SlCardImg src={Gear} alt="Imagem Site" />
-                            <SlCardH3>Desenvolvimento de Sistemas Web</SlCardH3>
+                            <SlCardH3>Desenho Técnico e Industrial</SlCardH3>
+                        </SlCardUp>
+
+                        <SlCardDown>
+                            <SlCardImg src={Arrow} alt="Seta" />
+                            <SlCardP>Com auxílio das mais completas linguagens de programação, fornecemos aplicativos e sistemas próprios para a sua empresa que irão acelerar e auxiliar internamente no gerenciamento e desenvolvimento do seu negócio.</SlCardP>
+                        </SlCardDown>
+                    </SlCard>
+                </ServiceletterCard>
+
+                <ServiceletterCard>
+                    <SlCard>
+                        <SlCardUp>
+                            <SlCardImg src={Piston} alt="Imagem Sistemas" />
+                            <SlCardH3>Projetos de Automação</SlCardH3>
+                        </SlCardUp>
+
+                        <SlCardDown>
+                            <SlCardImg src={Arrow} alt="Seta" />
+                            <SlCardP>Desenvolvemos do zero um site pensado exclusivamente para atender as necessidades do seu negócio. Utilizamos das ferramentas mais modernas do mercado para criar uma solução única que irá alavancar a visibilidade do seu produto!</SlCardP>
+                        </SlCardDown>  
+                    </SlCard>
+
+                    <SlCard>
+                        <SlCardUp>
+                            <SlCardImg src={Gear} alt="Imagem Site" />
+                            <SlCardH3>Prototipagem</SlCardH3>
                         </SlCardUp>
 
                         <SlCardDown>

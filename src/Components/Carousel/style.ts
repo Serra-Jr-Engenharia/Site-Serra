@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-
+interface Props{
+    containerWidth?: string
+}
 
 
 export const Container = styled.div`
@@ -9,6 +11,7 @@ export const Container = styled.div`
     width: 100%;
     overflow: hidden;
     background-color: transparent;
+    
 `;
 
 export const Wrapper = styled.div`
@@ -31,7 +34,6 @@ export const ContainerSection = styled.section`
     width: 85%;
     min-height: 90vh;
     padding-bottom: 1rem;
-   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,5 +154,14 @@ export const ContainerSectionContent = styled.div`
         align-items: center;
         width: 100%;
         padding: 10px;
+    }
+`;
+
+export const SliderContainer = styled.div<Props>`
+    display: inline-block;
+    ${({containerWidth}) => containerWidth ?
+        `width: ${containerWidth}`
+        :
+        `width: 100%`
     }
 `;
