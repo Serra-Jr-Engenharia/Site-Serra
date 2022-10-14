@@ -64,7 +64,6 @@ export const Form = styled.div`
     background-color: #D2D2D2;
     border-radius: 20px;
     width: 50%;
-    height: 50rem;
 `;
 
 export const Inputs = styled.div`
@@ -100,7 +99,7 @@ export const InputArea = styled.input`
 `;
 
 export const Button = styled.button`
-    margin-top: 10%;
+    margin-top: 20px;
     border: 0px;
     background: #FF7400;
     border-radius: 10px;
@@ -108,6 +107,7 @@ export const Button = styled.button`
     height: 2.5rem;
     color: #fff;
     font-size: 20px;
+    margin-bottom: 20px;
 `;
 
 export const InputAreaMensage = styled.input`
@@ -118,6 +118,7 @@ export const InputAreaMensage = styled.input`
     width: calc(90% - 30px);
     height: 10rem;
     background: #EEEEEE;
+    margin-bottom: 10px;
 
     &:focus{
         outline: none;

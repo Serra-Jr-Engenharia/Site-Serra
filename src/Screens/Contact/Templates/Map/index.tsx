@@ -1,4 +1,5 @@
 import React from "react";
+import { REACT_APP_MAPS_KEY } from '../../../../../.env'
 
 import {
     MapsWrapper,
@@ -14,14 +15,16 @@ import {
 
 import { useGoogleMaps } from "react-hook-google-maps";
 
+
+
 const Mapa = () => {
+  
   let lat = -22.28613903496477;
   let long = -42.542094971657946;
- 
 
   const { ref, map, google } = useGoogleMaps(
     // Use your own API key, you can get one from Google (https://console.cloud.google.com/google/maps-apis/overview)
-    "AIzaSyB5E7wzIaDoH_3qDfJ54az4JMOfLhJb290", //Google maps key
+    REACT_APP_MAPS_KEY, //Google maps key
     // NOTE: even if you change options later
     {
       center: { lat: lat, lng: long },

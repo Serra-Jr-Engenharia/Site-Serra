@@ -91,6 +91,16 @@ export const SubMenuContainerSon = styled.div<Props>`
         visibility: hidden;
         transition: opacity 0.5s;`
     }
+
+    @media screen and (min-width: 3840px){
+        top: 13vh;
+        
+    }
+
+    @media screen and (min-width: 2560px){
+        top: 10vh;
+        
+    }
 `;
 
 export const SubMenuLine = styled.div`
