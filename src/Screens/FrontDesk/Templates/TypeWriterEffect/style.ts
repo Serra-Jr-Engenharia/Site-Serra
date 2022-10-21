@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const SloganTextContainer = styled.div`
+    width: 100%;
     .writer{
         font-family: 'Courier Prime';
         font-size: 70px;

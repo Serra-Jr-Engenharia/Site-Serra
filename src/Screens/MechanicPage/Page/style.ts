@@ -65,6 +65,7 @@ export const ServiceLetterH2 = styled.h2 `
 export const ServiceletterCard = styled.div `
     display: flex;
     justify-content: space-around;
+
 `;
 
 export const SlCard = styled.div `
@@ -73,8 +74,8 @@ export const SlCard = styled.div `
 `;
 
 export const SlCardImg = styled.img`
-    width: 10%;
-    height: 10%;
+    display: flex;
+    width: 3.5vw;
     margin-right: 4%;
 `;
 export const SlCardUp = styled.div `
@@ -85,6 +86,8 @@ export const SlCardUp = styled.div `
 
 export const SlCardDown = styled.div `
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 `;
 
 export const EngMecImg = styled.img`

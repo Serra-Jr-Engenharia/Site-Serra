@@ -20,6 +20,10 @@ export const Row = styled.div`
 
 export const LinksDiv = styled.div`
     margin-left: 2rem;
+
+    @media screen and (min-width: 390){
+        flex-direction: column;
+    }
 `;
 
 export const LinksSpan = styled.span`
@@ -34,6 +38,7 @@ export const LinksP = styled.p`
 export const LinksContainer = styled.div`
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 `;
 
 export const SocialMediaIMG = styled.img`
@@ -80,11 +85,11 @@ export const PartnersSpan = styled.span`
 `;
 
 export const PartnersDiv = styled.div`
-    height: 20vh;
     width: 80vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 `;
 
 export const PartnersA = styled.a`
@@ -96,11 +101,16 @@ export const PartnersA = styled.a`
 `;
 
 export const PartnersIMG = styled.img`
-    height: 90%;
+    height: 20vh;
+
+    @media screen and (max-width: 1024px){
+        height: 10vh;
+        
+    }
+    
 `;
 
 export const Partners = styled.div`
-    height: 25vh;
     width: 100%;
     background-color: #D9D9D9;
     display: flex;

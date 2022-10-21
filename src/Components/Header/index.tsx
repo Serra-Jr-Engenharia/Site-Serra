@@ -1,72 +1,37 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import LogoSerraJr from "../../Assets/Global/LogoSiteSerraJr.svg"
 
-import ArrowHeader from "../../Assets/Global/arrow-header.svg"
+import DesktopNavBar from '../DesktopNavBar';
+import MobileNavBar from '../MobileNavBar';
+import MenuButton from '../MenuButton';
 
-import { 
-    HeaderStyle, 
-    HeaderUl,
-    HeaderLi,
-    HeaderUlContainer,
-    SerraLogo,
-    HeaderText,
-    SubMenuContainer,
-    SubMenuImg,
-    SubMenuContainerFather,
-    SubMenuContainerSon,
-    SubMenuLine,
-    LinkStyle,
-    
-} from './style';
 
 import { Link } from "react-router-dom";
 
+import { 
+    HeaderStyle, 
+    HeaderImg,
+    MenuButtonContainer,
+} from './style';
+
 const Header: React.FC = () =>{
-
-    const [subMenu, setSubMenu] = useState(false)
-
+    const [toggleMenu, setToggleMenu] = useState(false)
+    
     return(
         <HeaderStyle>
-            <SerraLogo>
-                {/* trocar o link quando tiver a url */}
-                <a href="/"><img src={LogoSerraJr} alt="Logo Serra Jr" /></a>
-            </SerraLogo>
             
+            <Link to="/">
+                <HeaderImg src={LogoSerraJr} alt="Logo Serra Jr" />
+            </Link>
 
-            <HeaderUlContainer>
-                    <HeaderUl>
-                        <HeaderLi>
-                            <Link to='/'>Home</Link>
-                        </HeaderLi>
+            <MenuButtonContainer onClick={() => {setToggleMenu(!toggleMenu)}}>
+                <MenuButton status={toggleMenu}/>
+            </MenuButtonContainer>
+            
+            <DesktopNavBar />
 
-                        <HeaderLi>
-                            <Link to='/quemSomos'>Sobre Nós</Link>
-                        </HeaderLi>
+            <MobileNavBar status={toggleMenu}/>
 
-                        <HeaderLi>
-                            <SubMenuContainer onClick={() => setSubMenu(!subMenu)}>
-                                <SubMenuContainerFather>
-                                    <HeaderText>Serviços</HeaderText>
-                                    <SubMenuImg activeStyle={subMenu} src={ArrowHeader} alt="Seta" />
-                                </SubMenuContainerFather>
-                            
-                                <SubMenuContainerSon activeStyle={subMenu}>
-                                    <LinkStyle>
-                                        <Link to='/computacao'>Computação</Link>
-                                    </LinkStyle>
-                                    <SubMenuLine color="white"/>
-                                    <LinkStyle>
-                                        <Link to='/mecanica'>Mecânica</Link>
-                                    </LinkStyle>
-                                </SubMenuContainerSon>
-                            </SubMenuContainer>
-                        </HeaderLi>
-                        
-                        <HeaderLi>
-                            <Link to='/contatos'>Contato</Link>
-                        </HeaderLi>
-                    </HeaderUl>
-            </HeaderUlContainer>
         </HeaderStyle>
     )
 }

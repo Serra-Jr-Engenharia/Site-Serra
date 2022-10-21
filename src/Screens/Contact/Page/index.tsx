@@ -2,7 +2,6 @@ import React from "react";
 import Title from "../../../Components/Title";
 import Mapa from "../Templates/Map";
 import Reaptcha from "reaptcha";
-import { REACT_APP_SITE_KEY } from "../../../../.env";
 
 import ScheduleIMG from "../../../Assets/Contact/agenda.svg"; 
 import Email from "../../../Assets/Contact/email.svg"; 
@@ -10,11 +9,7 @@ import Localization from "../../../Assets/Contact/localizacao.svg";
 import Phone from "../../../Assets/Contact/telefone.svg"; 
 
 import { Information,
-     Schedule, 
-     EmailStyle, 
-     Local, 
-     MapBox,
-     Telephone, 
+     MapBox, 
      Form, 
      Inputs, 
      All, 
@@ -23,69 +18,82 @@ import { Information,
      Button,
      InputAreaMensage,
      InformationImg,
-     InformationSpan
+     InformationSpan,
+     FormContainer,
+     MapBoxContainer,
+     ContactStyle,
+     ButtonContainer,
+     InformationIconText,
+     CaptchaContainer
 } from './style';
 
 
 
 const Contact: React.FC = () => {
     return(
-        <>
+        <ContactStyle>
             <Title titleWidth="40%" text="Entre em contato conosco!" />  
             <All>
                 <Information>
-                    <Schedule>
+                    <InformationIconText>
                         <InformationImg src={Localization} alt="" />
                         <InformationSpan>Rua Bonfim, 25 em Vila Amélia, </InformationSpan>
-                    </Schedule>
-                    <EmailStyle>
+                    </InformationIconText>
+                    <InformationIconText>
                         <InformationImg src={Phone} alt="" />
                         <InformationSpan>(22) 2533-2265</InformationSpan>
-                    </EmailStyle>
-                    <Local>
+                    </InformationIconText>
+                    <InformationIconText>
                         <InformationImg src={Email} alt="" />
                         <InformationSpan>serrajr@iprj.uerj.br</InformationSpan>
-                    </Local>
-                    <Telephone>
+                    </InformationIconText>
+                    <InformationIconText>
                         <InformationImg src={ScheduleIMG} alt="" />
                         <InformationSpan>Horário de atendimento: <br />
                         Segunda a Sexta, das 09hrs <br />
                         às 17hrs.</InformationSpan>
-                    </Telephone>  
-                    <MapBox>
-                        <Mapa />
-                    </MapBox>
+                    </InformationIconText>  
                 </Information>
 
 
-                <Form>
-                    <Inputs>
-                        <InputsP>Nome</InputsP>
-                        <InputArea type="text" placeholder="Insira seu nome"/>
+                <FormContainer>
+                    <Form>
+                        <Inputs>
+                            <InputsP>Nome</InputsP>
+                            <InputArea type="text" placeholder="Insira seu nome"/>
 
-                        <InputsP>Email</InputsP>
-                        <InputArea type="text" placeholder="Insira seu email"/>
+                            <InputsP>Email</InputsP>
+                            <InputArea type="text" placeholder="Insira seu email"/>
 
-                        <InputsP>Telefone</InputsP>
-                        <InputArea type="text" placeholder="(XX) XXXXX-XXXX"/>
+                            <InputsP>Telefone</InputsP>
+                            <InputArea type="text" placeholder="(XX) XXXXX-XXXX"/>
 
-                        <InputsP>Assunto</InputsP>
-                        <InputArea type="text" placeholder="Digite o assunto da mensagem"/>
+                            <InputsP>Assunto</InputsP>
+                            <InputArea type="text" placeholder="Digite o assunto da mensagem"/>
 
-                        <InputsP>Mensagem</InputsP>
-                        <InputAreaMensage type="text" placeholder="Digite a mensagem"/>
+                            <InputsP>Mensagem</InputsP>
+                            <InputAreaMensage type="text" placeholder="Digite a mensagem"/>
 
-                        <Reaptcha sitekey={REACT_APP_SITE_KEY} />
+                            <CaptchaContainer>
+                                <Reaptcha 
+                                sitekey={"6Lef0HsiAAAAAPmdiuuS_Xz6_TA8fPzPzZdr9RC2"} />
+                            </CaptchaContainer>
 
-                        <Button>Enviar</Button>
-                    </Inputs>
-                </Form>
-
-                
-
+                            <ButtonContainer>
+                                <Button>Enviar</Button>
+                            </ButtonContainer>
+                        </Inputs>
+                    </Form>
+                </FormContainer>
             </All>
+
+            <MapBoxContainer>
+                <MapBox>
+                    <Mapa />
+                </MapBox>
+            </MapBoxContainer>
             
-        </>
+        </ContactStyle>
     );
 }
 

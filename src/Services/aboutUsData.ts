@@ -1,4 +1,5 @@
-import membersImage1 from '../Assets/AboutUs/membros-1.png'
+import membersImage1 from '../Assets/AboutUs/membros-1.svg'
+import membersImage2 from '../Assets/AboutUs/membros-2.svg'
 
 import missionIcon from '../Assets/AboutUs/missao-icon.svg'
 import visionIcon from '../Assets/AboutUs/visao-icon.svg'
@@ -12,7 +13,7 @@ export const aboutUsData = {
             alt:"Foto tirada na última imersão da Serra Jr. Engenharia",
         },
         {
-            image: membersImage1,
+            image: membersImage2,
             alt:"Foto tirada na última imersão da Serra Jr. Engenharia",
         },
     ],

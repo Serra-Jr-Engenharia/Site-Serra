@@ -19,7 +19,8 @@ export const CardBody = styled.div`
     flex-wrap: wrap;
 `;
 
-export const Title = styled.div<Props>`
+export const Title = styled.p<Props>`
+    margin: 0;
     width: 100%;
     height: 4rem;
     min-height: 30px;
@@ -32,22 +33,25 @@ export const Title = styled.div<Props>`
     color: white;
     font-size: 1.6rem;
     font-weight: 600;
+    text-align: center;
 `;
 
 export const ButtonContainer = styled.a`
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
     text-decoration: none;
+
+    @media screen and (min-width: 1024px){
+        width: 40%;
+    }
 `;
 
 export const Button = styled.button<Props>`
     background-color: ${({buttonColor}) => buttonColor ?? '#FD6300'};
     border: none;
-    width: 50%;
+    width: 100%;
     padding: 0.6rem;
     font-size: 1.5rem;
     font-weight: 500;
@@ -57,6 +61,7 @@ export const Button = styled.button<Props>`
     align-items: center;
     border-radius: 1rem;
     cursor: pointer;
+    margin-bottom: 10px;
 
     &:hover{
         opacity: 0.8;

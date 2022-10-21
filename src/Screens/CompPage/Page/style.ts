@@ -188,3 +188,49 @@ export const ProjectsCompAll = styled.div`
     margin-top: 3%;
 `;
 
+export const AllBoxes = styled.div`
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 5%;
+`;
+
+export const Box1 = styled.p`
+    /* background-color: blue; */
+    border-top: 3px solid #FD6300;
+    width: 40%;
+    height: 3vh;
+    border-top-right-radius: 20px;
+    margin-top: 0px;
+    border-right: 3px solid #FD6300;
+    margin-bottom: 0px;
+`;
+
+export const Box2 = styled.p`
+    /* background-color: red; */
+    width: 22%;
+    height: 90px;
+    border-left: 3px solid #FD6300;
+    border-right: 3px solid #FD6300;
+    border-bottom: 3px solid #FD6300;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FD6300;
+    font-size: 20px;
+    font-weight: 500;
+`;
+
+export const Box3 = styled.p`
+    /* background-color: green; */
+    border-top: 3px solid #FD6300;
+    width: 40%;
+    height: 3vh;
+    border-top-left-radius: 20px;
+    margin-top: 0px;
+    border-left: 3px solid #FD6300;
+    margin-bottom: 0px;
+`;
+

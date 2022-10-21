@@ -4,7 +4,13 @@ import BackgroundIMG from '../../../Assets/FrontDesk/background-image.svg'
 export const Presentation = styled.div`
     background-color: #DBDBDB;
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 390){
+        flex-direction: column; 
+    }
 `;
 
 export const PresentationImg = styled.img`
@@ -12,10 +18,10 @@ export const PresentationImg = styled.img`
 `;
 
 export const Slogan = styled.div`
-    display: flex;
+    display: block;
     justify-content: center;
     flex-direction: column;
-    width: 35%;
+    width: 50%;
 `;
 
 export const FrontDeskContent = styled.div`
@@ -41,6 +47,7 @@ export const CardContainer = styled.div`
     opacity: 1;
     }
     }
+
 `;
 
 export const FrontDeskStyle = styled.div`

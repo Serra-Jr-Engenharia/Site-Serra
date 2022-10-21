@@ -45,6 +45,10 @@ import {
     SlCardP,
     ServiceletterDiv,
     ContactLink,
+    AllBoxes,
+    Box1,
+    Box2,
+    Box3,
 } from "./style";
 
 
@@ -111,6 +115,12 @@ const CompPage: React.FC = () =>{
                 <Line2 color="#FD6300"/>
             </Lines>
 
+
+            <AllBoxes>
+                <Box1></Box1>
+                <Box2>Quer colocar um projeto em prática? &rarr;</Box2>
+                <Box3></Box3>
+            </AllBoxes>
             
 
             <ProjectsCompAll>
