@@ -34,6 +34,14 @@ export const BottomCardContent = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
+    @media screen and (max-width: 390px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+    }
 `;
 
 export const BottomCardLink = styled.a`
@@ -74,7 +82,7 @@ export const BottomCardStyle = styled.div<Props>`
     padding-bottom: 2.5rem;
     background-color: #E6E6E5;
     width: 100%;
-
+    
     ${({carouselStyle}) => carouselStyle ?
         null
         :
@@ -83,19 +91,41 @@ export const BottomCardStyle = styled.div<Props>`
         align-items: center;
         flex-direction: column;`
     }
+
+    
 `;
 
-export const HistoryText = styled.span`
+export const HistoryText1 = styled.span`
     color: black;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
-    padding: 10px 30px;
+    padding: 20px 30px;
+
+    @media screen and (max-width: 500px) {
+        font-size: 15px;
+        
+    }
+`;
+
+export const HistoryText2 = styled.span`
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: justify;
+    padding: 20px 30px;
+
+    @media screen and (max-width: 500px) {
+        font-size: 15px;
+        
+    }
 `;
 
 export const HistoryTextContainer = styled.div`
-    width: 45%;
+    width: 80%;
+    margin-top: 2%;
     display: flex;
     align-items: center;
     justify-content: center;

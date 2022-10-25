@@ -38,12 +38,25 @@ export const LinksP = styled.p`
 export const LinksContainer = styled.div`
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+
+    @media screen and (max-width: 390px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+    }
+
+
 `;
 
 export const SocialMediaIMG = styled.img`
     width: 1.4rem;
     margin-right: 0.8rem;
+    
+    @media screen and (max-width: 390px) {
+        margin-top: 10%;
+    }
 `;
 
 export const SocialMediaA = styled.a`
@@ -53,6 +66,12 @@ export const SocialMediaA = styled.a`
 export const SocialMediaContainer = styled.div`
     width: 40%;
     padding: 2rem 2rem 2rem 0;
+
+    @media screen and (max-width: 390px) {
+        flex-wrap: wrap;
+        width: 20%;
+    }
+
 `;
 
 export const ContentContainer = styled.div`

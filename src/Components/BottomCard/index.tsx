@@ -9,7 +9,8 @@ import {
     Title, 
     BottomCardButton, 
     HistoryTextContainer, 
-    HistoryText, 
+    HistoryText1,
+    HistoryText2,
     HistoryImg,
 } from './style'
 
@@ -37,7 +38,7 @@ const BottomCard: React.FC<BottomCardProps> = ({title, buttonUrl, buttonTitle, c
             {hasCarousel ?
                 <BottomCardBody>
                     <BottomCardContent>
-                        <HistoryText>{aboutUsData.membersText}</HistoryText>
+                        <HistoryText1>{aboutUsData.membersText}</HistoryText1>
 
                         <AboutUsCarousel width='50%' carouselData={aboutUsData.members}/>
                     </BottomCardContent>
@@ -48,7 +49,7 @@ const BottomCard: React.FC<BottomCardProps> = ({title, buttonUrl, buttonTitle, c
                     <BottomCardContent>
 
                         <HistoryTextContainer>
-                            <HistoryText>{text}</HistoryText>
+                            <HistoryText2>{text}</HistoryText2>
                         </HistoryTextContainer>
 
                         <HistoryImg src={image} alt={alt} />

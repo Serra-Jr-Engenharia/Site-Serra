@@ -3,30 +3,30 @@ import React from 'react'
 import Card from "../../../Components/Card"
 import Title from "../../../Components/Title"
 import BottomCard from '../../../Components/BottomCard'
-import TypeWriterEffect from '../Templates/TypeWriterEffect'
+import TypeWriterEffect from '../Template/TypeWriterEffect'
 
-import presentationImage from '../../../Assets/FrontDesk/presentation-image.png'
-import monitorIcon from '../../../Assets/FrontDesk/Sites.svg'
-import systemsIcon from '../../../Assets/FrontDesk/sistemas-web.svg'
-import repairIcon from '../../../Assets/FrontDesk/manutencao.svg'
-import drawIcon from '../../../Assets/FrontDesk/desenho-tecnico.svg'
-import botIcon from '../../../Assets/FrontDesk/braco-robo.svg'
-import printerIcon from '../../../Assets/FrontDesk/impressora-3d.svg'
-import ourHistory from '../../../Assets/FrontDesk/nossa-historia.svg'
+import presentationImage from '../../../Assets/Home/presentation-image.png'
+import monitorIcon from '../../../Assets/Home/Sites.svg'
+import systemsIcon from '../../../Assets/Home/sistemas-web.svg'
+import repairIcon from '../../../Assets/Home/manutencao.svg'
+import drawIcon from '../../../Assets/Home/desenho-tecnico.svg'
+import botIcon from '../../../Assets/Home/braco-robo.svg'
+import printerIcon from '../../../Assets/Home/impressora-3d.svg'
+import ourHistory from '../../../Assets/Home/nossa-historia.svg'
 
 import { 
-    FrontDeskStyle, 
+    HomeStyle, 
     Presentation, 
     Slogan,  
-    FrontDeskContent,
+    HomeContent,
     CardContainer,
     PresentationImg, 
 } from './style'
 
 
-const FrontDesk: React.FC = () =>{
+const Home: React.FC = () =>{
     return(
-        <FrontDeskStyle>
+        <HomeStyle>
             <Presentation>
                 <Slogan>
                     <TypeWriterEffect />
@@ -35,7 +35,7 @@ const FrontDesk: React.FC = () =>{
             </Presentation>
 
             <Title text="O que fazemos" />
-            <FrontDeskContent>
+            <HomeContent>
                 <CardContainer>
                     <Card 
                         title="Projetos de Computação" 
@@ -66,9 +66,9 @@ const FrontDesk: React.FC = () =>{
                     alt="Imagem com os membros da Serra Jr. Engenharia"
                     hasCarousel={false}
                 />
-            </FrontDeskContent>
-        </FrontDeskStyle>    
+            </HomeContent>
+        </HomeStyle>    
     )
 }
 
-export default FrontDesk
+export default Home

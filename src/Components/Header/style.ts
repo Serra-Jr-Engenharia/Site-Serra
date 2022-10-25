@@ -3,7 +3,16 @@ import { width } from '../../Services/config'
 
 export const HeaderImg = styled.img`
     width: 12rem;
-    margin-left: 50%;
+    margin-left: 25%;
+
+    @media screen and (max-width: ${width.mobile}){
+        width: 6rem;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}){
+        width: 15rem;
+    }
+    
 `;
 
 export const HeaderStyle = styled.div`

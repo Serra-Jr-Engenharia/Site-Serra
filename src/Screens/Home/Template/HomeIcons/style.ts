@@ -21,7 +21,7 @@ export const IconDescription = styled.p`
     color: #000000;
 `;
 
-export const FrontDeskIconsStyle = styled.div`
+export const HomeIconsStyle = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,30 +1,44 @@
 import styled, {keyframes} from "styled-components";
-import BackgroundIMG from '../../../Assets/FrontDesk/background-image.svg'
+import BackgroundIMG from '../../../Assets/Home/background-image.svg';
+import { width } from "../../../Services/config";
 
 export const Presentation = styled.div`
     background-color: #DBDBDB;
     display: flex;
+    flex-direction: row; 
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 
-    @media screen and (max-width: 390){
-        flex-direction: column; 
+    @media screen and (max-width: ${width.tablet}){
+        flex-direction: column-reverse; 
+        align-items: space-around;
+    justify-content: center;
     }
 `;
 
 export const PresentationImg = styled.img`
     width: 45%;
+    
+    @media screen and (max-width: ${width.tablet}){
+        width: 60%;
+    }
 `;
 
 export const Slogan = styled.div`
     display: block;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
+
+    @media screen and (max-width: ${width.tablet}){
+        width: 80%;
+        margin-top: 4%;
+    }
 `;
 
-export const FrontDeskContent = styled.div`
+export const HomeContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +64,7 @@ export const CardContainer = styled.div`
 
 `;
 
-export const FrontDeskStyle = styled.div`
+export const HomeStyle = styled.div`
     background-image: url(${BackgroundIMG});
 `;
 

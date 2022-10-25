@@ -11,7 +11,6 @@ export const Container = styled.div`
     width: 100%;
     overflow: hidden;
     background-color: transparent;
-    
 `;
 
 export const Wrapper = styled.div`
@@ -19,7 +18,6 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
     @media screen and (max-width: 959px) {
         display: flex;

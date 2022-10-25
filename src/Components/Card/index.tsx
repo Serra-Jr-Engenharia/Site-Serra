@@ -1,6 +1,6 @@
 import React from 'react'
 
-import FrontDeskIcons from '../../Screens/FrontDesk/Templates/FrontDeskIcons'
+import HomeIcons from '../../Screens/Home/Template/HomeIcons'
 
 import {
     CardBody,
@@ -29,7 +29,7 @@ const Card: React.FC<CardProps> = ({title, buttonUrl, buttonTitle, color, images
 
             <CardBody>
                 <BodyContents>
-                    {images.map((image, key) => <FrontDeskIcons key={key} icon={image} text={texts[key]} alt={texts[key]} />)}
+                    {images.map((image, key) => <HomeIcons key={key} icon={image} text={texts[key]} alt={texts[key]} />)}
                 </BodyContents>
 
                 <ButtonContainer href={buttonUrl}>

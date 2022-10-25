@@ -29,9 +29,6 @@ import {
     SlCardUp,
     SlCardDown,
     SlLogo,
-    Line1,
-    Line2,
-    Lines,
     ImagesPreFooterContact,
     ImagesPreFooterScrollUp,
     ImagesPreFooter,
@@ -44,11 +41,8 @@ import {
     SlCardH3,
     SlCardP,
     ServiceletterDiv,
-    ContactLink,
-    AllBoxes,
-    Box1,
-    Box2,
-    Box3,
+    Box,
+    Line
 } from "./style";
 
 
@@ -105,7 +99,13 @@ const CompPage: React.FC = () =>{
                 </SlLogoContainer>
             </ServiceletterDiv>
 
-            <Lines>
+            <Line />
+            
+            <Box>
+                <BoxText>Quer colocar um projeto em prática? &rarr;</BoxText>
+            </Box>
+
+            {/* <Lines>
                 <Line1 color="#FD6300"/>  
 
                 <BoxContainer>
@@ -120,7 +120,7 @@ const CompPage: React.FC = () =>{
                 <Box1></Box1>
                 <Box2>Quer colocar um projeto em prática? &rarr;</Box2>
                 <Box3></Box3>
-            </AllBoxes>
+            </AllBoxes> */}
             
 
             <ProjectsCompAll>

@@ -91,6 +91,14 @@ export const SubMenuContainerSon = styled.div<Props>`
         top: 10vh;
         
     }
+
+    @media screen and (min-width: ${width.largeNotebook}){
+        width: 10vw;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}){
+        width: 10vw;
+    }
 `;
 
 export const SubMenuLine = styled.div`

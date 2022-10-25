@@ -1,6 +1,11 @@
 import styled from "styled-components";
+import backgroundImg from "../../../Assets/MechanicPage/background-mecanica.svg"
 
 export const MecStyle = styled.div `
+`;
+
+export const ServiceLetterContainer = styled.div`
+    background-image: url(${backgroundImg});
 `;
 
 export const EngMec = styled.div `
@@ -46,12 +51,12 @@ export const EngMecPContainer = styled.div`
 `;
 export const ServiceLetterH1 = styled.h1`
     text-align: center;
-    margin-top: 5%;
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 500;
     font-size: 76px;
     line-height: 113px;
+    margin-top: 0;
     margin-bottom: 0px;
 `;
 export const ServiceLetterH2 = styled.h2 `
@@ -80,7 +85,8 @@ export const SlCardImg = styled.img`
 `;
 export const SlCardUp = styled.div `
     display: flex;
-    margin-bottom: 10%;
+    min-height: 20%;
+    margin-bottom: 5%;
     align-items: center;
 `;
 
@@ -96,8 +102,10 @@ export const EngMecImg = styled.img`
 
 export const Line = styled.hr `
     margin: 0px;   
-    height: 1px;
+    height: 4px;
     margin: 0px;
+    border: 0;
+    background: linear-gradient(90deg, rgba(4,173,215,1) 0%, rgba(4,173,215,1) 41%, rgba(255,116,0,1) 69%);
 `;
 
 export const BoxText = styled.p`
@@ -105,9 +113,8 @@ export const BoxText = styled.p`
     text-align: center;
     margin: 0px;
     padding: 2%;
-    border-top: 0px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    margin-top: 2%;
+    border-radius: 20px;
     cursor: pointer;
     font-family: 'Maven Pro';
     font-style: normal;

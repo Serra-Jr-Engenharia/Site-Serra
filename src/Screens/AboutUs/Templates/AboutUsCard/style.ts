@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { width } from "../../../../Services/config";
+
 export const AboutUsCardStyle = styled.div`
     
     display: flex;
@@ -14,6 +16,28 @@ export const AboutUsCardStyle = styled.div`
     font-weight: 400;
     font-size: 28px;
     line-height: 32px;
+
+
+
+    @media screen and (max-width: ${width.mobile}) {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 2px;
+        padding: 2px;
+        text-align: justify;
+        width: 70%;
+    }
+
+    @media screen and (max-width: ${width.tablet}) {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 2px;
+        padding: 2px;
+        text-align: justify;
+        width: 70%;
+    }
+
+    
 `;
 
 export const Content = styled.p`
@@ -31,10 +55,22 @@ export const List = styled.li`
         content: "•";
         color: #001830;
     }
+
+    
 `;
 
 export const AboutUsCardImg = styled.img`
     width: 150px;
     height: 140px;
+
+    @media screen and (max-width: ${width.mobile}) {
+        width: 98px;
+        height: 98px;
+    }
+
+    @media screen and (max-width: ${width.tablet}) {
+        width: 100px;
+        height: 100px;
+    }
 `;
     

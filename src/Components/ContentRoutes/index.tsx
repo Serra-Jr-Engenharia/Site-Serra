@@ -4,7 +4,7 @@ import Header from "../Header";
 
 import { Route, Routes } from "react-router-dom";
 
-import FrontDesk from '../../Screens/FrontDesk/Page';
+import Home from '../../Screens/Home/Page';
 import AboutUs from "../../Screens/AboutUs/Page";
 import Contact from "../../Screens/Contact/Page"
 import MechanicPage from "../../Screens/MechanicPage/Page";
@@ -18,7 +18,7 @@ const ContentRoutes: React.FC = () =>{
             <Header />
 
             <Routes>
-                <Route path="/" element={<FrontDesk />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/computacao" element={<CompPage />} />
                 <Route path="/mecanica" element={<MechanicPage />} />
                 <Route path="/quemSomos" element={<AboutUs />} />
