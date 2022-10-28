@@ -20,9 +20,9 @@ export const Row = styled.div`
 
 export const LinksDiv = styled.div`
     margin-left: 2rem;
-
     @media screen and (min-width: 390){
         flex-direction: column;
+        
     }
 `;
 
@@ -41,6 +41,7 @@ export const LinksContainer = styled.div`
 
     @media screen and (max-width: 390px) {
         flex-direction: column;
+        padding-top: 10%;
     }
 
     @media screen and (max-width: 500px) {
@@ -55,7 +56,7 @@ export const SocialMediaIMG = styled.img`
     margin-right: 0.8rem;
     
     @media screen and (max-width: 390px) {
-        margin-top: 10%;
+        margin-top: 30%;
     }
 `;
 

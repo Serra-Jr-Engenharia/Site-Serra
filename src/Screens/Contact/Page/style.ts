@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { width } from "../../../Services/config";
 
 export const InformationSpan = styled.span`
+    align-self: center;
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 300;
@@ -11,30 +12,33 @@ export const InformationSpan = styled.span`
     color: #000000;
     margin-left: 5%;
 
+    @media screen and (min-width: ${width.tablet}) {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
     @media screen and (min-width: ${width.largeDesktop}) {
         font-weight: 300;
         font-size: 40px;
         line-height: 40px;
-        width: 700px;
-    } 
+    }
+    
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         font-weight: 300;
         font-size: 60px;
-        line-height: 60px;
-        width: 900px;
-    }
-
-    @media screen and (min-width: ${width.mobile}) {
-        font-size: 20px;
-        line-height: 20px;
-        width: 300px;
-        
+        line-height: 100px;
     }
 `;
 
 export const InformationImg = styled.img`
+
     width: 3em;
     height: 3em;
+
+    @media screen and (min-width: ${width.tablet}) {
+        width: 4em;
+        height: 4em;
+    }
 
     @media screen and (min-width: ${width.largeDesktop}) {
         width: 4em;
@@ -42,17 +46,17 @@ export const InformationImg = styled.img`
     }
     
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        width: 6em;
-        height: 6em;
+        width: 10em;
+        height: 10em;
     }
-
-    @media screen and (min-width: ${width.mobile}) {
-        width: 20%;
-        height: 20%;
-    }
+   
 `;
 
 export const Information = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 80%;
     height: 100%;
     margin-right: 2%;
@@ -67,15 +71,16 @@ export const Information = styled.div`
         align-items: center;
     }
 
-    @media screen and (min-width: ${width.mobile}) {
+    @media screen and (max-width: ${width.mobile}) {
         margin-top: 20%;
     }
+
 
     
 `;
 
 export const MapBox = styled.div`
-    width: 60%;
+    width: 100%;
     height: 50vh;
     display: flex;
     align-items: center;
@@ -83,11 +88,19 @@ export const MapBox = styled.div`
 `;
 
 export const MapBoxContainer = styled.div`
-    width: 100%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 7%;
+
+    @media screen and (max-width: 390px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 80%;
+    }
 `;
 
 export const All = styled.div`
@@ -102,7 +115,9 @@ export const All = styled.div`
         flex-direction: column;
     }
 
-    
+    @media screen and (max-width: ${width.largeMobile}) {
+        width: 90%;
+    } 
 `;
 
 export const InformationIconText = styled.div`
@@ -138,6 +153,8 @@ export const Form = styled.div`
     @media screen and (min-width: ${width.largeNotebook}) {
         width: 60%;
     }
+
+    
 `;
 
 export const Inputs = styled.div`

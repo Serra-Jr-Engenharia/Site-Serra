@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { width } from '../../Services/config'
 
 interface Props{
     titleColor?: string
@@ -28,6 +29,10 @@ export const BottomCardBody = styled.div`
     background-color: #fff;
     margin-top: 5%;
     margin-bottom: 5%;
+
+    @media screen and (max-width: ${width.tablet}) {
+        width: 95vw;
+    }
 `;
 
 export const BottomCardContent = styled.div`
@@ -42,6 +47,11 @@ export const BottomCardContent = styled.div`
     @media screen and (max-width: 500px) {
         flex-direction: column;
     }
+
+    @media screen and (max-width: 820px) {
+        flex-direction: column;
+    }
+
 `;
 
 export const BottomCardLink = styled.a`
@@ -129,6 +139,12 @@ export const HistoryTextContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 500px) {
+        width: 90%;
+        
+    }
+    
 `;
 
 export const HistoryImg = styled.img`
@@ -139,5 +155,15 @@ export const HistoryImg = styled.img`
     align-self: center;
     margin: 40px;
     border-radius: 1rem;
+
+    @media screen and (max-width: 500px) {
+        width: 65%;
+        height: 65%;
+    }
+
+    @media screen and (max-width: 820px) {
+        width:70%;
+        height: 70%;
+    }
 `;
 

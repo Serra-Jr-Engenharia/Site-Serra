@@ -13,14 +13,35 @@ export const EngComp = styled.div`
     justify-content: space-evenly;
     border-radius: 0px 0px 0px 100px;
     align-items: center;
+
+    @media screen and (max-width: ${width.tablet}) {
+        border-radius: 0px 0px 0px 60px;
+        
+    }
+    
+    @media screen and (max-width: ${width.mobile}) {
+        flex-direction: column;
+
+    }
 `;
 
 export const EngCompImg = styled.img`
     width: 40%;
+
+    @media screen and (max-width: ${width.extraLargeDesktop}){
+        width: 30%;
+    }
+
+    
+    @media screen and (max-width: ${width.mobile}) {
+        width: 70%;
+    }
 `;
 
 export const ServiceletterDiv = styled.div`
     background-image: url(${backgroundImg});
+    background-repeat: no-repeat; 
+    background-size: cover; 
 `;
 
 export const EngCompP = styled.p`
@@ -31,6 +52,21 @@ export const EngCompP = styled.p`
     line-height: 30px;
     text-align: center;
     color: #FFFFFF;
+    
+    @media screen and (max-width: ${width.extraLargeDesktop}){
+        font-size: 110px;
+        line-height: 40px;
+    }
+
+    @media screen and (max-width: ${width.notebook}) {
+        font-size: 56px;
+        line-height: 30px;
+    }
+
+    @media screen and (max-width: ${width.tablet}) {
+        font-size: 40px;
+        line-height: 10px;
+    }
 `;
 
 export const EngCompPContainer = styled.div`
@@ -60,11 +96,22 @@ export const ServiceletterCard = styled.div`
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
+
+    /* background-color: red; */
+    @media screen and (max-width: 550px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
 `;
 
 export const SlCard = styled.div`
     margin-top: 3%;
     width: 40%;
+
+    @media screen and (max-width: ${width.mobile}){
+        width: 90%;
+    }
 `;
 
 
@@ -117,6 +164,7 @@ export const SlCardImg = styled.img`
 `;
 export const SlCardDown = styled.div`
     display: flex;
+    
 `;
 
 
@@ -125,11 +173,21 @@ export const SlLogoContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
+`;
+
+export const SlLogoBox = styled.div`
+
+    @media screen and (max-width: ${width.mobile}){
+        width: 30%;
+    }
 `;
 
 export const SlLogo = styled.img`
     margin: 10px;
+    width: 100%;
     
+
 `;
 
 export const BoxContainer = styled.div`

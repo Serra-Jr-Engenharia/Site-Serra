@@ -37,6 +37,7 @@ import {
     BoxContainer,
     BoxText,
     SlLogoContainer,
+    SlLogoBox,
     SlCardImg,
     SlCardH3,
     SlCardP,
@@ -90,12 +91,31 @@ const CompPage: React.FC = () =>{
                 </ServiceletterCard>
 
                 <SlLogoContainer>
-                    <SlLogo src={HTML} alt="ImagemHtml" />
-                    <SlLogo src={CSS} alt="Imagemcss" />
-                    <SlLogo src={JS} alt="ImagemJS" />
-                    <SlLogo src={TS} alt="ImagemTS" />
-                    <SlLogo src={REACT} alt="ImagemREACT" />
-                    <SlLogo src={Styled} alt="ImagemStyled" />
+
+                    <SlLogoBox>
+                        <SlLogo src={HTML} alt="ImagemHtml" />
+                    </SlLogoBox>
+                    
+                    <SlLogoBox>
+                        <SlLogo src={CSS} alt="Imagemcss" />
+                    </SlLogoBox>
+                    
+                    <SlLogoBox>
+                        <SlLogo src={JS} alt="ImagemJS" />
+                    </SlLogoBox>
+
+                    <SlLogoBox>
+                        <SlLogo src={TS} alt="ImagemTS" />
+                    </SlLogoBox>
+
+                    <SlLogoBox>
+                        <SlLogo src={REACT} alt="ImagemREACT" />
+                    </SlLogoBox>
+
+                    <SlLogoBox>
+                        <SlLogo src={Styled} alt="ImagemStyled" />
+                    </SlLogoBox>
+                    
                 </SlLogoContainer>
             </ServiceletterDiv>
 

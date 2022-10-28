@@ -58,22 +58,20 @@ html, body{
 
 @media (max-width: 390px) {
   .slick-next:before{
-    margin-left: 100%;
+    padding-left: 100%;
   }
 
   .slick-prev:before{
-    background-color: blue;
-    margin-right: 100%;
+    margin-left: -200%;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 820px) {
   .slick-next:before{
-    margin-left: 100%;
+    padding-left: 250%;
   }
 
   .slick-prev:before{
-    background-color: blue;
-    margin-right: 100%;
+    margin-left: -400%;
   }
 }

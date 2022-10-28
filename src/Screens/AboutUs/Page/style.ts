@@ -8,7 +8,6 @@ export const PresentationMain = styled.div`
     justify-content: space-around;
     border-radius: 0px 0px 0px 100px;
     height: 50vh;
-
     
     @media screen and (max-width: 390px) {
         order: 1;
@@ -22,10 +21,24 @@ export const PresentationMain = styled.div`
         /* flex-direction: column; */
         flex-wrap: wrap;
     }
+
+    @media screen and (max-width: 820px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 
 export const PresentationContainer = styled.div `
+   
+
 `;
 
 export const AboutUsContainer = styled.div`
@@ -51,6 +64,17 @@ export const PresentationAboutUsP = styled.p`
     @media screen and (max-width: 500px) {
         font-size: 70px;
     }
+
+    @media screen and (max-width: 820px) {
+        margin-bottom: 5%;
+    }
+
+    @media screen and (min-width: 1000px) {
+        margin-bottom: 5%;
+        font-size: 120px;
+    }
+
+    
 `;
 
 export const PresentationAboutUsImg = styled.img`
@@ -61,6 +85,14 @@ export const PresentationAboutUsImg = styled.img`
 
     @media screen and (max-width: 500px) {
         width: 80%;
+    }
+
+    @media screen and (max-width: 820px) {
+        width: 70%;
+    }
+
+    @media screen and (max-width: 1000px) {
+        width: 60%;
     }
 `;
 

@@ -46,7 +46,7 @@ export const HomeContent = styled.div`
 `;
 
 export const CardContainer = styled.div`
-    width: 70vw;
+    width: 80vw;
     
     animation: fade-in-bottom 0.6s ease-in 2s both;
     @keyframes fade-in-bottom {

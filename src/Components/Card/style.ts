@@ -61,7 +61,7 @@ export const Button = styled.button<Props>`
     align-items: center;
     border-radius: 1rem;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
     &:hover{
         opacity: 0.8;

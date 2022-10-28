@@ -8,14 +8,14 @@ export const SloganTextContainer = styled.div`
 
     .writer{
         font-family: 'Courier Prime';
-        font-size: 50px;
+        font-size: 45px;
         color: #001830;
         font-weight: 700;
     }
 
     .writer-cursor{
         font-family: 'Courier Prime';
-        font-size: 50px;
+        font-size: 45px;
         color: orange;
         font-weight: 700;
         animation: blink 0.5s infinite;

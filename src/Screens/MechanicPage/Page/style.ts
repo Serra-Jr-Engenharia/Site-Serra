@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import backgroundImg from "../../../Assets/MechanicPage/background-mecanica.svg"
 
+import { width } from "../../../Services/config";
+
 export const MecStyle = styled.div `
 `;
 
 export const ServiceLetterContainer = styled.div`
     background-image: url(${backgroundImg});
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: top;
 `;
 
 export const EngMec = styled.div `
@@ -14,6 +19,10 @@ export const EngMec = styled.div `
     justify-content: space-evenly;
     align-items: center;
     border-radius: 0px 0px 0px 100px;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        flex-wrap: wrap;
+    } 
 `;
 
 export const SlCardH3 = styled.h3`
@@ -24,6 +33,11 @@ export const SlCardH3 = styled.h3`
     line-height: 22px;
     margin-top: 0px;
     margin-bottom: 0px;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        font-size: 22px;
+    }
+    
 `;
 export const SlCardP = styled.p`
     width: 400px;
@@ -34,6 +48,13 @@ export const SlCardP = styled.p`
     line-height: 30px;
     text-align: left;
     margin-top: 0px;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        width: 70%;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: justify;
+    }
 `;
 
 export const EngMecP = styled.p`
@@ -44,6 +65,12 @@ export const EngMecP = styled.p`
     text-align: center;  
     color: #FFFFFF;
     margin: 20px;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        margin-top: 20%;
+        line-height: 5%;
+        font-size: 50px;
+    } 
 `;
 
 export const EngMecPContainer = styled.div`
@@ -58,6 +85,10 @@ export const ServiceLetterH1 = styled.h1`
     line-height: 113px;
     margin-top: 0;
     margin-bottom: 0px;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        font-size: 38px;
+    }
 `;
 export const ServiceLetterH2 = styled.h2 `
     text-align: center;
@@ -66,22 +97,40 @@ export const ServiceLetterH2 = styled.h2 `
     font-weight: 500;
     font-size: 28px;
     line-height: 56px;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        margin-top: -5%;
+        font-size: 22px;
+       }
 `;
 export const ServiceletterCard = styled.div `
     display: flex;
     justify-content: space-around;
-
+    
+    @media screen and (max-width: ${width.largeMobile}) {
+        flex-directiom: row;
+        flex-wrap: wrap;
+    }
 `;
 
 export const SlCard = styled.div `
     margin-top: 3%;
     margin-bottom: 3%;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        margin-bottom: 12%;
+    }
 `;
 
 export const SlCardImg = styled.img`
     display: flex;
     width: 3.5vw;
     margin-right: 4%;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        width: 8%;
+        margin-left: 5%;
+    }
 `;
 export const SlCardUp = styled.div `
     display: flex;
@@ -98,6 +147,10 @@ export const SlCardDown = styled.div `
 
 export const EngMecImg = styled.img`
     width: 40%;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        width: 80%;
+    }
 `;
 
 export const Line = styled.hr `
@@ -130,6 +183,11 @@ export const BoxText = styled.p`
         color: #fff;
         transition: background-color 0.8s;
     }
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        font-size: 16px;
+        line-height: 20px;
+    }
 `;
 
 export const Box = styled.div `
@@ -139,6 +197,10 @@ export const Box = styled.div `
     margin: 0px;
     width: 100%;
     height: 30%;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        margin: 25px 0px;
+    }
 `;
 
 export const ImagesPreFooter = styled.div `
@@ -150,16 +212,28 @@ export const ImagesPreFooter = styled.div `
 export const ImagesPreFooterContact = styled.img `
     margin-right: 2%;
     width: 3.5rem;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        width: 2.5rem;
+    }
 `;
 
 export const ImagesPreFooterScrollUp = styled.img `
     margin-right: 2%;
     width: 3rem;
     height: 3rem;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        width: 2rem;
+    }
 `;
 
 export const ProjectsMecAll = styled.div `
     margin-top: 3%;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        margin-top: 20%;
+    }
 `;  
 
 

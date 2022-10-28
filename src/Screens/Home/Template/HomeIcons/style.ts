@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { width } from "../../../../Services/config";
 
 export const Icon = styled.img`
     height: 15vh;
@@ -29,4 +30,9 @@ export const HomeIconsStyle = styled.div`
     margin: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
+
+    @media screen  and (max-width: ${width.tablet}){
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
 `;

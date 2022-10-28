@@ -23,20 +23,12 @@ export const Wrapper = styled.div`
     align-items: center;
     
 
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: ${width.tablet}) {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }   
-
-    @media screen and (max-width: ${width.mobile}) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
 `;
 
 
@@ -45,16 +37,15 @@ export const Logo = styled.img`
     width: 60%;
     max-height: 40vh;
     border-radius: 20px;
+
     @media screen and (max-width: ${width.tablet}) {    
         width: 96%;
         max-height: 40vh;
-        border-radius: 20px;
     }
 
     @media screen and (max-width: ${width.mobile}) {
-        width: 96%;
+        width: 100%;
         max-height: 40vh;
-        border-radius: 20px;
     }
     
 `;
