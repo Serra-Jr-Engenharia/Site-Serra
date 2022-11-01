@@ -40,12 +40,24 @@ export const AboutUsCardStyle = styled.div`
     
 `;
 
+
+
 export const Content = styled.p`
     width: 95%;
+
+    @media screen and (min-width: 2048px) {
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+    }
 `;
 
 export const AboutUsCardUl = styled.ul`
-
+    @media screen and (min-width: 2048px) {
+        font-size: 35px;
+        line-height: 40px;
+        
+    }
 `;
 
 export const List = styled.li`

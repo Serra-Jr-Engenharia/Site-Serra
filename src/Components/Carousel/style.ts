@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { width } from "../../Services/config";
 
 interface Props{
     containerWidth?: string
@@ -24,7 +25,7 @@ export const Wrapper = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }   
+    }
 `;
 
 
@@ -103,6 +104,7 @@ export const ContainerLogo = styled.div`
         align-items: center;
         margin-bottom: 2%;
     }
+    
 `;
 
 export const SectionSpan = styled.span`
@@ -112,11 +114,15 @@ export const SectionSpan = styled.span`
     color: var(--blue);
 
     @media screen and (max-width: 959px) {
-        width: 100%;
+        width: 85%;
         font-size: 1rem;
         font-weight: 500;
         color: var(--blue);
     }
+
+    @media screen and (max-width: 500px) {
+        width: 85%;
+    } 
 `;
 
 export const SectionButton = styled.button`
@@ -135,6 +141,12 @@ export const SectionButton = styled.button`
     &:hover{
         opacity: 0.8;
     }
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        width: 80%;
+        font-size: 1rem;
+    }    
+
 `;
 
 
@@ -151,8 +163,9 @@ export const ContainerSectionContent = styled.div`
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 10px;
     }
+
+    
 `;
 
 export const SliderContainer = styled.div<Props>`
@@ -162,4 +175,5 @@ export const SliderContainer = styled.div<Props>`
         :
         `width: 100%`
     }
+    
 `;

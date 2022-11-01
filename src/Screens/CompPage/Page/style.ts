@@ -79,9 +79,10 @@ export const ServiceletterH1 = styled.h1`
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 500;
-    font-size: 76px;
+    font-size: 4em;
     line-height: 113px;
     margin-bottom: 0px;
+
 `;
 export const ServiceletterH2 = styled.h2`
     text-align: center;
@@ -90,6 +91,12 @@ export const ServiceletterH2 = styled.h2`
     font-weight: 500;
     font-size: 28px;
     line-height: 56px;
+
+    @media screen and (min-width: 2048px) {
+        font-size: 35px;
+        line-height: 40px;
+        
+    }
 `;
 export const ServiceletterCard = styled.div`
     display: flex;
@@ -109,7 +116,7 @@ export const SlCard = styled.div`
     margin-top: 3%;
     width: 40%;
 
-    @media screen and (max-width: ${width.mobile}){
+    @media screen and (max-width: ${width.tablet}){
         width: 90%;
     }
 `;
@@ -139,6 +146,12 @@ export const SlCardP = styled.p`
         line-height: 40px;
         font-weight: 300;
     }
+
+    @media screen and (min-width: 2048px) {
+        font-size: 35px;
+        line-height: 40px;
+        
+    }
 `;
 
 export const SlCardH3 = styled.h3`
@@ -153,6 +166,12 @@ export const SlCardH3 = styled.h3`
     @media screen and (min-width: ${width.largeDesktop}){
         font-size: 2em;
         line-height: 40px;
+    }
+
+    @media screen and (min-width: 2048px) {
+        font-size: 35px;
+        line-height: 40px;
+        
     }
 `;
 
@@ -184,10 +203,7 @@ export const SlLogoBox = styled.div`
 `;
 
 export const SlLogo = styled.img`
-    margin: 10px;
     width: 100%;
-    
-
 `;
 
 export const BoxContainer = styled.div`
@@ -227,15 +243,16 @@ export const BoxText = styled.p`
     text-align: center;
     margin: 0px;
     padding: 2%;
-    margin-top: 2%;
+    margin-top: 3%;
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
-    line-height: 47px;
+    /* line-height: 47px; */
     text-align: center;
+    
 
     color: #FD6300;
 
@@ -244,6 +261,20 @@ export const BoxText = styled.p`
         color: #fff;
         transition: background-color 0.8s;
     }
+
+    @media screen and (max-width: ${width.tablet}) {
+        width: 80%;
+        font-size: 1.2em;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    @media screen and (min-width: 2048px) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    
 `;
 
 export const Box = styled.div `

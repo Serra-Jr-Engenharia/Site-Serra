@@ -49,7 +49,7 @@ const Carousel: React.FC<SliderProps> = (props) => {
                             <Wrapper>
                                 <ContainerSection>
                                     <ContainerSectionTitle>
-                                        <Title text={item.title} fontSize="50px"/>
+                                        <Title text={item.title}/>
                                     </ContainerSectionTitle>
 
                                     <ContainerSectionContainer>

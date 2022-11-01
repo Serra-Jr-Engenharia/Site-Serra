@@ -38,6 +38,12 @@ export const SlCardH3 = styled.h3`
         font-size: 22px;
     }
     
+    @media screen and (min-width: 2048px) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    
 `;
 export const SlCardP = styled.p`
     width: 400px;
@@ -55,6 +61,24 @@ export const SlCardP = styled.p`
         line-height: 25px;
         text-align: justify;
     }
+
+    @media screen and (min-width: 1280px){
+        font-size: 20px;
+        line-height: 30px;
+        
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    @media screen and (min-width: 2048px) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    
 `;
 
 export const EngMecP = styled.p`
@@ -70,7 +94,23 @@ export const EngMecP = styled.p`
         margin-top: 20%;
         line-height: 5%;
         font-size: 50px;
-    } 
+    }  
+
+    @media screen and (min-width: 1280px){
+        font-size: 70px;
+        line-height: 100px;
+        
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 106px;
+        line-height: 120px;
+    }
+
+    @media screen and (min-width: 2048px) {
+        font-size: 126px;
+        line-height: 130px;
+    }
 `;
 
 export const EngMecPContainer = styled.div`
@@ -101,7 +141,25 @@ export const ServiceLetterH2 = styled.h2 `
     @media screen and (max-width: ${width.largeMobile}) {
         margin-top: -5%;
         font-size: 22px;
-       }
+       } 
+
+    @media screen and (min-width: 1280px){
+        font-size: 30px;
+        line-height: 40px;
+        
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    @media screen and (min-width: 2048px) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+       
 `;
 export const ServiceletterCard = styled.div `
     display: flex;
@@ -111,6 +169,10 @@ export const ServiceletterCard = styled.div `
         flex-directiom: row;
         flex-wrap: wrap;
     }
+
+    @media screen and (max-width: 420px) {
+        flex-direction: column;
+    }    
 `;
 
 export const SlCard = styled.div `
@@ -120,6 +182,17 @@ export const SlCard = styled.div `
     @media screen and (max-width: ${width.largeMobile}) {
         margin-bottom: 12%;
     }
+
+    @media screen and (max-width: ${width.tablet}) {
+        width: 40%;
+        margin-bottom: 12%;
+    } 
+
+    @media screen and (max-width: 420px) {
+        flex-direction: column;
+        width: 95%;
+    }
+
 `;
 
 export const SlCardImg = styled.img`
@@ -131,12 +204,17 @@ export const SlCardImg = styled.img`
         width: 8%;
         margin-left: 5%;
     }
+
+    @media screen and (max-width: ${width.tablet}) {
+        width: 10%;
+    } 
 `;
 export const SlCardUp = styled.div `
     display: flex;
     min-height: 20%;
     margin-bottom: 5%;
     align-items: center;
+
 `;
 
 export const SlCardDown = styled.div `

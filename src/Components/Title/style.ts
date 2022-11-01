@@ -14,8 +14,11 @@ export const TitleText = styled.p`
     color: #001830;
     margin-bottom: 10px;
     
+    @media screen and (max-width: ${width.largeMobile}) {
+        font-size: 40px;
+    }
 
-    @media screen and (max-width: ${width.notebook}) {
+    @media screen and (min-width: ${width.notebook}) {
         font-size: 38px;
         width: 80%;
     }

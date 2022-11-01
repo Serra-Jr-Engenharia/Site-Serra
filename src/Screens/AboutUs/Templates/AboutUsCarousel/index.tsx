@@ -23,12 +23,14 @@ interface SliderProps{
 
 const Carousel: React.FC<SliderProps> = (props) => {    
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2500
     };
     
     return(
