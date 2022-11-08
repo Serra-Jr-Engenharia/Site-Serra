@@ -37,6 +37,9 @@ export const AboutUsCardStyle = styled.div`
         width: 70%;
     }
 
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        width: 30%;
+    }
     
 `;
 
@@ -50,6 +53,11 @@ export const Content = styled.p`
         line-height: 40px;
         text-align: center;
     }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 3.2rem;
+        line-height: 70px;
+    }
 `;
 
 export const AboutUsCardUl = styled.ul`
@@ -57,6 +65,11 @@ export const AboutUsCardUl = styled.ul`
         font-size: 35px;
         line-height: 40px;
         
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 3.2rem;
+        line-height: 70px;
     }
 `;
 
@@ -83,6 +96,16 @@ export const AboutUsCardImg = styled.img`
     @media screen and (max-width: ${width.tablet}) {
         width: 100px;
         height: 100px;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        width: 200px;
+        height: 200px;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        width: 300px;
+        height: 300px;
     }
 `;
     

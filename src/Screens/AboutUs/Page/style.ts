@@ -74,6 +74,14 @@ export const PresentationAboutUsP = styled.p`
         font-size: 120px;
     }
 
+    @media screen and (min-width: ${width.largeDesktop}) {
+        font-size: 180px;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 250px;
+    }
+
     
 `;
 
@@ -137,6 +145,14 @@ export const AboutUsContentDivision = styled.div`
         transform: rotate(90deg);
         margin: 0px;
         height: 20vh;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        height: 45vh;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        height: 50vh;
     }
 `;
 

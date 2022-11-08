@@ -1,4 +1,5 @@
 import React from "react";
+import FooterSlider from "../FooterSlider";
 
 import {
     FooterStyle,
@@ -17,7 +18,7 @@ import {
     LinksDiv,
     LinksSpan,
     LinksP,
-    ContentDivision
+    ContentDivision,
 } from './style';
 
 import facebookIcon from '../../Assets/Global/facebook.svg'
@@ -39,13 +40,15 @@ const Footer: React.FC = () =>{
             <Partners>
                 <PartnersSpan>Parceiros</PartnersSpan>
                 <PartnersDiv>
-                    <PartnersA target="_blank" rel="noopener noreferrer" href="https://www.voitto.com.br"><PartnersIMG src={voittoIcon} alt="Voitto" /></PartnersA>
+                    <FooterSlider></FooterSlider>
+                    {/* <PartnersA target="_blank" rel="noopener noreferrer" href="https://www.voitto.com.br"><PartnersIMG src={voittoIcon} alt="Voitto" /></PartnersA>
                     <PartnersA target="_blank" rel="noopener noreferrer" href="http://www.iprj.uerj.br/"><PartnersIMG src={iprjIcon} alt="IPRJ" /></PartnersA>
                     <PartnersA target="_blank" rel="noopener noreferrer" href="https://inovafri.com.br/"><PartnersIMG src={inovafriIcon} alt="InovaFri" /></PartnersA>
                     <PartnersA target="_blank" rel="noopener noreferrer" href="https://wiseup.com/"><PartnersIMG src={wiseupIcon} alt="WiseUp" /></PartnersA>
-                    <PartnersA target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ligajuniornf/"><PartnersIMG src={ligajrIcon} alt="Liga Jr NF" /></PartnersA>
+                    <PartnersA target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ligajuniornf/"><PartnersIMG src={ligajrIcon} alt="Liga Jr NF" /></PartnersA> */}
                 </PartnersDiv>
             </Partners>
+
 
             <ContentContainer>
                 <Row>

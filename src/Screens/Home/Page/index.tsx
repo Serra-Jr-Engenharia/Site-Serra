@@ -12,7 +12,7 @@ import repairIcon from '../../../Assets/Home/manutencao.svg'
 import drawIcon from '../../../Assets/Home/desenho-tecnico.svg'
 import botIcon from '../../../Assets/Home/braco-robo.svg'
 import printerIcon from '../../../Assets/Home/impressora-3d.svg'
-import ourHistory from '../../../Assets/Home/nossa-historia.svg'
+import ourHistory from '../../../Assets/Home/membros-2.svg'
 
 import { 
     HomeStyle, 

@@ -19,6 +19,11 @@ export const Title = styled.div<Props>`
     font-size: 1.6rem;
     font-weight: 600;
     margin-bottom: 20px;
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 4.5rem;
+        height: 10rem;
+    }
 `;
 
 export const BottomCardBody = styled.div`
@@ -32,6 +37,11 @@ export const BottomCardBody = styled.div`
 
     @media screen and (max-width: ${width.tablet}) {
         width: 95vw;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        width: 85vw;
+        padding: 80px 0px;
     }
 `;
 
@@ -117,6 +127,11 @@ export const HistoryText1 = styled.span`
         font-size: 15px;
         
     }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 3rem;
+        padding: 40px 80px;
+    }
 `;
 
 export const HistoryText2 = styled.span`
@@ -129,7 +144,7 @@ export const HistoryText2 = styled.span`
 
     @media screen and (max-width: 500px) {
         font-size: 15px;
-        
+
     }
 `;
 
@@ -142,7 +157,6 @@ export const HistoryTextContainer = styled.div`
 
     @media screen and (max-width: 500px) {
         width: 90%;
-        
     }
     
 `;
@@ -164,6 +178,11 @@ export const HistoryImg = styled.img`
     @media screen and (max-width: 820px) {
         width:70%;
         height: 70%;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        width: 90%;
+        height: 90%;
     }
 `;
 

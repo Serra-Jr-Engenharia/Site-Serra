@@ -13,8 +13,12 @@ export const TitleText = styled.p`
     text-align: center;
     color: #001830;
     margin-bottom: 10px;
+
+    @media screen and (max-width: ${width.tablet}) {
+        font-size: 30px;
+    }
     
-    @media screen and (max-width: ${width.largeMobile}) {
+    @media screen and (min-width: ${width.largeMobile}) {
         font-size: 40px;
     }
 
@@ -24,11 +28,11 @@ export const TitleText = styled.p`
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        font-size: 54px;
+        font-size: 100px;
     }
 `;
 
@@ -39,6 +43,9 @@ export const GradientBar = styled.hr<Props>`
     width: 80%;
     background: linear-gradient(90deg, rgba(4,173,215,1) 0%, rgba(4,173,215,1) 41%, rgba(255,116,0,1) 69%);
 
+    @media screen and (max-width: ${width.tablet}) {
+        height: 7px;
+    }
     @media screen and (max-width: ${width.notebook}) {
         width: 60%;
     }

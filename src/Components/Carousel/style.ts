@@ -41,9 +41,12 @@ export const ContainerSection = styled.section`
     background-color: lightgrey;
     border-radius: 3rem;
     
-
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: ${width.largeMobile}) {
+        min-height: 100vh;
+    }
+    @media screen and (max-width: ${width.tablet}) {
         width: 80%;
+        min-height: 100vh;
     }
 `;
 
@@ -53,6 +56,7 @@ export const ContainerSectionTitle = styled.div`
     justify-content: center;
     align-items: flex-start;
     padding: 0 0 10px 0;
+    margin-bottom: 3%;
 
     @media screen and (max-width: 959px) {
         height: 20%;
@@ -84,8 +88,8 @@ export const Logo = styled.img`
     max-height: 40vh;
     border-radius: 20px;
 
-    @media screen and (max-width: 959px) {    
-        width: 60%;
+    @media screen and (max-width: ${width.tablet}) {    
+        width: 50%;
         max-height: 40vh;
         border-radius: 20px;
     }
@@ -113,16 +117,20 @@ export const SectionSpan = styled.span`
     font-weight: 500;
     color: var(--blue);
 
-    @media screen and (max-width: 959px) {
+
+    @media screen and (max-width: ${width.notebook}) {
         width: 85%;
         font-size: 1rem;
-        font-weight: 500;
         color: var(--blue);
     }
 
-    @media screen and (max-width: 500px) {
-        width: 85%;
-    } 
+    @media screen and (min-width: ${width.largeDesktop}) {
+        font-size: 2.0rem;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 3.5rem;
+    }
 `;
 
 export const SectionButton = styled.button`
@@ -135,7 +143,7 @@ export const SectionButton = styled.button`
     width: 90%;
     background-color: #FF7400;
     border-radius: 1rem;
-    margin-top: 20px;
+    margin-top: 40px;
     border: 0px;
 
     &:hover{
@@ -145,7 +153,12 @@ export const SectionButton = styled.button`
     @media screen and (max-width: ${width.largeMobile}) {
         width: 80%;
         font-size: 1rem;
-    }    
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        width: 90%;
+        font-size: 2rem;
+    }
 
 `;
 

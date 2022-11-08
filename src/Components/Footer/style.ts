@@ -105,7 +105,7 @@ export const PartnersSpan = styled.span`
 `;
 
 export const PartnersDiv = styled.div`
-    width: 80vw;
+    width: 99.5vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -137,3 +137,10 @@ export const Partners = styled.div`
     align-items: center;
     flex-direction: column;
 `;
+
+
+
+
+
+
+
