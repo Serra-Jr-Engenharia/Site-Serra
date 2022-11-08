@@ -8,26 +8,27 @@ import {
 
 interface MobileNavBar{
     status: boolean
+    toogle: Function
 }
 
-const MobileNavBar: React.FC<MobileNavBar> = ({status}) =>{
+const MobileNavBar: React.FC<MobileNavBar> = ({status, toogle}) =>{
 
     return(
         <MobileMenu activeStyle={status}>
             <LinkContainer>
-                <Link to='/'>Home</Link>
+                <Link onClick={() => toogle(!status)} to='/'>Home</Link>
             </LinkContainer>
             <LinkContainer>
-                <Link to='/quemSomos'>Sobre Nós</Link>
+                <Link onClick={() => toogle(!status)} to='/quemSomos'>Sobre Nós</Link>
             </LinkContainer>
             <LinkContainer>
-                <Link to='/computacao'>Computação</Link>
+                <Link onClick={() => toogle(!status)} to='/computacao'>Computação</Link>
             </LinkContainer>
             <LinkContainer>
-                <Link to='/mecanica'>Mecânica</Link>
+                <Link onClick={() => toogle(!status)} to='/mecanica'>Mecânica</Link>
             </LinkContainer>
             <LinkContainer>
-                <Link to='/contatos'>Contatos</Link>
+                <Link onClick={() => toogle(!status)} to='/contatos'>Contatos</Link>
             </LinkContainer>
         </MobileMenu>
     )

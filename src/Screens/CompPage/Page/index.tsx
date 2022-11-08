@@ -22,8 +22,8 @@ import {
     EngComp, 
     EngCompP, 
     EngCompImg, 
-    ServiceletterH1, 
-    ServiceletterH2, 
+    ServiceLetterH1, 
+    ServiceLetterH2, 
     ServiceletterCard,
     SlCard,
     SlCardUp,
@@ -60,8 +60,8 @@ const CompPage: React.FC = () =>{
             </EngComp>
 
             <ServiceletterDiv>
-                <ServiceletterH1>Carta de Serviços</ServiceletterH1>
-                <ServiceletterH2>Engenharia de Computação</ServiceletterH2>
+                <ServiceLetterH1>Carta de Serviços</ServiceLetterH1>
+                <ServiceLetterH2>Engenharia de Computação</ServiceLetterH2>
                 
                 <ServiceletterCard>
                     <SlCard>
@@ -91,31 +91,12 @@ const CompPage: React.FC = () =>{
                 </ServiceletterCard>
 
                 <SlLogoContainer>
-
-                    <SlLogoBox>
                         <SlLogo src={HTML} alt="ImagemHtml" />
-                    </SlLogoBox>
-                    
-                    <SlLogoBox>
                         <SlLogo src={CSS} alt="Imagemcss" />
-                    </SlLogoBox>
-                    
-                    <SlLogoBox>
                         <SlLogo src={JS} alt="ImagemJS" />
-                    </SlLogoBox>
-
-                    <SlLogoBox>
                         <SlLogo src={TS} alt="ImagemTS" />
-                    </SlLogoBox>
-
-                    <SlLogoBox>
                         <SlLogo src={REACT} alt="ImagemREACT" />
-                    </SlLogoBox>
-
-                    <SlLogoBox>
                         <SlLogo src={Styled} alt="ImagemStyled" />
-                    </SlLogoBox>
-                    
                 </SlLogoContainer>
             </ServiceletterDiv>
 

@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
                             <InputArea type="text" placeholder="(XX) XXXXX-XXXX"/>
 
                             <InputsP>Assunto</InputsP>
-                            <InputArea type="text" placeholder="Digite o assunto da mensagem"/>
+                            <InputArea type="text" placeholder="Digite o assunto"/>
 
                             <InputsP>Mensagem</InputsP>
                             <InputAreaMensage type="text" placeholder="Digite a mensagem"/>

@@ -11,29 +11,19 @@ export const EngComp = styled.div`
     background-color: #FF7400;
     display: flex;
     justify-content: space-evenly;
-    border-radius: 0px 0px 0px 100px;
     align-items: center;
+    border-radius: 0px 0px 0px 100px;
 
-    @media screen and (max-width: ${width.tablet}) {
-        border-radius: 0px 0px 0px 60px;
-        
-    }
-    
-    @media screen and (max-width: ${width.mobile}) {
-        flex-direction: column;
-
-    }
+    @media screen and (max-width: ${width.largeMobile}) {
+        flex-wrap: wrap;
+    } 
 `;
 
 export const EngCompImg = styled.img`
+    margin-top: 10px;
     width: 40%;
 
-    @media screen and (max-width: ${width.extraLargeDesktop}){
-        width: 30%;
-    }
-
-    
-    @media screen and (max-width: ${width.mobile}) {
+    @media screen and (max-width: ${width.largeMobile}) {
         width: 70%;
     }
 `;
@@ -49,23 +39,30 @@ export const EngCompP = styled.p`
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
-    line-height: 30px;
-    text-align: center;
+    text-align: center;  
     color: #FFFFFF;
-    
-    @media screen and (max-width: ${width.extraLargeDesktop}){
-        font-size: 110px;
-        line-height: 40px;
+    margin: 20px;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        margin-top: 20%;
+        line-height: 5%;
+        font-size: 50px;
+    }  
+
+    @media screen and (min-width: 1280px){
+        font-size: 70px;
+        line-height: 100px;
+        
     }
 
-    @media screen and (max-width: ${width.notebook}) {
-        font-size: 56px;
-        line-height: 30px;
+    @media screen and (min-width: 1920px) {
+        font-size: 106px;
+        line-height: 120px;
     }
 
-    @media screen and (max-width: ${width.tablet}) {
-        font-size: 40px;
-        line-height: 10px;
+    @media screen and (min-width: 2048px) {
+        font-size: 126px;
+        line-height: 130px;
     }
 `;
 
@@ -73,18 +70,21 @@ export const EngCompPContainer = styled.div`
 `;
 
 
-export const ServiceletterH1 = styled.h1`
+export const ServiceLetterH1 = styled.h1`
     text-align: center;
-    margin-top: 0;
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 500;
-    font-size: 4em;
+    font-size: 76px;
     line-height: 113px;
+    margin-top: 0;
     margin-bottom: 0px;
 
+    @media screen and (max-width: ${width.largeMobile}) {
+        font-size: 38px;
+    }
 `;
-export const ServiceletterH2 = styled.h2`
+export const ServiceLetterH2 = styled.h2 `
     text-align: center;
     font-family: 'Maven Pro';
     font-style: normal;
@@ -92,66 +92,89 @@ export const ServiceletterH2 = styled.h2`
     font-size: 28px;
     line-height: 56px;
 
-    @media screen and (min-width: 2048px) {
-        font-size: 35px;
+    @media screen and (max-width: ${width.largeMobile}) {
+        margin-top: -5%;
+        font-size: 22px;
+       } 
+
+    @media screen and (min-width: 1280px){
+        font-size: 30px;
         line-height: 40px;
         
     }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    @media screen and (min-width: 2048px) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+       
 `;
-export const ServiceletterCard = styled.div`
+export const ServiceletterCard = styled.div `
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    
+    @media screen and (max-width: ${width.largeMobile}) {
+        flex-directiom: row;
+        flex-wrap: wrap;
+    }
 
-    /* background-color: red; */
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 420px) {
         flex-direction: column;
-        align-items: center;
-    }
-
+    }    
 `;
 
-export const SlCard = styled.div`
+export const SlCard = styled.div `
     margin-top: 3%;
-    width: 40%;
+    margin-bottom: 3%;
 
-    @media screen and (max-width: ${width.tablet}){
-        width: 90%;
+    @media screen and (max-width: ${width.largeMobile}) {
+        margin-bottom: 12%;
     }
+
+    @media screen and (max-width: ${width.tablet}) {
+        width: 40%;
+        margin-bottom: 12%;
+    } 
+
+    @media screen and (max-width: 420px) {
+        flex-direction: column;
+        width: 95%;
+    }
+
 `;
 
-
-export const SlCardUp = styled.div`
+export const SlCardImg = styled.img`
     display: flex;
-    min-height: 6vh;
+    width: 3.5vw;
+    margin-right: 4%;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        width: 8%;
+        margin-left: 5%;
+    }
+
+    @media screen and (max-width: ${width.tablet}) {
+        width: 10%;
+    } 
+`;
+export const SlCardUp = styled.div `
+    display: flex;
+    min-height: 20%;
     margin-bottom: 5%;
     align-items: center;
-    width: 100%;
 
 `;
 
-export const SlCardP = styled.p`
-    width: 100%;
-    font-family: 'Maven Pro';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 26px;
-    line-height: 30px;
-    text-align: left;
-    margin-top: 0px;
-
-    @media screen and (min-width: ${width.largeDesktop}){
-        font-size: 2em;
-        line-height: 40px;
-        font-weight: 300;
-    }
-
-    @media screen and (min-width: 2048px) {
-        font-size: 35px;
-        line-height: 40px;
-        
-    }
+export const SlCardDown = styled.div `
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 `;
 
 export const SlCardH3 = styled.h3`
@@ -175,14 +198,39 @@ export const SlCardH3 = styled.h3`
     }
 `;
 
-export const SlCardImg = styled.img`
-    width: 10%;
-    height: 10%;
-    margin-right: 4%;
-    color: red;
-`;
-export const SlCardDown = styled.div`
-    display: flex;
+export const SlCardP = styled.p`
+    width: 400px;
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 0px;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        width: 70%;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    @media screen and (min-width: 1280px){
+        font-size: 20px;
+        line-height: 30px;
+        
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    @media screen and (min-width: 2048px) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
     
 `;
 
@@ -196,14 +244,15 @@ export const SlLogoContainer = styled.div`
 `;
 
 export const SlLogoBox = styled.div`
-
-    @media screen and (max-width: ${width.mobile}){
-        width: 30%;
-    }
+    width: 100%;
+    
 `;
 
 export const SlLogo = styled.img`
-    width: 100%;
+
+    @media screen and (max-width: ${width.tablet}){
+        width: 100px
+    }
 `;
 
 export const BoxContainer = styled.div`

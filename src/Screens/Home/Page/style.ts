@@ -14,7 +14,8 @@ export const Presentation = styled.div`
     @media screen and (max-width: ${width.tablet}){
         flex-direction: column-reverse; 
         align-items: space-around;
-    justify-content: center;
+        justify-content: center;
+        min-height: 500px;
     }
 `;
 
@@ -48,7 +49,7 @@ export const HomeContent = styled.div`
 export const CardContainer = styled.div`
     width: 80vw;
     
-    animation: fade-in-bottom 0.6s ease-in 2s both;
+    animation: fade-in-bottom 0.6s ease-in 0.5s both;
     @keyframes fade-in-bottom {
     0% {
     transform: translateY(50px);

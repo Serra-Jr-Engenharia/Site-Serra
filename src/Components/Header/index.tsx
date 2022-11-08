@@ -30,7 +30,7 @@ const Header: React.FC = () =>{
             
             <DesktopNavBar />
 
-            <MobileNavBar status={toggleMenu}/>
+            <MobileNavBar status={toggleMenu} toogle={setToggleMenu}/>
 
         </HeaderStyle>
     )
