@@ -46,7 +46,7 @@ export const EngCompP = styled.p`
     @media screen and (max-width: ${width.largeMobile}) {
         margin-top: 20%;
         line-height: 5%;
-        font-size: 50px;
+        font-size: 40px;
     }  
 
     @media screen and (min-width: 1280px){
@@ -251,7 +251,8 @@ export const SlLogoBox = styled.div`
 export const SlLogo = styled.img`
 
     @media screen and (max-width: ${width.tablet}){
-        width: 100px
+        width: 50px;
+        height: 50px;
     }
 `;
 

@@ -12,6 +12,9 @@ export const compData = {
             de sócio torcedor do Friburguense Atlético Clube. O site contém as funcionalidades de cadastro e 
             login, com um sistema de pagamentos integrado. Além disso, possui uma aba dedicada aos patrocinadores 
             do clube, com um slider para exibição de seus logotipos.`,
+            members: ['alguem', 'alguem', 'alguem', 'alguem', 'alguem', 'alguem'],
+            opinions: ['dskadksoapdka', 'msakdlmsakdlas', 'dsaklmsakdlsmadlas', 'salçds,açlds,alçdsa,ç'],
+            
         },
         {
             title: "Projeto TMF",
@@ -21,6 +24,9 @@ export const compData = {
             possibilidade de agendamento de orçamento dos serviços oferecidos pela funcionalidade de 
             envio de e-mails. Também há páginas de informações sobre a empresa e um mapa integrado exibindo a 
             localização da mesma.`,
+            members: ['alguem', 'alguem', 'alguem', 'alguem', 'alguem', 'alguem'],
+            opinions: ['dskadksoapdka', 'msakdlmsakdlas', 'dsaklmsakdlsmadlas', 'salçds,açlds,alçdsa,ç'],
+            acess: 'https://usinagemtmf.com.br/'
         },
     ],
 }

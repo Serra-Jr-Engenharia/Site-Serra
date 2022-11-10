@@ -27,9 +27,8 @@ import { Information,
      CaptchaContainer
 } from './style';
 
-
-
 const Contact: React.FC = () => {
+
     return(
         <ContactStyle>
             <Title titleWidth="40%" text="Entre em contato conosco!" />  

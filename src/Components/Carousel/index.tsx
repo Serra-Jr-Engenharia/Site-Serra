@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
+import Modal from "../Modal";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -23,6 +24,8 @@ interface ObjectProps{
     title: string
     image: string
     content: string
+    members: Array<string>
+    opinions: Array<string>
 }
 
 interface SliderProps{
@@ -39,6 +42,9 @@ const Carousel: React.FC<SliderProps> = (props) => {
         slidesToScroll: 1,
         arrows: true,
     };
+
+    const [statusModal, setStatusModal] = useState(false)
+    const [modalData, setModalData] = useState<ObjectProps>()
     
     return(
         <SliderContainer containerWidth={props.width}>
@@ -58,7 +64,13 @@ const Carousel: React.FC<SliderProps> = (props) => {
                                         </ContainerLogo>
                                         <ContainerSectionContent>
                                             <SectionSpan>{item.content}</SectionSpan>
-                                            <SectionButton>Você pode acessar o site clicando aqui</SectionButton>
+
+                                            <SectionButton onClick={() => {
+                                                setStatusModal(!statusModal)
+                                                setModalData(item)
+                                            }}>Saiba Mais</SectionButton>
+
+                                            <Modal data={modalData} status={statusModal} setStatus={setStatusModal}/>
                                         </ContainerSectionContent>
                                     </ContainerSectionContainer>
                                 </ContainerSection>

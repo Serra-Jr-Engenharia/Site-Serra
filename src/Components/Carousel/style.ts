@@ -31,7 +31,7 @@ export const Wrapper = styled.div`
 
 export const ContainerSection = styled.section`
     width: 85%;
-    min-height: 90vh;
+    min-height: 100vh;
     padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -41,12 +41,13 @@ export const ContainerSection = styled.section`
     background-color: lightgrey;
     border-radius: 3rem;
     
-    @media screen and (max-width: ${width.largeMobile}) {
-        min-height: 100vh;
-    }
     @media screen and (max-width: ${width.tablet}) {
         width: 80%;
         min-height: 100vh;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        min-height: 65vh;
     }
 `;
 
@@ -148,6 +149,7 @@ export const SectionButton = styled.button`
 
     &:hover{
         opacity: 0.8;
+        cursor: pointer;
     }
 
     @media screen and (max-width: ${width.largeMobile}) {
