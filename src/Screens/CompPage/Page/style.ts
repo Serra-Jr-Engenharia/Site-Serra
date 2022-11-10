@@ -281,6 +281,8 @@ export const ImagesPreFooter = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
     
 `;
 
@@ -288,7 +290,7 @@ export const ProjectsCompAll = styled.div`
     margin-top: 3%;
 `;
 
-export const BoxText = styled.p`
+export const BoxText = styled.a`
     border: 3px solid #FD6300;
     text-align: center;
     margin: 0px;

@@ -64,6 +64,12 @@ function FooterSlider() {
                     <div className="slide">
                         <img src={ligajrIcon} alt="ligajrIcon" />
                     </div>
+                    <div className="slide">
+                        <img src={wiseupIcon} alt="wiseupIcon" />
+                    </div>
+                    <div className="slide">
+                        <img src={ligajrIcon} alt="ligajrIcon" />
+                    </div>
                 </div>
             </div>
 

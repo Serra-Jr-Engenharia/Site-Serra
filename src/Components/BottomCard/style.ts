@@ -91,6 +91,15 @@ export const BottomCardButton = styled.button<Props>`
     &:hover{
         opacity: 0.8;
     }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        width: 30%;
+        font-size: 40px;
+    }
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        width: 30%;
+        font-size: 60px;
+    }
 `;
 
 export const BottomCardStyle = styled.div<Props>`
@@ -144,6 +153,15 @@ export const HistoryText2 = styled.span`
 
     @media screen and (max-width: 500px) {
         font-size: 15px;
+
+    }
+    @media screen and (min-width: ${width.largeDesktop}) {
+        font-size: 40px;   
+
+    }
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 60px;
+        width: 80%;
 
     }
 `;

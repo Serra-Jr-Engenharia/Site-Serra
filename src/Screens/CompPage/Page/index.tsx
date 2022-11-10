@@ -103,7 +103,7 @@ const CompPage: React.FC = () =>{
             <Line />
             
             <Box>
-                <BoxText>Quer colocar um projeto em prática? &rarr;</BoxText>
+                <BoxText href="http://127.0.0.1:5173/Site-Serra/contatos">Quer colocar um projeto em prática? &rarr;</BoxText>
             </Box>
 
             {/* <Lines>
@@ -130,7 +130,6 @@ const CompPage: React.FC = () =>{
 
 
             <ImagesPreFooter>
-                <ImagesPreFooterContact src={WhatsApp} alt="WhatsApp"/>
                 <ImagesPreFooterScrollUp onClick={() => window.scrollTo(0,0)} src={ScrollUp} alt="ScrollUp"/>
             </ImagesPreFooter>
 

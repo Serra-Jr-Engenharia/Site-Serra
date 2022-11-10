@@ -239,7 +239,7 @@ export const Line = styled.hr `
     background: linear-gradient(90deg, rgba(4,173,215,1) 0%, rgba(4,173,215,1) 41%, rgba(255,116,0,1) 69%);
 `;
 
-export const BoxText = styled.p`
+export const BoxText = styled.a`
     border: 3px solid #04ADD7;
     text-align: center;
     margin: 0px;
@@ -285,6 +285,8 @@ export const ImagesPreFooter = styled.div `
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 `;
 
 export const ImagesPreFooterContact = styled.img `
