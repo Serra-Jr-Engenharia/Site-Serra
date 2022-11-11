@@ -5,7 +5,8 @@ import {
     AboutUsCardImg, 
     Content, 
     List, 
-    AboutUsCardUl
+    AboutUsCardUl,
+    AboutUsTitle
 } from './style'
 
 interface AboutUsCardProps{
@@ -22,7 +23,7 @@ export const AboutUsCard: React.FC<AboutUsCardProps> = ({image, titleText, image
         <AboutUsCardStyle>
             <AboutUsCardImg src={image} alt={imageAlt} />
             
-            <Title titleWidth="50%" fontSize='30px' text={titleText}/>
+            <AboutUsTitle>{titleText}</AboutUsTitle>
             
             {hasList ?
                 <AboutUsCardUl>

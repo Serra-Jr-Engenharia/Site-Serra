@@ -11,6 +11,10 @@ export const SloganTextContainer = styled.div`
         font-size: 45px;
         color: #001830;
         font-weight: 700;
+
+        @media screen and (min-width: ${width.largeDesktop}){
+            font-size: 120px;
+        }
     }
 
     .writer-cursor{
@@ -19,6 +23,10 @@ export const SloganTextContainer = styled.div`
         color: orange;
         font-weight: 700;
         animation: blink 0.5s infinite;
+
+        @media screen and (min-width: ${width.largeDesktop}){
+            font-size: 90px;
+        }
 
     }
 

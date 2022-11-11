@@ -28,6 +28,7 @@ export const InformationSpan = styled.span`
         font-size: 60px;
         line-height: 100px;
     }
+
 `;
 
 export const InformationImg = styled.img`
@@ -118,6 +119,7 @@ export const All = styled.div`
     @media screen and (max-width: ${width.largeMobile}) {
         width: 90%;
     } 
+
 `;
 
 export const InformationIconText = styled.div`
@@ -154,6 +156,9 @@ export const Form = styled.div`
         width: 60%;
     }
 
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        width: 80%;
+    }
     
 `;
 
@@ -171,8 +176,8 @@ export const InputsP = styled.p`
     margin-bottom: 20px;
     
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        font-size: 40px;
-        line-height: 20px;
+        font-size: 3rem;
+        line-height: 25px;
     }
 
 `;
@@ -192,9 +197,16 @@ export const InputArea = styled.input`
         font-size: 20px;
         font-weight: 400;
     }
+
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         padding-bottom: 10px;
+        height: 4rem;
+
+        &::placeholder{
+            font-size: 1.8rem;
+        }
     }
+
 `;
 
 export const Button = styled.button`
@@ -209,7 +221,9 @@ export const Button = styled.button`
     margin-bottom: 20px;
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        width: 60%;
+        width: 85%;
+        height: 5rem;
+        font-size: 2.5rem;
     }
 `;
 
@@ -218,6 +232,7 @@ export const ButtonContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
 `;
 
 export const InputAreaMensage = styled.input`
@@ -236,6 +251,14 @@ export const InputAreaMensage = styled.input`
         font-size: 20px;
         font-weight: 400;
     }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        height: 15rem;
+
+        &::placeholder{
+            font-size: 1.8rem;
+        }
+    }
 `;
 
 export const FormContainer = styled.div`
@@ -247,6 +270,8 @@ export const FormContainer = styled.div`
     @media screen and (max-width: ${width.notebook}) {
         width: 100%;
     }
+
+    
 `;
 
 export const ContactStyle = styled.div`

@@ -20,6 +20,11 @@ export const Title = styled.div<Props>`
     font-weight: 600;
     margin-bottom: 20px;
 
+    @media screen and (min-width: ${width.largeDesktop}) {
+        font-size: 2.5rem;
+        height: 8rem;
+    }
+
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         font-size: 4.5rem;
         height: 10rem;
@@ -37,6 +42,11 @@ export const BottomCardBody = styled.div`
 
     @media screen and (max-width: ${width.tablet}) {
         width: 95vw;
+    }
+
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        width: 90vw;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
@@ -92,6 +102,10 @@ export const BottomCardButton = styled.button<Props>`
         opacity: 0.8;
     }
 
+    @media screen and (min-width: ${width.desktop}) {
+        width: 30%;
+        font-size: 30px;
+    }
     @media screen and (min-width: ${width.largeDesktop}) {
         width: 30%;
         font-size: 40px;
@@ -130,16 +144,25 @@ export const HistoryText1 = styled.span`
     font-weight: 400;
     font-size: 18px;
     text-align: justify;
-    padding: 20px 30px;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 
     @media screen and (max-width: 500px) {
         font-size: 15px;
         
     }
 
+    @media screen and (min-width: ${width.desktop}) {
+        font-size: 25px;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        font-size: 40px;
+    }
+
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        font-size: 3rem;
-        padding: 40px 80px;
+        font-size: 50px;
     }
 `;
 
@@ -155,10 +178,18 @@ export const HistoryText2 = styled.span`
         font-size: 15px;
 
     }
+
+    @media screen and (min-width: ${width.desktop}) {
+        font-size: 30px;
+        width: 90%;
+    }
+
     @media screen and (min-width: ${width.largeDesktop}) {
-        font-size: 40px;   
+        font-size: 40px;
+        width: 80%;
 
     }
+
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         font-size: 60px;
         width: 80%;

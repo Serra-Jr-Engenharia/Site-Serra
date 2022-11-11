@@ -43,6 +43,31 @@ export const AboutUsCardStyle = styled.div`
     
 `;
 
+export const AboutUsTitle = styled.p`
+    padding-bottom: 2%;
+    border-image: linear-gradient(90deg, rgba(4,173,215,1) 0%, rgba(4,173,215,1) 41%, rgba(255,116,0,1) 69%);
+    border-bottom: 5px solid;
+    border-image-slice: 1;
+    font-weight: 500;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        font-size: 1.4rem;
+        padding-bottom: 3%;
+    }
+    
+    @media screen and (min-width: ${width.largeDesktop}) {
+        font-size: 3rem;
+        padding-bottom: 3%;
+        border-image-width: 0px 0px 10px 0px;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 4.5rem;
+        padding-bottom: 3%;
+        border-image-width: 0px 0px 15px 0px;
+    }
+`;
+
 
 
 export const Content = styled.p`

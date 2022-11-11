@@ -29,6 +29,7 @@ export const EngCompImg = styled.img`
 `;
 
 export const ServiceletterDiv = styled.div`
+    padding-top: 2%;
     background-image: url(${backgroundImg});
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -77,11 +78,14 @@ export const ServiceLetterH1 = styled.h1`
     font-weight: 500;
     font-size: 76px;
     line-height: 113px;
-    margin-top: 0;
     margin-bottom: 0px;
 
     @media screen and (max-width: ${width.largeMobile}) {
         font-size: 38px;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 100px;
     }
 `;
 export const ServiceLetterH2 = styled.h2 `
@@ -113,6 +117,10 @@ export const ServiceLetterH2 = styled.h2 `
         line-height: 40px;
     }
 
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 60px;
+    }
+
        
 `;
 export const ServiceletterCard = styled.div `
@@ -127,6 +135,10 @@ export const ServiceletterCard = styled.div `
     @media screen and (max-width: 420px) {
         flex-direction: column;
     }    
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        margin-left: 10%;
+    }
 `;
 
 export const SlCard = styled.div `
@@ -196,6 +208,11 @@ export const SlCardH3 = styled.h3`
         line-height: 40px;
         
     }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 60px;
+        line-height: 60px;
+    }
 `;
 
 export const SlCardP = styled.p`
@@ -231,6 +248,13 @@ export const SlCardP = styled.p`
         line-height: 40px;
     }
 
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 60px;
+        width: 60%;
+        height: 30vh;
+        line-height: 70px;
+    }
+
     
 `;
 
@@ -240,6 +264,7 @@ export const SlLogoContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
 
 `;
 
@@ -253,6 +278,12 @@ export const SlLogo = styled.img`
     @media screen and (max-width: ${width.tablet}){
         width: 50px;
         height: 50px;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 2%;
     }
 `;
 
@@ -324,6 +355,11 @@ export const BoxText = styled.a`
     @media screen and (min-width: 2048px) {
         font-size: 35px;
         line-height: 40px;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 50px;
+        border: 6px solid #FD6300;
     }
 
     

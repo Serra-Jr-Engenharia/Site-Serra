@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { width } from "../../Services/config";
 
 interface Props{
     titleColor?: string
@@ -34,6 +35,11 @@ export const Title = styled.p<Props>`
     font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        font-size: 60px;
+        height: 8rem;
+    }
 `;
 
 export const ButtonContainer = styled.a`
@@ -66,6 +72,11 @@ export const Button = styled.button<Props>`
     &:hover{
         opacity: 0.8;
         box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        font-size: 60px;
+        width: 60%;
     }
 `;
 

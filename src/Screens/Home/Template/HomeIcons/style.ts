@@ -20,6 +20,18 @@ export const IconDescription = styled.p`
     width: 200px;
     text-align: center;
     color: #000000;
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        line-height: 50px;
+        font-size: 40px;
+        width: 400px;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        line-height: 60px;
+        font-size: 60px;
+        width: 500px;
+    }
 `;
 
 export const HomeIconsStyle = styled.div`

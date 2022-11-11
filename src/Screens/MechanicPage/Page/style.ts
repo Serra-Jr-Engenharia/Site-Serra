@@ -11,6 +11,9 @@ export const ServiceLetterContainer = styled.div`
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: top;
+    padding-top: 2%;
+
+    
 `;
 
 export const EngMec = styled.div `
@@ -43,6 +46,11 @@ export const SlCardH3 = styled.h3`
         line-height: 40px;
     }
 
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
     
 `;
 export const SlCardP = styled.p`
@@ -65,7 +73,6 @@ export const SlCardP = styled.p`
     @media screen and (min-width: 1280px){
         font-size: 20px;
         line-height: 30px;
-        
     }
 
     @media screen and (min-width: 1920px) {
@@ -76,6 +83,13 @@ export const SlCardP = styled.p`
     @media screen and (min-width: 2048px) {
         font-size: 35px;
         line-height: 40px;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 60px;
+        width: 50%;
+        height: 30vh;
+        line-height: 70px;
     }
 
     
@@ -129,7 +143,12 @@ export const ServiceLetterH1 = styled.h1`
     @media screen and (max-width: ${width.largeMobile}) {
         font-size: 38px;
     }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 100px;
+    }
 `;
+
 export const ServiceLetterH2 = styled.h2 `
     text-align: center;
     font-family: 'Maven Pro';
@@ -159,6 +178,10 @@ export const ServiceLetterH2 = styled.h2 `
         line-height: 40px;
     }
 
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 60px;
+    }
+
        
 `;
 export const ServiceletterCard = styled.div `
@@ -172,7 +195,11 @@ export const ServiceletterCard = styled.div `
 
     @media screen and (max-width: 420px) {
         flex-direction: column;
-    }    
+    }  
+    
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        margin-left: 10%;
+    }
 `;
 
 export const SlCard = styled.div `
@@ -191,6 +218,11 @@ export const SlCard = styled.div `
     @media screen and (max-width: 420px) {
         flex-direction: column;
         width: 95%;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        margin-bottom: 10%;
+        width: 50%;
     }
 
 `;
@@ -237,6 +269,15 @@ export const Line = styled.hr `
     margin: 0px;
     border: 0;
     background: linear-gradient(90deg, rgba(4,173,215,1) 0%, rgba(4,173,215,1) 41%, rgba(255,116,0,1) 69%);
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        height: 6px;
+    }
 `;
 
 export const BoxText = styled.a`
@@ -265,6 +306,16 @@ export const BoxText = styled.a`
     @media screen and (max-width: ${width.largeMobile}) {
         font-size: 16px;
         line-height: 20px;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        font-size: 40px;
+        border: 4px solid #04ADD7;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 50px;
+        border: 6px solid #04ADD7;
     }
 `;
 

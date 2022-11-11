@@ -10,7 +10,13 @@ export const HeaderImg = styled.img`
     }
 
     @media screen and (min-width: ${width.largeDesktop}){
-        width: 15rem;
+        width: 20rem;
+        margin-left: 50%;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}){
+        width: 30rem;
+        margin-left: 60%;
     }
     
 `;
@@ -33,7 +39,6 @@ export const HeaderStyle = styled.div`
     }
     @media screen and (min-width: ${width.extraLargeDesktop}){
         height: 13vh;
-        
     }
 `;
 
