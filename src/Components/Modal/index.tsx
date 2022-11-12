@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ReactModal from 'react-modal'
 import { width } from '../../Services/config';
-import { ModalLine, ModalButton, ModalContainer, ModalList, ModalListLine, ModalP, ModalTitle, ModalCrossButton, ModalImg, ModalResume, ModalH2, ModalAnchor, ModalHeader, ModalAcess } from './style';
+import { ModalLine, ModalContainer, ModalList, ModalListLine, ModalP, ModalTitle, ModalCrossButton, ModalImg, ModalResume, ModalH2, ModalAnchor, ModalHeader, ModalAcess } from './style';
 
 interface ObjectProps{
     title: string

@@ -11,7 +11,7 @@ export const HeaderUl = styled.ul`
     align-items: center;
     justify-content: flex-end;
     /* background-color: red; */
-    @media screen and (min-width: 3840px){
+    @media screen and (min-width: ${width.extraLargeDesktop}){
         width: 50%;
         height: 50%;
     }
@@ -49,12 +49,8 @@ export const SubMenuImg = styled.img<Props>`
         `transform: rotate(0deg);
         transition: 0.5s;`
     }
-    @media screen and (min-width: 3840px){
+    @media screen and (min-width: ${width.extraLargeDesktop}){
         width: 1vw;
-    }
-    @media screen and (min-width: 2560px){
-    
-        
     }
 `;
 
@@ -84,11 +80,11 @@ export const SubMenuContainerSon = styled.div<Props>`
         transition: opacity 0.5s;`
     }
     
-    @media screen and (min-width: 2560px){
+    @media screen and (min-width: ${width.largeDesktop}){
         top: 10vh;
         
     }
-    @media screen and (min-width: 3840px){
+    @media screen and (min-width: ${width.extraLargeDesktop}){
         top: 13vh;
         
     }
@@ -143,7 +139,7 @@ export const HeaderLi = styled.div`
         }
     }
     
-    @media screen and (min-width: 3840px) {
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
         width: 100%;
         height: 100%;
         font-size: 2.5rem;
@@ -158,7 +154,7 @@ export const HeaderUlContainer = styled.div`
     margin-right: 10%;
     margin-top: 0%;
 
-    @media screen and (max-width: 959px){
+    @media screen and (max-width: ${width.notebook}){
         display: none;
     }
 `;

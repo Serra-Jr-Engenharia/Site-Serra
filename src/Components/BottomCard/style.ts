@@ -59,16 +59,8 @@ export const BottomCardContent = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-    @media screen and (max-width: 390px) {
-        flex-direction: column;
-    }
 
-    @media screen and (max-width: 500px) {
-        flex-direction: column;
-    }
-
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: ${width.notebook}) {
         flex-direction: column;
     }
 
@@ -148,9 +140,8 @@ export const HistoryText1 = styled.span`
     padding-top: 2%;
     padding-bottom: 2%;
 
-    @media screen and (max-width: 500px) {
-        font-size: 15px;
-        
+    @media screen and (max-width: ${width.tablet}) {
+        font-size: 20px;
     }
 
     @media screen and (min-width: ${width.desktop}) {
@@ -174,9 +165,8 @@ export const HistoryText2 = styled.span`
     text-align: justify;
     padding: 20px 30px;
 
-    @media screen and (max-width: 500px) {
-        font-size: 15px;
-
+    @media screen and (max-width: ${width.tablet}) {
+        font-size: 20px;
     }
 
     @media screen and (min-width: ${width.desktop}) {
@@ -187,13 +177,11 @@ export const HistoryText2 = styled.span`
     @media screen and (min-width: ${width.largeDesktop}) {
         font-size: 40px;
         width: 80%;
-
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         font-size: 60px;
         width: 80%;
-
     }
 `;
 
@@ -204,7 +192,7 @@ export const HistoryTextContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: ${width.tablet}) {
         width: 90%;
     }
     
@@ -219,12 +207,7 @@ export const HistoryImg = styled.img`
     margin: 40px;
     border-radius: 1rem;
 
-    @media screen and (max-width: 500px) {
-        width: 65%;
-        height: 65%;
-    }
-
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: ${width.tablet}) {
         width:70%;
         height: 70%;
     }

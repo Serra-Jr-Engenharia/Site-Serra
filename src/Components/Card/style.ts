@@ -49,7 +49,7 @@ export const ButtonContainer = styled.a`
     align-items: center;
     text-decoration: none;
 
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: ${width.notebook}){
         width: 40%;
     }
 `;

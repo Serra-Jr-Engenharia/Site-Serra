@@ -4,6 +4,14 @@ import { width } from "../../Services/config";
 export const ModalContainer = styled.div`
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: ${width.largeDesktop}){
+        font-size: 40px;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}){
+        font-size: 50px;
+    }
 `;
 
 export const ModalHeader = styled.div`
@@ -17,10 +25,13 @@ export const ModalTitle = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: ${width.largeMobile}){
+        font-size: 12px;
+    }
 `;
 
 export const ModalH2 = styled.h2`
-    
 `;
 
 export const ModalAcess = styled.div`
@@ -50,6 +61,10 @@ export const ModalAnchor = styled.a`
         color: #fff;
         cursor: pointer;
     }
+
+    @media screen and (min-width: ${width.largeDesktop}){
+        padding: 10px 20px;
+    }
 `;
 
 export const ModalResume = styled.div`
@@ -65,6 +80,14 @@ export const ModalImg = styled.img`
 
     @media screen and (max-width: ${width.largeMobile}){
         width: 200px;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}){
+        width: 600px;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}){
+        width: 800px;
     }
 `;
 
@@ -83,6 +106,24 @@ export const ModalCrossButton = styled.button`
         transition: 0.3s;
         color: #fff;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: ${width.largeMobile}){
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}){
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}){
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
     }
 `;
 
@@ -103,24 +144,4 @@ export const ModalList = styled.ul`
 
 export const ModalListLine = styled.li`
     list-style: none;
-`;
-
-export const ModalButton = styled.button`
-    color: #FF7400;
-
-    background-color: #fff;
-    border: 2px solid #FF7400;
-    justify-self: center;
-    align-self: center;
-    font-size: 1.4em;
-    padding: 5px 10px;
-    border-radius: 7px;
-
-    &:hover{
-        border: 2px solid #fff;
-        background-color: #FF7400;
-        transition: 0.3s;
-        color: #fff;
-        cursor: pointer;
-    }
 `;

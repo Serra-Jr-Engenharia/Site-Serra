@@ -12,8 +12,6 @@ export const ServiceLetterContainer = styled.div`
     background-size: cover;
     background-position: top;
     padding-top: 2%;
-
-    
 `;
 
 export const EngMec = styled.div `

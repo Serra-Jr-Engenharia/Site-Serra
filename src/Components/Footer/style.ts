@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { width } from '../../Services/config';
 
 export const FooterStyle = styled.footer`
     width: 100%;
@@ -20,9 +21,8 @@ export const Row = styled.div`
 
 export const LinksDiv = styled.div`
     margin-left: 2rem;
-    @media screen and (min-width: 390){
+    @media screen and (min-width: ${width.mobile}){
         flex-direction: column;
-        
     }
 `;
 
@@ -39,12 +39,12 @@ export const LinksContainer = styled.div`
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: ${width.mobile}) {
         flex-direction: column;
         padding-top: 10%;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: ${width.largeMobile}) {
         flex-direction: column;
     }
 
@@ -55,7 +55,7 @@ export const SocialMediaIMG = styled.img`
     width: 1.4rem;
     margin-right: 0.8rem;
     
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: ${width.mobile}) {
         margin-top: 30%;
     }
 `;
@@ -68,7 +68,7 @@ export const SocialMediaContainer = styled.div`
     width: 40%;
     padding: 2rem 2rem 2rem 0;
 
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: ${width.mobile}) {
         flex-wrap: wrap;
         width: 20%;
     }
@@ -123,7 +123,7 @@ export const PartnersA = styled.a`
 export const PartnersIMG = styled.img`
     height: 20vh;
 
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: ${width.notebook}){
         height: 10vh;
         
     }

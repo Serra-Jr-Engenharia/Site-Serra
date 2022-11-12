@@ -58,7 +58,7 @@ export const MobileMenu = styled.div<Props>`
         transition: opacity 0.5s;`
     }
 
-    @media screen and (min-width: 959px){
+    @media screen and (min-width: ${width.notebook}){
         visibility: hidden;
     }   
 `;

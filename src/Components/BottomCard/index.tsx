@@ -38,8 +38,10 @@ const BottomCard: React.FC<BottomCardProps> = ({title, buttonUrl, buttonTitle, c
             {hasCarousel ?
                 <BottomCardBody>
                     <BottomCardContent>
-                        <HistoryText1>{aboutUsData.membersText}</HistoryText1>
-
+                        <HistoryTextContainer>
+                            <HistoryText1>{aboutUsData.membersText}</HistoryText1>
+                        </HistoryTextContainer>
+                        
                         <AboutUsCarousel width='50%' carouselData={aboutUsData.members}/>
                     </BottomCardContent>
 

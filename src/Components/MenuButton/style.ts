@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { width } from "../../Services/config";
 
 interface Props{
     active?: boolean
@@ -41,7 +42,7 @@ export const MenuButtonContainer = styled.div`
         opacity: 0.6;
         cursor: pointer;
     }
-    @media screen and (max-width: 959px){
+    @media screen and (max-width: ${width.notebook}){
         display: flex;
         margin-right: 20px;
     }

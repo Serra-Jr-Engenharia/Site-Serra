@@ -4,7 +4,7 @@ import { width } from "../../../../Services/config";
 export const Icon = styled.img`
     height: 15vh;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: ${width.notebook}) {
         height: 10vh;
     }
 `;

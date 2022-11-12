@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: ${width.notebook}) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -59,7 +59,7 @@ export const ContainerSectionTitle = styled.div`
     padding: 0 0 10px 0;
     margin-bottom: 3%;
 
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: ${width.notebook}) {
         height: 20%;
         display: flex;
         justify-content: center;
@@ -75,7 +75,7 @@ export const ContainerSectionContainer = styled.div`
     justify-content: center;
     flex-direction: row;
     
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: ${width.notebook}) {
         width: 100%;
         height: 100%;
         display: flex;
@@ -102,7 +102,7 @@ export const ContainerLogo = styled.div`
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 959px) {    
+    @media screen and (max-width: ${width.notebook}) {    
         width: 100%;
         display: flex;
         justify-content: center;
@@ -173,7 +173,7 @@ export const ContainerSectionContent = styled.div`
     text-align: justify;
     flex-direction: column;
 
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: ${width.notebook}) {
         display:flex;
         justify-content: center;
         align-items: center;
