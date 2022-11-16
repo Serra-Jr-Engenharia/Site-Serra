@@ -185,11 +185,6 @@ export const ServiceLetterH2 = styled.h2 `
 export const ServiceletterCard = styled.div `
     display: flex;
     justify-content: space-around;
-    
-    @media screen and (max-width: ${width.largeMobile}) {
-        flex-directiom: row;
-        flex-wrap: wrap;
-    }
 
     @media screen and (max-width: 420px) {
         flex-direction: column;
@@ -283,16 +278,16 @@ export const BoxText = styled.p`
     text-align: center;
     margin: 0px;
     padding: 2%;
-    margin-top: 2%;
+    margin-top: 3%;
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
-    line-height: 47px;
+    /* line-height: 47px; */
     text-align: center;
-    text-decoration: none;
+    
 
     color: #04ADD7;
 
@@ -303,13 +298,15 @@ export const BoxText = styled.p`
     }
 
     @media screen and (max-width: ${width.largeMobile}) {
-        font-size: 16px;
-        line-height: 20px;
+        width: 80%;
+        font-size: 1.2em;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 
-    @media screen and (min-width: ${width.largeDesktop}) {
-        font-size: 40px;
-        border: 4px solid #04ADD7;
+    @media screen and (min-width: 2048px) {
+        font-size: 35px;
+        line-height: 40px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
@@ -332,11 +329,11 @@ export const Box = styled.div `
 `;
 
 export const ImagesPreFooter = styled.div `
-    display: flex;
-    justify-content: flex-end;
+    
+    /* justify-content: flex-end;
     align-items: center;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 2%; */
 `;
 
 export const ImagesPreFooterContact = styled.img `
@@ -349,12 +346,22 @@ export const ImagesPreFooterContact = styled.img `
 `;
 
 export const ImagesPreFooterScrollUp = styled.img `
-    margin-right: 2%;
-    width: 3rem;
-    height: 3rem;
+    position: fixed;
+    z-index: 3;
+    bottom: 20px;
+    right: 20px;
+    width: 2rem;
+    height: 2rem;
 
-    @media screen and (max-width: ${width.largeMobile}) {
-        width: 2rem;
+    &:hover{
+        opacity: 0.7;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        width: 4rem;
+        height: 4rem;
     }
 `;
 

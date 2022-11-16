@@ -13,7 +13,6 @@ export const Container = styled.div`
     width: 100%;
     overflow: hidden;
     background-color: transparent;
-    
 `;
 
 export const Wrapper = styled.div`
@@ -34,28 +33,22 @@ export const Wrapper = styled.div`
 
 
 export const Logo = styled.img`
-    width: 60%;
-    max-height: 40vh;
+    height: 40vh;
     border-radius: 20px;
-
-    @media screen and (max-width: ${width.tablet}) {    
-        width: 96%;
-        max-height: 40vh;
-    }
-
-    @media screen and (max-width: ${width.mobile}) {
-        width: 100%;
-        max-height: 40vh;
-    }
-    
 `;
 
 export const SliderContainer = styled.div<Props>`
     margin: 20px;
     display: inline-block;
+
+    @media screen and (max-width: ${width.notebook}) {
+        width: 90%;
+    }
+
     ${({containerWidth}) => containerWidth ?
         `width: ${containerWidth}`
         :
         `width: 100%`
     }
+
 `;

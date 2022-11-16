@@ -7,7 +7,7 @@ export const PresentationMain = styled.div`
     display: flex;
     justify-content: space-around;
     border-radius: 0px 0px 0px 100px;
-    height: 50vh;
+    min-height: 50vh;
     
     @media screen and (max-width: 390px) {
         order: 1;
@@ -86,21 +86,16 @@ export const PresentationAboutUsP = styled.p`
 `;
 
 export const PresentationAboutUsImg = styled.img`
-   @media screen and (max-width: 390px) {
-        width: 80%;
-        
-    }
-
     @media screen and (max-width: 500px) {
-        width: 80%;
-    }
-
-    @media screen and (max-width: 820px) {
         width: 70%;
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (min-width: 500px) {
         width: 60%;
+    }
+
+    @media screen and (min-width: 1000px) {
+        width: 50%;
     }
 `;
 

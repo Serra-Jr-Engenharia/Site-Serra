@@ -62,6 +62,7 @@ export const BottomCardContent = styled.div`
 
     @media screen and (max-width: ${width.notebook}) {
         flex-direction: column;
+        padding-bottom: 4%;
     }
 
 `;

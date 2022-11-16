@@ -37,6 +37,7 @@ export const ContainerSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content:center;
+    margin-bottom: 3%;
   
     background-color: lightgrey;
     border-radius: 3rem;

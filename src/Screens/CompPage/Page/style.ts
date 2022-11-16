@@ -297,15 +297,24 @@ export const BoxContainer = styled.div`
     
 `;
 
-export const ImagesPreFooterContact = styled.img`
-    margin-right: 2%;
-    width: 3.5rem;
-`;
-
 export const ImagesPreFooterScrollUp = styled.img`
-    margin-right: 2%;
-    width: 3rem;
-    height: 3rem;
+    position: fixed;
+    z-index: 3;
+    bottom: 20px;
+    right: 20px;
+    width: 2rem;
+    height: 2rem;
+
+    &:hover{
+        opacity: 0.7;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        width: 4rem;
+        height: 4rem;
+    }
 `;
 
 export const ImagesPreFooter = styled.div`
@@ -345,7 +354,7 @@ export const BoxText = styled.p`
         transition: background-color 0.8s;
     }
 
-    @media screen and (max-width: ${width.tablet}) {
+    @media screen and (max-width: ${width.largeMobile}) {
         width: 80%;
         font-size: 1.2em;
         margin-top: 10%;
@@ -361,8 +370,6 @@ export const BoxText = styled.p`
         font-size: 50px;
         border: 6px solid #FD6300;
     }
-
-    
 `;
 
 export const Box = styled.div `

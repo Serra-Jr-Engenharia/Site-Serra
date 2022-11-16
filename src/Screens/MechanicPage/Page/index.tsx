@@ -111,16 +111,14 @@ const MechanicPage: React.FC = () =>{
                 <Line />
 
                 <Box>
-                    <BoxText onClick={() => navigate('/Site-Serra/contatos')}>Quer colocar um projeto em prática? &rarr;</BoxText>
+                    <BoxText onClick={() => navigate('/contatos')}>Quer colocar um projeto em prática? &rarr;</BoxText>
                 </Box>
 
                 <ProjectsMecAll>
                     <Carousel carouselData={mechanicData.mechanicsProjects} />
                 </ProjectsMecAll>
 
-                <ImagesPreFooter>
-                    <ImagesPreFooterScrollUp onClick={() => window.scrollTo(0,0)} src={ScrollUp} alt="ScrollUp"/>
-                </ImagesPreFooter>
+                <ImagesPreFooterScrollUp onClick={() => window.scrollTo(0,0)} src={ScrollUp} alt="ScrollUp"/>
 
             </MecStyle>
     )

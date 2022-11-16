@@ -29,15 +29,11 @@ import {
     SlCardUp,
     SlCardDown,
     SlLogo,
-    ImagesPreFooterContact,
     ImagesPreFooterScrollUp,
-    ImagesPreFooter,
     ProjectsCompAll,
     EngCompPContainer,
-    BoxContainer,
     BoxText,
     SlLogoContainer,
-    SlLogoBox,
     SlCardImg,
     SlCardH3,
     SlCardP,
@@ -117,9 +113,7 @@ const CompPage: React.FC = () =>{
             </ProjectsCompAll>
 
 
-            <ImagesPreFooter>
-                <ImagesPreFooterScrollUp onClick={() => window.scrollTo(0,0)} src={ScrollUp} alt="ScrollUp"/>
-            </ImagesPreFooter>
+            <ImagesPreFooterScrollUp onClick={() => window.scrollTo(0,0)} src={ScrollUp} alt="ScrollUp"/>
 
         </CompStyle>
     )
