@@ -46,8 +46,13 @@ import {
     Line
 } from "./style";
 
+import { useNavigate } from "react-router-dom"
+
 
 const CompPage: React.FC = () =>{
+
+    const navigate = useNavigate()
+
     return (
         <CompStyle>
             <EngComp>
@@ -103,25 +108,8 @@ const CompPage: React.FC = () =>{
             <Line />
             
             <Box>
-                <BoxText href="http://127.0.0.1:5173/Site-Serra/contatos">Quer colocar um projeto em prática? &rarr;</BoxText>
+                <BoxText onClick={() => navigate('/contatos')}>Quer colocar um projeto em prática? &rarr;</BoxText>
             </Box>
-
-            {/* <Lines>
-                <Line1 color="#FD6300"/>  
-
-                <BoxContainer>
-                    <ContactLink href="http://127.0.0.1:5173/Site-Serra/contatos"><BoxText>Quer colocar um projeto em prática? &rarr;</BoxText></ContactLink>
-                </BoxContainer>
-
-                <Line2 color="#FD6300"/>
-            </Lines>
-
-
-            <AllBoxes>
-                <Box1></Box1>
-                <Box2>Quer colocar um projeto em prática? &rarr;</Box2>
-                <Box3></Box3>
-            </AllBoxes> */}
             
 
             <ProjectsCompAll>

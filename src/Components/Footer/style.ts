@@ -21,6 +21,7 @@ export const Row = styled.div`
 
 export const LinksDiv = styled.div`
     margin-left: 2rem;
+    width: 100%;
     @media screen and (min-width: ${width.mobile}){
         flex-direction: column;
     }
@@ -48,6 +49,9 @@ export const LinksContainer = styled.div`
         flex-direction: column;
     }
 
+    @media screen and (min-width: ${width.largeDesktop}){
+        width: 50%;
+    }
 
 `;
 
@@ -58,10 +62,17 @@ export const SocialMediaIMG = styled.img`
     @media screen and (max-width: ${width.mobile}) {
         margin-top: 30%;
     }
+    @media screen and (min-width: ${width.desktop}) {
+        width: 3rem;
+    }
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        width: 3.5rem;
+    }
 `;
 
 export const SocialMediaA = styled.a`
     text-decoration: none;
+
 `;
 
 export const SocialMediaContainer = styled.div`
@@ -72,7 +83,6 @@ export const SocialMediaContainer = styled.div`
         flex-wrap: wrap;
         width: 20%;
     }
-
 `;
 
 export const ContentContainer = styled.div`
@@ -81,6 +91,13 @@ export const ContentContainer = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: ${width.desktop}) {
+        font-size: 2em;
+    }
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 3em;
+    }
 `;
 export const ContentDivision = styled.hr`
     width: 90%;
@@ -102,6 +119,13 @@ export const PartnersSpan = styled.span`
     font-weight: 600;
     font-size: 1.3rem;
     color: #535353;
+
+    @media screen and (min-width: ${width.desktop}) {
+        font-size: 2em;
+    }
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 3em;
+    }
 `;
 
 export const PartnersDiv = styled.div`

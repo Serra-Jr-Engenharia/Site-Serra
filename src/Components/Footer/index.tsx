@@ -11,8 +11,6 @@ import {
     Partners,
     PartnersSpan,
     PartnersDiv,
-    PartnersA,
-    PartnersIMG,
     SocialMediaIMG,
     SocialMediaA,
     LinksDiv,
@@ -26,13 +24,6 @@ import instagramIcon from '../../Assets/Global/instagram.svg'
 import linkedinIcon from '../../Assets/Global/linkedin.svg'
 
 
-import voittoIcon from '../../Assets/Apoiadores/voitto.svg'
-import iprjIcon from '../../Assets/Apoiadores/iprj.svg'
-import inovafriIcon from '../../Assets/Apoiadores/inovafri.svg'
-import wiseupIcon from '../../Assets/Apoiadores/wiseup.svg'
-import ligajrIcon from '../../Assets/Apoiadores/ligajr.svg'
-
-
 const Footer: React.FC = () =>{
 
     return(
@@ -40,12 +31,7 @@ const Footer: React.FC = () =>{
             <Partners>
                 <PartnersSpan>Parceiros</PartnersSpan>
                 <PartnersDiv>
-                    <FooterSlider></FooterSlider>
-                    {/* <PartnersA target="_blank" rel="noopener noreferrer" href="https://www.voitto.com.br"><PartnersIMG src={voittoIcon} alt="Voitto" /></PartnersA>
-                    <PartnersA target="_blank" rel="noopener noreferrer" href="http://www.iprj.uerj.br/"><PartnersIMG src={iprjIcon} alt="IPRJ" /></PartnersA>
-                    <PartnersA target="_blank" rel="noopener noreferrer" href="https://inovafri.com.br/"><PartnersIMG src={inovafriIcon} alt="InovaFri" /></PartnersA>
-                    <PartnersA target="_blank" rel="noopener noreferrer" href="https://wiseup.com/"><PartnersIMG src={wiseupIcon} alt="WiseUp" /></PartnersA>
-                    <PartnersA target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ligajuniornf/"><PartnersIMG src={ligajrIcon} alt="Liga Jr NF" /></PartnersA> */}
+                    <FooterSlider />
                 </PartnersDiv>
             </Partners>
 

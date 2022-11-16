@@ -321,7 +321,7 @@ export const ProjectsCompAll = styled.div`
     margin-top: 3%;
 `;
 
-export const BoxText = styled.a`
+export const BoxText = styled.p`
     border: 3px solid #FD6300;
     text-align: center;
     margin: 0px;

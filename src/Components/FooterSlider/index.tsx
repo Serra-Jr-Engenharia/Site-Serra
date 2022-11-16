@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./style.css"
+import FooterSliderImg from "../FooterSliderImg";
 
 
 import voittoIcon from '../../Assets/Apoiadores/voitto.svg'
@@ -8,71 +8,43 @@ import iprjIcon from '../../Assets/Apoiadores/iprj.svg'
 import inovafriIcon from '../../Assets/Apoiadores/inovafri.svg'
 import wiseupIcon from '../../Assets/Apoiadores/wiseup.svg'
 import ligajrIcon from '../../Assets/Apoiadores/ligajr.svg'
+import { LogoSlider, LogoSliderTrack } from "./style";
 
 function FooterSlider() {
     return (
-            <div className="logo-slider">
-                <div className="logo-slide-track">
-                    <div className="slide">
-                      <a target="_blank" rel="noopener noreferrer" href="https://www.voitto.com.br"><img src={voittoIcon} alt="Voitto"/></a>  <img src={voittoIcon} alt="Voitto"/>
-                    </div>
-                    <div className="slide">
-                        <img src={iprjIcon} alt="iprjIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={inovafriIcon} alt="inovafriIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={wiseupIcon} alt="wiseupIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={ligajrIcon} alt="ligajrIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={voittoIcon} alt="Voitto"/>
-                    </div>
-                    <div className="slide">
-                        <img src={iprjIcon} alt="iprjIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={inovafriIcon} alt="inovafriIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={wiseupIcon} alt="wiseupIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={ligajrIcon} alt="ligajrIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={voittoIcon} alt="Voitto"/>
-                    </div>
-                    <div className="slide">
-                        <img src={iprjIcon} alt="iprjIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={inovafriIcon} alt="inovafriIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={wiseupIcon} alt="wiseupIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={ligajrIcon} alt="ligajrIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={wiseupIcon} alt="wiseupIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={ligajrIcon} alt="ligajrIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={wiseupIcon} alt="wiseupIcon" />
-                    </div>
-                    <div className="slide">
-                        <img src={ligajrIcon} alt="ligajrIcon" />
-                    </div>
-                </div>
-            </div>
+            <LogoSlider>
+                <LogoSliderTrack>
+                    <FooterSliderImg image={voittoIcon} altText="Voitto" redirect="https://www.voitto.com.br"/>
+                    <FooterSliderImg image={iprjIcon} altText="IPRJ" redirect="http://www.iprj.uerj.br/"/>
+                    <FooterSliderImg image={inovafriIcon} altText="Inova Fri" redirect="https://inovafri.com.br/"/>
+                    <FooterSliderImg image={wiseupIcon} altText="WiseUp" redirect="https://wiseup.com/"/>
+                    <FooterSliderImg image={ligajrIcon} altText="Liga Júnior" redirect="https://www.instagram.com/ligajuniornf/"/>
 
+                    <FooterSliderImg image={voittoIcon} altText="Voitto" redirect="https://www.voitto.com.br"/>
+                    <FooterSliderImg image={iprjIcon} altText="IPRJ" redirect="http://www.iprj.uerj.br/"/>
+                    <FooterSliderImg image={inovafriIcon} altText="Inova Fri" redirect="https://inovafri.com.br/"/>
+                    <FooterSliderImg image={wiseupIcon} altText="WiseUp" redirect="https://wiseup.com/"/>
+                    <FooterSliderImg image={ligajrIcon} altText="Liga Júnior" redirect="https://www.instagram.com/ligajuniornf/"/>
+
+                    <FooterSliderImg image={voittoIcon} altText="Voitto" redirect="https://www.voitto.com.br"/>
+                    <FooterSliderImg image={iprjIcon} altText="IPRJ" redirect="http://www.iprj.uerj.br/"/>
+                    <FooterSliderImg image={inovafriIcon} altText="Inova Fri" redirect="https://inovafri.com.br/"/>
+                    <FooterSliderImg image={wiseupIcon} altText="WiseUp" redirect="https://wiseup.com/"/>
+                    <FooterSliderImg image={ligajrIcon} altText="Liga Júnior" redirect="https://www.instagram.com/ligajuniornf/"/>
+
+                    <FooterSliderImg image={voittoIcon} altText="Voitto" redirect="https://www.voitto.com.br"/>
+                    <FooterSliderImg image={iprjIcon} altText="IPRJ" redirect="http://www.iprj.uerj.br/"/>
+                    <FooterSliderImg image={inovafriIcon} altText="Inova Fri" redirect="https://inovafri.com.br/"/>
+                    <FooterSliderImg image={wiseupIcon} altText="WiseUp" redirect="https://wiseup.com/"/>
+                    <FooterSliderImg image={ligajrIcon} altText="Liga Júnior" redirect="https://www.instagram.com/ligajuniornf/"/>
+
+                    <FooterSliderImg image={voittoIcon} altText="Voitto" redirect="https://www.voitto.com.br"/>
+                    <FooterSliderImg image={iprjIcon} altText="IPRJ" redirect="http://www.iprj.uerj.br/"/>
+                    <FooterSliderImg image={inovafriIcon} altText="Inova Fri" redirect="https://inovafri.com.br/"/>
+                    <FooterSliderImg image={wiseupIcon} altText="WiseUp" redirect="https://wiseup.com/"/>
+                    <FooterSliderImg image={ligajrIcon} altText="Liga Júnior" redirect="https://www.instagram.com/ligajuniornf/"/>
+                </LogoSliderTrack>
+            </LogoSlider>
     )
   }
   

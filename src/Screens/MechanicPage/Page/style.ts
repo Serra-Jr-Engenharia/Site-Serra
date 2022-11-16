@@ -278,7 +278,7 @@ export const Line = styled.hr `
     }
 `;
 
-export const BoxText = styled.a`
+export const BoxText = styled.p`
     border: 3px solid #04ADD7;
     text-align: center;
     margin: 0px;
@@ -292,6 +292,7 @@ export const BoxText = styled.a`
     font-size: 22px;
     line-height: 47px;
     text-align: center;
+    text-decoration: none;
 
     color: #04ADD7;
 

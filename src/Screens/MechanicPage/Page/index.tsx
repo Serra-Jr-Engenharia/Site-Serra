@@ -38,8 +38,10 @@ import {
     SlCardP,
     ServiceLetterContainer
 } from "./style";
+import { useNavigate } from "react-router-dom"
 
 const MechanicPage: React.FC = () =>{
+    const navigate = useNavigate()
     return (
             <MecStyle>
                 <EngMec>
@@ -109,7 +111,7 @@ const MechanicPage: React.FC = () =>{
                 <Line />
 
                 <Box>
-                    <BoxText href="http://127.0.0.1:5173/Site-Serra/contatos">Quer colocar um projeto em prática? &rarr;</BoxText>
+                    <BoxText onClick={() => navigate('/Site-Serra/contatos')}>Quer colocar um projeto em prática? &rarr;</BoxText>
                 </Box>
 
                 <ProjectsMecAll>
