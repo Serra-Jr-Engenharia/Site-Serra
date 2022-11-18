@@ -139,10 +139,11 @@ export const HistoryText1 = styled.span`
     text-align: justify;
     padding-left: 4%;
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 6%;
 
     @media screen and (max-width: ${width.tablet}) {
         font-size: 20px;
+        padding-left: 1%;
     }
 
     @media screen and (min-width: ${width.desktop}) {

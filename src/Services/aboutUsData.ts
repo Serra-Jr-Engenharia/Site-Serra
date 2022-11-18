@@ -43,7 +43,7 @@ export const aboutUsData = {
             imageAlt: "Valores",
             titleText: "Valores",
             hasList: true,
-            list: ['Dedicação por excelência', 'Gestão segura', 'Impactar nossa era', 'Evolução constante', 'Responsabilidade com os clientes'],
+            list: ['Dedicação por excelência;', 'Gestão segura;', 'Impactar nossa era;', 'Evolução constante;', 'Responsabilidade com os clientes.'],
             content: undefined,
         },
     ],

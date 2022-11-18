@@ -72,11 +72,12 @@ export const AboutUsTitle = styled.p`
 
 export const Content = styled.p`
     width: 95%;
+    text-align: justify;
 
     @media screen and (min-width: 2048px) {
         font-size: 35px;
         line-height: 40px;
-        text-align: center;
+        text-align: justify;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
@@ -86,6 +87,7 @@ export const Content = styled.p`
 `;
 
 export const AboutUsCardUl = styled.ul`
+
     @media screen and (min-width: 2048px) {
         font-size: 35px;
         line-height: 40px;
@@ -104,9 +106,9 @@ export const List = styled.li`
     &:before {
         content: "•";
         color: #001830;
+        padding-right: 10px;
+        margin-right: 2%;
     }
-
-    
 `;
 
 export const AboutUsCardImg = styled.img`

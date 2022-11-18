@@ -12,16 +12,16 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.9.1",
     "@types/react-slick": "^0.23.10",
     "@types/styled-components": "^5.1.26",
-    "nodemailer": "^6.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^2.1.0",
     "react-hook-google-maps": "^0.0.3",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.3.0",
     "react-slick": "^0.29.0",
-    "reaptcha": "^1.12.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
     "typewriter-effect": "^2.19.0"

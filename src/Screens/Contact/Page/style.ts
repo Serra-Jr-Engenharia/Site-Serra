@@ -282,5 +282,8 @@ export const ContactStyle = styled.div`
 `;
 
 export const CaptchaContainer = styled.div`  
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 `;
