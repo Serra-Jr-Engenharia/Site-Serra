@@ -9,6 +9,7 @@ export const MapsWrapper = styled.div`
     margin-bottom: 20px;
     background-color: #f3f3f3;
     z-index: 2;
+    border-radius: 10px;
 
     @media screen and (max-width: 700px) {
         display: flex;
@@ -23,6 +24,7 @@ export const MapsWrapperItems = styled.div`
     width: 90%;
     display: flex;
     padding-top: 20px;
+    border-radius: 10px;
 
     @media screen and (max-width: 700px) {
         display: flex;
@@ -54,6 +56,8 @@ export const MapsContent = styled.div`
     border-radius: 20px;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+
 
     @media screen and (max-width: 700px) {
         width: 100%;
@@ -85,6 +89,7 @@ export const MapsDescriptionTitle = styled.h2`
 export const MapaContent = styled.div`
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 
     @media screen and (max-width: 700px) {
         width: 100%;

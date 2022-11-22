@@ -1,10 +1,8 @@
 import styled from "styled-components";
 import { width } from "../../../../Services/config";
-import TypewriterComponent from 'typewriter-effect';
 
 export const SloganTextContainer = styled.div`
     width: 100%;
-    /* background-color: red; */
 
     .writer{
         font-family: 'Courier Prime';
@@ -13,7 +11,7 @@ export const SloganTextContainer = styled.div`
         font-weight: 700;
 
         @media screen and (min-width: ${width.largeDesktop}){
-            font-size: 120px;
+            font-size: 100px;
         }
     }
 

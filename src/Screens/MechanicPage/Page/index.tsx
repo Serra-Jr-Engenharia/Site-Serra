@@ -54,7 +54,7 @@ const MechanicPage: React.FC = () =>{
 
                 <ServiceLetterContainer>
                     <ServiceLetterH1>Carta de Serviços</ServiceLetterH1>
-                    <ServiceLetterH2>Engenharia Mecânica</ServiceLetterH2>
+                
                     <ServiceletterCard>
                         <SlCard>
                             <SlCardUp>
@@ -111,7 +111,7 @@ const MechanicPage: React.FC = () =>{
                 <Line />
 
                 <Box>
-                    <BoxText onClick={() => navigate('/contatos')}>Quer colocar um projeto em prática? &rarr;</BoxText>
+                    <BoxText onClick={() => {navigate('/contatos'); window.scrollTo(0, 0)}}>Quer colocar um projeto em prática? &rarr;</BoxText>
                 </Box>
 
                 <ProjectsMecAll>

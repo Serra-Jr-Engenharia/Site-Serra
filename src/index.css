@@ -50,12 +50,13 @@ html, body{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .slick-list{
   overflow: hidden;
 }
+
 
 /* @media (max-width: 450px) {
 

@@ -26,6 +26,9 @@ export const EngCompImg = styled.img`
     @media screen and (max-width: ${width.largeMobile}) {
         width: 70%;
     }
+    @media screen and (min-width: ${width.largeDesktop}) {
+        width: 30%;
+    }
 `;
 
 export const ServiceletterDiv = styled.div`
@@ -62,7 +65,7 @@ export const EngCompP = styled.p`
     }
 
     @media screen and (min-width: 2048px) {
-        font-size: 126px;
+        font-size: 110px;
         line-height: 130px;
     }
 `;

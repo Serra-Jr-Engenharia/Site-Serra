@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 import HomeIcons from '../../Screens/Home/Template/HomeIcons'
 
@@ -21,6 +22,8 @@ interface CardProps{
 }
 
 const Card: React.FC<CardProps> = ({title, buttonUrl, buttonTitle, color, images, texts}) => {
+    const navigate = useNavigate()
+
     return (
         <CardStyle>
             <Title titleColor={color}>
@@ -32,9 +35,7 @@ const Card: React.FC<CardProps> = ({title, buttonUrl, buttonTitle, color, images
                     {images.map((image, key) => <HomeIcons key={key} icon={image} text={texts[key]} alt={texts[key]} />)}
                 </BodyContents>
 
-                <ButtonContainer href={buttonUrl}>
-                    <Button buttonColor={color}>{buttonTitle}</Button>
-                </ButtonContainer>
+                <Button onClick={() => {navigate(buttonUrl); window.scrollTo(0, 0)}} buttonColor={color}>{buttonTitle}</Button>
                 
             </CardBody>
         </CardStyle>

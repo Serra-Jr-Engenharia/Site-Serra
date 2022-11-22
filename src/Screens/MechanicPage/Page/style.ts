@@ -33,7 +33,8 @@ export const SlCardH3 = styled.h3`
     font-size: 26px;
     line-height: 22px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
+    width: 300px;
 
     @media screen and (max-width: ${width.largeMobile}) {
         font-size: 22px;
@@ -47,12 +48,13 @@ export const SlCardH3 = styled.h3`
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         font-size: 60px;
         line-height: 60px;
+        width: 500px;
     }
 
     
 `;
 export const SlCardP = styled.p`
-    width: 400px;
+    width: 500px;
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 200;
@@ -81,6 +83,7 @@ export const SlCardP = styled.p`
     @media screen and (min-width: 2048px) {
         font-size: 35px;
         line-height: 40px;
+    
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
@@ -120,7 +123,7 @@ export const EngMecP = styled.p`
     }
 
     @media screen and (min-width: 2048px) {
-        font-size: 126px;
+        font-size: 110px;
         line-height: 130px;
     }
 `;
@@ -246,6 +249,8 @@ export const SlCardDown = styled.div `
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+
+
 `;
 
 export const EngMecImg = styled.img`
@@ -253,6 +258,10 @@ export const EngMecImg = styled.img`
 
     @media screen and (max-width: ${width.largeMobile}) {
         width: 80%;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        width: 30%;
     }
 `;
 

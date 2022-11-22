@@ -20,7 +20,7 @@ export const Row = styled.div`
 `;
 
 export const LinksDiv = styled.div`
-    margin-left: 2rem;
+    margin-left: 1rem;
     width: 100%;
     @media screen and (min-width: ${width.mobile}){
         flex-direction: column;
@@ -66,7 +66,8 @@ export const SocialMediaIMG = styled.img`
         width: 3rem;
     }
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        width: 3.5rem;
+        width: 5rem;
+        /* background-color: red; */
     }
 `;
 
@@ -93,7 +94,7 @@ export const ContentContainer = styled.div`
     align-items: center;
 
     @media screen and (min-width: ${width.desktop}) {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         font-size: 3em;

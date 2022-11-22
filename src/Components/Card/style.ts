@@ -37,12 +37,12 @@ export const Title = styled.p<Props>`
     text-align: center;
 
     @media screen and (min-width: ${width.largeDesktop}) {
-        font-size: 60px;
+        font-size: 45px;
         height: 8rem;
     }
 `;
 
-export const ButtonContainer = styled.a`
+export const ButtonContainer = styled.div`
     width: 60%;
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@ export const ButtonContainer = styled.a`
 export const Button = styled.button<Props>`
     background-color: ${({buttonColor}) => buttonColor ?? '#FD6300'};
     border: none;
-    width: 100%;
+    width: 30%;
     padding: 0.6rem;
     font-size: 1.5rem;
     font-weight: 500;
@@ -74,9 +74,13 @@ export const Button = styled.button<Props>`
         box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
     }
 
+    @media screen and (max-width: ${width.tablet}) {
+        width: 50%;
+    }
+
     @media screen and (min-width: ${width.largeDesktop}) {
-        font-size: 60px;
-        width: 60%;
+        font-size: 40px;
+        width: 20%;
     }
 `;
 

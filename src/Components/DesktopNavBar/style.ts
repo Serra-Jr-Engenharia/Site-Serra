@@ -79,15 +79,6 @@ export const SubMenuContainerSon = styled.div<Props>`
         visibility: hidden;
         transition: opacity 0.5s;`
     }
-    
-    @media screen and (min-width: ${width.largeDesktop}){
-        top: 10vh;
-        
-    }
-    @media screen and (min-width: ${width.extraLargeDesktop}){
-        top: 13vh;
-        
-    }
 
     @media screen and (min-width: ${width.largeNotebook}){
         width: 10vw;

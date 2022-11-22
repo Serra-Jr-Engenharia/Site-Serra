@@ -6,11 +6,11 @@ export const ModalContainer = styled.div`
     flex-direction: column;
 
     @media screen and (min-width: ${width.largeDesktop}){
-        font-size: 40px;
+        font-size: 30px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}){
-        font-size: 50px;
+        font-size: 40px;
     }
 `;
 
@@ -83,11 +83,11 @@ export const ModalImg = styled.img`
     }
 
     @media screen and (min-width: ${width.largeDesktop}){
-        width: 600px;
+        width: 500px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}){
-        width: 800px;
+        width: 700px;
     }
 `;
 
@@ -115,15 +115,15 @@ export const ModalCrossButton = styled.button`
     }
 
     @media screen and (min-width: ${width.largeDesktop}){
-        width: 80px;
-        height: 80px;
-        border-radius: 40px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}){
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
     }
 `;
 

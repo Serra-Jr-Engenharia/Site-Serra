@@ -49,7 +49,10 @@ export const ContainerSection = styled.section`
 
     @media screen and (min-width: ${width.largeDesktop}) {
         min-height: 65vh;
+        padding-bottom: 3%;
     }
+
+    
 `;
 
 export const ContainerSectionTitle = styled.div`
@@ -59,6 +62,7 @@ export const ContainerSectionTitle = styled.div`
     align-items: flex-start;
     padding: 0 0 10px 0;
     margin-bottom: 3%;
+    
 
     @media screen and (max-width: ${width.notebook}) {
         height: 20%;
@@ -67,6 +71,7 @@ export const ContainerSectionTitle = styled.div`
         align-items: flex-start;
         padding: 0 0 10px 0;
     }
+
 `;
 
 export const ContainerSectionContainer = styled.div`
@@ -76,12 +81,16 @@ export const ContainerSectionContainer = styled.div`
     justify-content: center;
     flex-direction: row;
     
+    
     @media screen and (max-width: ${width.notebook}) {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column !important;
     }
+
+    
+
 `;
 
 
@@ -110,6 +119,7 @@ export const ContainerLogo = styled.div`
         align-items: center;
         margin-bottom: 2%;
     }
+    
     
 `;
 
@@ -180,7 +190,6 @@ export const ContainerSectionContent = styled.div`
         align-items: center;
         width: 100%;
     }
-
     
 `;
 

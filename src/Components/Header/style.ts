@@ -33,13 +33,6 @@ export const HeaderStyle = styled.div`
         justify-content: space-between;
         align-items: center;
     }
-    @media screen and (min-width: ${width.largeDesktop}){
-        height: 10vh;
-        
-    }
-    @media screen and (min-width: ${width.extraLargeDesktop}){
-        height: 13vh;
-    }
 `;
 
 export const MenuButtonContainer = styled.div`

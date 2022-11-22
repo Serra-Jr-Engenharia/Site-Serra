@@ -75,7 +75,7 @@ export const PresentationAboutUsP = styled.p`
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {
-        font-size: 180px;
+        font-size: 150px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
@@ -96,6 +96,10 @@ export const PresentationAboutUsImg = styled.img`
 
     @media screen and (min-width: 1000px) {
         width: 50%;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        width: 30%;
     }
 `;
 

@@ -59,6 +59,7 @@ export const BottomCardContent = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    /* background-color: green; */
 
     @media screen and (max-width: ${width.notebook}) {
         flex-direction: column;
@@ -67,7 +68,7 @@ export const BottomCardContent = styled.div`
 
 `;
 
-export const BottomCardLink = styled.a`
+export const BottomCardLink = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
@@ -80,7 +81,7 @@ export const BottomCardLink = styled.a`
 export const BottomCardButton = styled.button<Props>`
     background-color: ${({buttonColor}) => buttonColor ?? "#FD6300"};
     border: none;
-    width: 50%;
+    width: 30%;
     padding: 0.6rem;
     font-size: 1.5rem;
     font-weight: 500;
@@ -96,15 +97,15 @@ export const BottomCardButton = styled.button<Props>`
     }
 
     @media screen and (min-width: ${width.desktop}) {
-        width: 30%;
+        width: 20%;
         font-size: 30px;
     }
     @media screen and (min-width: ${width.largeDesktop}) {
-        width: 30%;
+        width: 20%;
         font-size: 40px;
     }
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        width: 30%;
+        width: 20%;
         font-size: 60px;
     }
 `;
@@ -151,7 +152,7 @@ export const HistoryText1 = styled.span`
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
@@ -173,22 +174,19 @@ export const HistoryText2 = styled.span`
 
     @media screen and (min-width: ${width.desktop}) {
         font-size: 30px;
-        width: 90%;
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {
-        font-size: 40px;
-        width: 80%;
+        font-size: 30px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        font-size: 60px;
-        width: 80%;
+        font-size: 50px;
     }
 `;
 
 export const HistoryTextContainer = styled.div`
-    width: 80%;
+    width: 50%;
     margin-top: 2%;
     display: flex;
     align-items: center;
@@ -197,12 +195,11 @@ export const HistoryTextContainer = styled.div`
     @media screen and (max-width: ${width.tablet}) {
         width: 90%;
     }
-    
 `;
 
 export const HistoryImg = styled.img`
-    width: 45%;
-    height: 45%;
+    width: 25%;
+    height: 25%;
     display: flex;
     justify-self: center;
     align-self: center;
@@ -212,11 +209,6 @@ export const HistoryImg = styled.img`
     @media screen and (max-width: ${width.tablet}) {
         width:70%;
         height: 70%;
-    }
-
-    @media screen and (min-width: ${width.extraLargeDesktop}) {
-        width: 90%;
-        height: 90%;
     }
 `;
 

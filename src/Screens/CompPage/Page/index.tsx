@@ -14,7 +14,6 @@ import REACT from "../../../Assets/CompPage/react-icon.svg"
 import TS from "../../../Assets/CompPage/ts-icon.svg"
 import Styled from "../../../Assets/CompPage/styled-icon.svg"
 
-import WhatsApp from "../../../Assets/Global/whatsapp.svg"
 import ScrollUp from "../../../Assets/Global/arrow-up.svg"
 
 import {
@@ -23,7 +22,6 @@ import {
     EngCompP, 
     EngCompImg, 
     ServiceLetterH1, 
-    ServiceLetterH2, 
     ServiceletterCard,
     SlCard,
     SlCardUp,
@@ -62,7 +60,7 @@ const CompPage: React.FC = () =>{
 
             <ServiceletterDiv>
                 <ServiceLetterH1>Carta de Serviços</ServiceLetterH1>
-                <ServiceLetterH2>Engenharia de Computação</ServiceLetterH2>
+                
                 
                 <ServiceletterCard>
                     <SlCard>
@@ -104,7 +102,7 @@ const CompPage: React.FC = () =>{
             <Line />
             
             <Box>
-                <BoxText onClick={() => navigate('/contatos')}>Quer colocar um projeto em prática? &rarr;</BoxText>
+                <BoxText onClick={() => {navigate('/contatos'); window.scrollTo(0, 0)}}>Quer colocar um projeto em prática? &rarr;</BoxText>
             </Box>
             
 

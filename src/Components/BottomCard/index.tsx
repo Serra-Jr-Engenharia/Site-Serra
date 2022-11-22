@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import AboutUsCarousel from '../../Screens/AboutUs/Templates/AboutUsCarousel'
 import { aboutUsData } from '../../Services/aboutUsData'
 
@@ -28,6 +29,8 @@ interface BottomCardProps{
 }
 
 const BottomCard: React.FC<BottomCardProps> = ({title, buttonUrl, buttonTitle, color, hasButton, text, image, alt, hasCarousel}) => {
+    const navigate = useNavigate()
+
     return (
         <BottomCardStyle carouselStyle={hasCarousel}>
             <Title titleColor={color}>
@@ -59,9 +62,9 @@ const BottomCard: React.FC<BottomCardProps> = ({title, buttonUrl, buttonTitle, c
 
                     </BottomCardContent>
 
-                    {hasButton ? 
-                        <BottomCardLink href={buttonUrl}>
-                            <BottomCardButton buttonColor={color}>{buttonTitle}</BottomCardButton>
+                    {hasButton && buttonUrl ? 
+                        <BottomCardLink>
+                            <BottomCardButton onClick={() => {navigate(buttonUrl); window.scrollTo(0, 0)}} buttonColor={color}>{buttonTitle}</BottomCardButton>
                         </BottomCardLink> 
                         :
                         null

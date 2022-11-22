@@ -25,6 +25,9 @@ export const PresentationImg = styled.img`
     @media screen and (max-width: ${width.tablet}){
         width: 60%;
     }
+    @media screen and (min-width: ${width.largeDesktop}){
+        width: 40%;
+    }
 `;
 
 export const Slogan = styled.div`
