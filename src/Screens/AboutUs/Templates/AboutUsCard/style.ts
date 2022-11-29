@@ -19,13 +19,14 @@ export const AboutUsCardStyle = styled.div`
 
 
 
-    @media screen and (max-width: ${width.mobile}) {
+    @media screen and (max-width: ${width.largeMobile}) {
         font-size: 16px;
         line-height: 25px;
         margin: 2px;
         padding: 2px;
         text-align: justify;
         width: 70%;
+        min-height: 10vh;
     }
 
     @media screen and (max-width: ${width.tablet}) {

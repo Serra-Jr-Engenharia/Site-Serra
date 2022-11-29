@@ -56,18 +56,17 @@ export const LinksContainer = styled.div`
 `;
 
 export const SocialMediaIMG = styled.img`
-    width: 1.4rem;
+    width: 1.2rem;
     margin-right: 0.8rem;
     
     @media screen and (max-width: ${width.mobile}) {
         margin-top: 30%;
     }
     @media screen and (min-width: ${width.desktop}) {
-        width: 3rem;
+        width: 2rem;
     }
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        width: 5rem;
-        /* background-color: red; */
+        width: 4rem;
     }
 `;
 

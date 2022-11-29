@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { width } from "../../Services/config";
+
 
 export const LogoSlider = styled.div`
     background: #D9D9D9;
@@ -7,6 +9,18 @@ export const LogoSlider = styled.div`
 	overflow: hidden;
 	position: relative;
 	width: 100%;
+    height: 21vh;
+
+
+    @media screen and (max-width: ${width.largeDesktop}){
+        height: 16%;
+    }
+    @media screen and (max-width: ${width.tablet}){
+        height: 17%;
+    }
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+	    height: 17%;
+    }
 
     &::before{
         content: "";

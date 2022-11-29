@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { width } from "../../Services/config";
 
 interface Props{
@@ -36,7 +36,7 @@ export const ContainerSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content: space-evenly;
     margin-bottom: 3%;
   
     background-color: lightgrey;
@@ -44,7 +44,12 @@ export const ContainerSection = styled.section`
     
     @media screen and (max-width: ${width.tablet}) {
         width: 80%;
-        min-height: 100vh;
+        min-height: 80vh;
+    }
+
+    @media screen and (min-width: ${width.tablet}) {
+        width: 80%;
+        min-height: 60vh;
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {
@@ -129,11 +134,22 @@ export const ContainerLogo = styled.div`
     
 `;
 
-export const SectionSpan = styled.span`
+interface SectionSpanProps {
+    tamanhoDoTexto: number;
+}
+
+
+export const SectionSpan = styled.span<SectionSpanProps>`
     width: 90%;
-    font-size: 1.5rem;
+    font-size: 60px;
     font-weight: 500;
     color: var(--blue);
+
+    /* background-color: red; */
+
+
+
+    
 
 
     @media screen and (max-width: ${width.notebook}) {
@@ -149,6 +165,8 @@ export const SectionSpan = styled.span`
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         font-size: 3.5rem;
     }
+
+    /* ${ ({tamanhoDoTexto}) => tamanhoDoTexto && (tamanhoDoTexto > 300) ? css`font-size: 40px`: (tamanhoDoTexto > 350) ? css`font-size: 60px`: null  } */
 `;
 
 export const SectionButton = styled.button`

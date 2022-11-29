@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import HomeIcons from '../../Screens/Home/Template/HomeIcons'
 
 import {
     CardBody,
     CardStyle,
-    ButtonContainer,
     Title, 
     BodyContents, 
     Button
@@ -23,6 +22,18 @@ interface CardProps{
 
 const Card: React.FC<CardProps> = ({title, buttonUrl, buttonTitle, color, images, texts}) => {
     const navigate = useNavigate()
+
+
+    // <Container>
+    //  <Title>
+            // Text
+    //  <Title>
+
+    //  Card
+    //      Services
+    //      Button
+    //  </Card>
+    // Container
 
     return (
         <CardStyle>

@@ -268,6 +268,10 @@ export const SlLogoContainer = styled.div`
     justify-content: center;
     flex-wrap: wrap;
 
+    @media screen and (max-width: ${width.largeMobile}){
+        padding-bottom: 10%;
+    }
+
 
 `;
 
@@ -281,6 +285,7 @@ export const SlLogo = styled.img`
     @media screen and (max-width: ${width.tablet}){
         width: 50px;
         height: 50px;
+        margin-bottom: 5%;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {

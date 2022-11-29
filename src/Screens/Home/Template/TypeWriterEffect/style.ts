@@ -11,7 +11,7 @@ export const SloganTextContainer = styled.div`
         font-weight: 700;
 
         @media screen and (min-width: ${width.largeDesktop}){
-            font-size: 100px;
+            font-size: 60px;
         }
     }
 

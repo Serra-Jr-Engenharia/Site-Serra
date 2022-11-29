@@ -108,6 +108,11 @@ export const BottomCardButton = styled.button<Props>`
         width: 20%;
         font-size: 60px;
     }
+
+    @media screen and (max-width: ${width.largeMobile}){
+        font-size: 25px;
+        width: 60%;
+    }
 `;
 
 export const BottomCardStyle = styled.div<Props>`
@@ -206,9 +211,6 @@ export const HistoryImg = styled.img`
     margin: 40px;
     border-radius: 1rem;
 
-    @media screen and (max-width: ${width.tablet}) {
-        width:70%;
-        height: 70%;
-    }
+
 `;
 

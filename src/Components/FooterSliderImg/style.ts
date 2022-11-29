@@ -10,8 +10,8 @@ export const SlideAnchor = styled.a`
 `;
 
 export const SlideImg = styled.img`
-    width: 250px;
-	margin: 0;
+    width: 150px;
+	margin: 0 20px;
 	transition: 0.5s;
 	overflow: hidden;
 
@@ -23,10 +23,19 @@ export const SlideImg = styled.img`
     @media screen and (max-width: ${width.largeMobile}) {
 	    width: 150px;
     }
+    @media screen and (max-width: ${width.mobile}){
+        width: 120px;
+    }
     @media screen and (min-width: ${width.desktop}) {
-	    width: 350px;
+	    width: 180px;
+    }
+    @media screen and (min-width: ${width.largeDesktop}) {
+	    width: 240px;
     }
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-	    width: 450px;
+	    width: 380px;
+    }
+    @media screen and (max-width: ${width.notebook}){
+        width: 120px;
     }
 `;

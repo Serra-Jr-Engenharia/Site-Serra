@@ -13,12 +13,14 @@ html, body{
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 3px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
+
+  
 }
  
 /* Handle */
@@ -78,3 +80,9 @@ html, body{
     margin-left: -400%;
   }
 } */
+
+@media screen and (min-width: 1920px) {
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+}

@@ -75,11 +75,11 @@ export const PresentationAboutUsP = styled.p`
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {
-        font-size: 150px;
+        font-size: 120px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        font-size: 250px;
+        font-size: 180px;
     }
 
     
@@ -111,21 +111,12 @@ export const AboutUsContent = styled.div`
     margin-top: 5%;
     margin-bottom: 5%;
 
-    @media screen and (max-width: 390px) {
-        order: 1;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
     @media screen and (max-width: 500px) {
         order: 1;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: wrap; 
+        justify-content: center; 
         align-items: center;
     }
 `;
@@ -134,16 +125,11 @@ export const AboutUsContentDivision = styled.div`
     border: 1px solid #001830;
     height: 80vh;
 
-    @media screen and (max-width: 390px) {
-        transform: rotate(90deg);
-        margin: 0px;
-        height: 20vh;
-    }
-
     @media screen and (max-width: 500px) {
         transform: rotate(90deg);
         margin: 0px;
-        height: 20vh;
+        height: 10vh;
+        
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {

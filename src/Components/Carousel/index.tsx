@@ -53,6 +53,11 @@ const Carousel: React.FC<SliderProps> = (props) => {
         <SliderContainer containerWidth={props.width}>
             <Slider {...settings}>
                 { props.carouselData.map((item, key) => {
+
+                    const tamanhoDoTexto = item.content.length
+
+                    console.log(tamanhoDoTexto)
+
                     return (
                         <Container key={key}>
                             <Wrapper>
@@ -63,10 +68,10 @@ const Carousel: React.FC<SliderProps> = (props) => {
 
                                     <ContainerSectionContainer>
                                         <ContainerLogo>
-                                            <Logo src={item.image[0]} alt={item.title} />
+                                            <Logo src={item.image[0]} alt={item.title} style={{width: item.imageWidth}}/>
                                         </ContainerLogo>
                                         <ContainerSectionContent>
-                                            <SectionSpan>{item.content}</SectionSpan>
+                                            <SectionSpan tamanhoDoTexto={tamanhoDoTexto}>{item.content}</SectionSpan>
 
                                             <SectionButton onClick={() => {
                                                 setStatusModal(!statusModal)
