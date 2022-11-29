@@ -45,7 +45,7 @@ const BottomCard: React.FC<BottomCardProps> = ({title, buttonUrl, buttonTitle, c
                             <HistoryText1>{aboutUsData.membersText}</HistoryText1>
                         </HistoryTextContainer>
                         
-                        <AboutUsCarousel width='50%' carouselData={aboutUsData.members}/>
+                        <AboutUsCarousel width='50%' carouselData={aboutUsData.members} alt="Imagens dos membros da Serra Jr. Engenharia"/>
                     </BottomCardContent>
 
                 </BottomCardBody>

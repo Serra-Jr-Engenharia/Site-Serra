@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
 import ReactModal from 'react-modal'
 import { width } from '../../Services/config';
+import ImageCarousel from '../ImageCarousel';
 import { ModalLine, ModalContainer, ModalList, ModalListLine, ModalP, ModalTitle, ModalCrossButton, ModalImg, ModalResume, ModalH2, ModalAnchor, ModalHeader, ModalAcess } from './style';
 
 interface ObjectProps{
     title: string
-    image: string
+    image: Array<string>
     content: string
-    members: Array<string>
-    opinions: Array<string>
+    summary: string
+    imageSize?: string
+    members?: Array<string>
+    opinions?: Array<string>
     acess?: string
 }
 
@@ -38,7 +41,7 @@ const Modal: React.FC<ModalProps> = ({status, setStatus, data}) =>{
         },
 
         overlay: {
-            backgroundColor: '#0000004f',
+            backgroundColor: '#00000028',
         }
       };
 
@@ -60,22 +63,35 @@ const Modal: React.FC<ModalProps> = ({status, setStatus, data}) =>{
                         <ModalLine />
                     </ModalHeader>
                     
-                    
-                    
-
                     <ModalH2>Resumo do projeto</ModalH2>
                     <ModalResume>
-                        <ModalImg src={data.image} alt={data.title} />
-                        <ModalP>{data.content}</ModalP>
+                        {data.image.length > 1 ?
+                            <ImageCarousel carouselData={data.image} alt={`Imagens do ${data.title}`} imageSize={data.imageSize} hasArrows={true}/>
+                            :
+                            <ModalImg src={data.image[0]} alt={data.title} style={{height: data.imageSize}}/>
+                        }
+                        <ModalP>{data.summary}</ModalP>
                     </ModalResume>
         
-                    <ModalH2>Membros envolvidos</ModalH2>
-                    <ModalList>
-                        {data.members.map((eachMember, key) => <ModalListLine key={key}>{eachMember}</ModalListLine>)}
-                    </ModalList>
+                    {data.members ?
+                        <>
+                            <ModalH2>Membros envolvidos</ModalH2>
+                            <ModalList>
+                                {data.members.map((eachMember, key) => <ModalListLine key={key}>{eachMember}</ModalListLine>)}
+                            </ModalList>
+                        </>
+                        :
+                        null
+                    }
         
-                    <ModalH2>Depoimento de clientes</ModalH2>
-                    {data.opinions.map((eachOpinion, key) => <ModalP key={key}>{eachOpinion}</ModalP>)}
+                    {data.opinions ?
+                        <>
+                            <ModalH2>Depoimento de clientes</ModalH2>
+                            {data.opinions.map((eachOpinion, key) => <ModalP key={key}>{eachOpinion}</ModalP>)}
+                        </>
+                        :
+                        null
+                    }
 
                     {data.acess ?
                         <ModalAcess>

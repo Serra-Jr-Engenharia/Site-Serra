@@ -22,10 +22,13 @@ import Title from "../Title";
 
 interface ObjectProps{
     title: string
-    image: string
+    image: Array<string>
     content: string
-    members: Array<string>
-    opinions: Array<string>
+    summary: string
+    imageWidth?: string
+    members?: Array<string>
+    opinions?: Array<string>
+    acess?: string
 }
 
 interface SliderProps{
@@ -60,7 +63,7 @@ const Carousel: React.FC<SliderProps> = (props) => {
 
                                     <ContainerSectionContainer>
                                         <ContainerLogo>
-                                            <Logo src={item.image} alt={item.title} />
+                                            <Logo src={item.image[0]} alt={item.title} />
                                         </ContainerLogo>
                                         <ContainerSectionContent>
                                             <SectionSpan>{item.content}</SectionSpan>

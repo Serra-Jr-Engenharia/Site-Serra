@@ -9,22 +9,23 @@ import {
     Logo,
     SliderContainer
 } from "./style"
-
     
 interface SliderProps{
     carouselData: Array<string>
     width?: string
-    alt?: string
+    alt: string
+    imageSize?: string
+    hasArrows?: boolean
 }
 
-const AboutUsCarousel: React.FC<SliderProps> = (props) => {    
+const ImageCarousel: React.FC<SliderProps> = (props) => {    
     const settings = {
         dots: true,
         infinite: true,
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         autoplay: true,
         autoplaySpeed: 2500
     };
@@ -36,7 +37,7 @@ const AboutUsCarousel: React.FC<SliderProps> = (props) => {
                     return (
                         <Container key={key}>
                             <Wrapper>
-                                <Logo src={item} alt={props.alt} />
+                                <Logo src={item} alt={props.alt} style={{height: props.imageSize}}/>
                             </Wrapper>
                         </Container>
                     )
@@ -46,4 +47,4 @@ const AboutUsCarousel: React.FC<SliderProps> = (props) => {
     )
 }
 
-export default AboutUsCarousel
+export default ImageCarousel

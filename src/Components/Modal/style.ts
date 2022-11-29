@@ -19,6 +19,7 @@ export const ModalHeader = styled.div`
     top: 0;
     background-color: #fff;
     width: 100%;
+    z-index: 3;
 `;
 
 export const ModalTitle = styled.div`
@@ -143,5 +144,5 @@ export const ModalList = styled.ul`
 `;
 
 export const ModalListLine = styled.li`
-    list-style: none;
+    list-style: circle;
 `;

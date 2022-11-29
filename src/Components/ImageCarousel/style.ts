@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { width } from "../../../../Services/config";
+import { width } from "../../Services/config";
 
 interface Props{
     containerWidth?: string
@@ -33,8 +33,19 @@ export const Wrapper = styled.div`
 
 
 export const Logo = styled.img`
-    height: 40vh;
     border-radius: 20px;
+
+    @media screen and (max-width: ${width.largeMobile}) {
+        width: 20vh;
+    }
+
+    @media screen and (max-width: ${width.tablet}) {
+        width: 25vh;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        width: 40vh;
+    }
 `;
 
 export const SliderContainer = styled.div<Props>`

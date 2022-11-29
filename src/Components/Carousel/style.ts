@@ -104,6 +104,12 @@ export const Logo = styled.img`
         max-height: 40vh;
         border-radius: 20px;
     }
+
+    @media screen and (min-width: ${width.largeDesktop}) {    
+        width: 50%;
+        max-height: 40vh;
+        border-radius: 20px;
+    }
 `;
 
 export const ContainerLogo = styled.div`
