@@ -23,18 +23,6 @@ interface CardProps{
 const Card: React.FC<CardProps> = ({title, buttonUrl, buttonTitle, color, images, texts}) => {
     const navigate = useNavigate()
 
-
-    // <Container>
-    //  <Title>
-            // Text
-    //  <Title>
-
-    //  Card
-    //      Services
-    //      Button
-    //  </Card>
-    // Container
-
     return (
         <CardStyle>
             <Title titleColor={color}>

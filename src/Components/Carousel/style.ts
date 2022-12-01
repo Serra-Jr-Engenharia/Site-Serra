@@ -10,12 +10,15 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 100%;
+    
     overflow: hidden;
     background-color: transparent;
 `;
 
 export const Wrapper = styled.div`
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,8 +34,8 @@ export const Wrapper = styled.div`
 
 export const ContainerSection = styled.section`
     width: 85%;
-    min-height: 100vh;
-    padding-bottom: 1rem;
+    height: 100%;
+    padding-bottom: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,28 +43,10 @@ export const ContainerSection = styled.section`
     margin-bottom: 3%;
   
     background-color: lightgrey;
-    border-radius: 3rem;
-    
-    @media screen and (max-width: ${width.tablet}) {
-        width: 80%;
-        min-height: 80vh;
-    }
-
-    @media screen and (min-width: ${width.tablet}) {
-        width: 80%;
-        min-height: 60vh;
-    }
-
-    @media screen and (min-width: ${width.largeDesktop}) {
-        min-height: 65vh;
-        padding-bottom: 3%;
-    }
-
-    
+    border-radius: 3rem;    
 `;
 
 export const ContainerSectionTitle = styled.div`
-    height: 20%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -81,7 +66,6 @@ export const ContainerSectionTitle = styled.div`
 
 export const ContainerSectionContainer = styled.div`
     width: 100%;
-    height: 80%;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -89,30 +73,23 @@ export const ContainerSectionContainer = styled.div`
     
     @media screen and (max-width: ${width.notebook}) {
         width: 100%;
-        height: 100%;
         display: flex;
         flex-direction: column !important;
     }
-
-    
-
 `;
 
 
 export const Logo = styled.img`
-    width: 60%;
-    max-height: 40vh;
+    height: 30vh;
     border-radius: 20px;
 
     @media screen and (max-width: ${width.tablet}) {    
-        width: 50%;
-        max-height: 40vh;
+        height: 15vh;
         border-radius: 20px;
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {    
-        width: 50%;
-        max-height: 40vh;
+        height: 20vh;
         border-radius: 20px;
     }
 `;
@@ -130,8 +107,6 @@ export const ContainerLogo = styled.div`
         align-items: center;
         margin-bottom: 2%;
     }
-    
-    
 `;
 
 interface SectionSpanProps {
@@ -141,32 +116,33 @@ interface SectionSpanProps {
 
 export const SectionSpan = styled.span<SectionSpanProps>`
     width: 90%;
-    font-size: 60px;
+    /* height: 20vh; */
+    font-size: 1.2rem;
     font-weight: 500;
     color: var(--blue);
-
-    /* background-color: red; */
-
-
-
-    
-
 
     @media screen and (max-width: ${width.notebook}) {
         width: 85%;
         font-size: 1rem;
         color: var(--blue);
+        /* ${ ({tamanhoDoTexto}) => tamanhoDoTexto && (tamanhoDoTexto > 350) ? css`font-size: 0.7rem`: css`font-size: 0.9rem`} */
+    }
+
+    @media screen and (min-width: ${width.notebook}) {
+        height: 30vh;
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {
         font-size: 2.0rem;
+        height: 15vh;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         font-size: 3.5rem;
+        height: 25vh;
     }
 
-    /* ${ ({tamanhoDoTexto}) => tamanhoDoTexto && (tamanhoDoTexto > 300) ? css`font-size: 40px`: (tamanhoDoTexto > 350) ? css`font-size: 60px`: null  } */
+    
 `;
 
 export const SectionButton = styled.button`

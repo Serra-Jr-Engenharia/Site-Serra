@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import BackgroundIMG from "../../../Assets/Home/background-image.svg";
+import { Device } from "../../../Config/Device";
 import { width } from "../../../Services/config";
 
 export const Presentation = styled.div`
@@ -12,20 +13,25 @@ export const Presentation = styled.div`
 
   @media screen and (max-width: ${width.tablet}) {
     flex-direction: column-reverse;
-    align-items: space-around;
-    justify-content: center;
-    min-height: 500px;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: ${Device.Screen.height * 0.75}px;
   }
 `;
 
 export const PresentationImg = styled.img`
-  width: 45%;
-
-  @media screen and (max-width: ${width.tablet}) {
+  @media screen and (max-width: ${width.largeMobile}) {
     width: 60%;
+    margin-top: 10%;
   }
-  @media screen and (min-width: ${width.largeDesktop}) {
-    width: 30%;
+
+  @media screen and (min-width: ${width.largeMobile}) {
+    width: 40%;
+    margin-top: 5%;
+  }
+  @media screen and (min-width: ${width.notebook}) {
+    width: 25%;
+    margin-top: 0;
   }
 `;
 
@@ -33,7 +39,9 @@ export const Slogan = styled.div`
   display: block;
   justify-content: center;
   flex-direction: column;
+  
   width: 45%;
+  height: 45%;
 
   @media screen and (max-width: ${width.tablet}) {
     width: 80%;
@@ -49,18 +57,12 @@ export const HomeContent = styled.div`
 `;
 
 export const CardContainer = styled.div`
-  /* width: 85vw; */
-  /* height: 100vh; */
-  /* overflow: hidden; */
+  width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
-  @media screen and (min-width: ${width.largeDesktop}) {
-    width: 70vw;
-  }
 
   animation: fade-in-bottom 0.6s ease-in 0.5s both;
   @keyframes fade-in-bottom {

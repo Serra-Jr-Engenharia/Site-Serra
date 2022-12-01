@@ -18,14 +18,7 @@ export const PresentationMain = styled.div`
     }
 
     @media screen and (max-width: 500px) {
-        /* flex-direction: column; */
         flex-wrap: wrap;
-    }
-
-    @media screen and (max-width: 820px) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     @media screen and (max-width: 1000px) {
@@ -49,29 +42,18 @@ export const AboutUsContainer = styled.div`
 export const PresentationAboutUsP = styled.p`
     margin: 0px;
     font-family: 'Maven Pro';
-    font-style: normal;
     font-weight: 500;
-    font-size: 76px;
     text-align: center;
     color: #FFFFFF;
     display: flex;
     align-items: center;
-    
-    @media screen and (max-width: 390px) {
-        font-size: 50px;
+
+    @media screen and (max-width: ${width.tablet}) {
+        font-size: 40px;
     }
 
-    @media screen and (max-width: 500px) {
-        font-size: 70px;
-    }
-
-    @media screen and (max-width: 820px) {
-        margin-bottom: 5%;
-    }
-
-    @media screen and (min-width: 1000px) {
-        margin-bottom: 5%;
-        font-size: 120px;
+    @media screen and (min-width: ${width.tablet}) {
+        font-size: 60px;
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {
@@ -80,26 +62,22 @@ export const PresentationAboutUsP = styled.p`
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         font-size: 180px;
-    }
-
-    
+    }    
 `;
 
 export const PresentationAboutUsImg = styled.img`
-    @media screen and (max-width: 500px) {
-        width: 70%;
-    }
-
-    @media screen and (min-width: 500px) {
+    @media screen and (max-width: ${width.largeMobile}) {
         width: 60%;
+        margin-top: 10%;
     }
 
-    @media screen and (min-width: 1000px) {
-        width: 50%;
+    @media screen and (min-width: ${width.largeMobile}) {
+        width: 40%;
+        margin-top: 5%;
     }
-
-    @media screen and (min-width: ${width.largeDesktop}) {
-        width: 30%;
+    @media screen and (min-width: ${width.notebook}) {
+        width: 25%;
+        margin-top: 0;
     }
 `;
 
@@ -112,7 +90,6 @@ export const AboutUsContent = styled.div`
     margin-bottom: 5%;
 
     @media screen and (max-width: 500px) {
-        order: 1;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap; 

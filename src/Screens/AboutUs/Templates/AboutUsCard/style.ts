@@ -113,8 +113,8 @@ export const List = styled.li`
 `;
 
 export const AboutUsCardImg = styled.img`
-    width: 150px;
-    height: 140px;
+    width: 120px;
+    height: 100px;
 
     @media screen and (max-width: ${width.mobile}) {
         width: 98px;

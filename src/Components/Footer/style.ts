@@ -66,7 +66,7 @@ export const SocialMediaIMG = styled.img`
         width: 2rem;
     }
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        width: 4rem;
+        width: 3.5rem;
     }
 `;
 

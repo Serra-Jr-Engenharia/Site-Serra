@@ -3,10 +3,10 @@ import { width } from "../../../../Services/config";
 import { Device } from "../../../../Config/Device";
 
 export const Icon = styled.img`
-  width: ${Device.Screen.height * 0.2}px;
-  height: ${Device.Screen.height * 0.2}px;
-
   @media screen and (max-width: ${width.notebook}) {
+    height: 8vh;
+  }
+  @media screen and (min-width: ${width.notebook}) {
     height: 10vh;
   }
   @media screen and (max-width: ${width.largeDesktop}) {
@@ -15,33 +15,14 @@ export const Icon = styled.img`
 `;
 
 export const IconDescription = styled.p`
-  font-family: "Maven Pro";
-  font-style: normal;
   font-weight: 500;
-  font-size: ${Device.FontSize.xLarge}px;
-  /* line-height: 30px; */
-  /* min-height: 90px; */
+  font-size: 20px;
+  min-height: 90px;
   margin: 0;
   padding: 0;
-  /* margin-bottom: 0; */
-  /* width: 200px; */
-  width: 70%;
+  margin-bottom: 0;
   text-align: center;
-  color: #000000;
-  font-size: ${Device.FontSize.standart}px;
-  margin-top: ${Device.FontSize.standart}px;
-
-  /* @media screen and (min-width: ${width.largeDesktop}) {
-    line-height: 50px;
-    font-size: 35px;
-    width: 400px;
-  }
-
-  @media screen and (min-width: ${width.extraLargeDesktop}) {
-    line-height: 60px;
-    font-size: 55px;
-    width: 500px;
-  } */
+  color: #000000;  
 `;
 
 export const HomeIconsStyle = styled.div`
@@ -49,12 +30,7 @@ export const HomeIconsStyle = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin: 10px;
-  margin-top: 50px;
-  margin-bottom: 50px; */
-
-  @media screen and (max-width: ${width.tablet}) {
-    /* margin-top: 30px;
-    margin-bottom: 0; */
-  }
+  margin-top: 20px;
+  width: 250px;
+ 
 `;

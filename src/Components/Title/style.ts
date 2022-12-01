@@ -56,6 +56,7 @@ export const TitleStyle = styled.div`
     justify-content: center;
     align-items: center;
     margin: 20px;
+    margin-top: 0px;
 `;
 
 export const TitleContainer = styled.div`

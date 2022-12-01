@@ -29,12 +29,5 @@ export const compData = {
             summary: 'O projeto consistiu no desenvolvimento de um website para a TMF Usinagem, para exibição de produtos e serviços oferecidos pela empresa. O site conta com o catálogo de produtos, além da possibilidade de agendamento de orçamento dos serviços oferecidos pela funcionalidade de envio de e-mails. Também há páginas de informações sobre a empresa e um mapa integrado exibindo a localização da mesma.',
             acess: 'https://usinagemtmf.com.br/'
         },
-        {
-            title: "Projeto Miljóias",
-            image: [milJoiasImage],
-            imageSize: '30vh',
-            content: `O projeto consistiu no desenvolvimento de um website para exibição do catálogo de produtos da loja, junto com o site foi desenvolvido um banco de dados com sistema de autenticação para que os funcionários autorizados pudessem fazer a atualização do catálogo cadastrando ou retirando novos itens. Junto com o website foi desenvolvido um manual com todas as instruções para manuseio do site.`,
-            summary: 'O projeto consistiu no desenvolvimento de um website para exibição do catálogo de produtos da loja, junto com o site foi desenvolvido um banco de dados com sistema de autenticação para que os funcionários autorizados pudessem fazer a atualização do catálogo cadastrando ou retirando novos itens. Junto com o website foi desenvolvido um manual com todas as instruções para manuseio do site.',
-        },
     ],
 }

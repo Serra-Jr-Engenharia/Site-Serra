@@ -20,14 +20,18 @@ export const EngComp = styled.div`
 `;
 
 export const EngCompImg = styled.img`
-    margin-top: 10px;
-    width: 40%;
-
     @media screen and (max-width: ${width.largeMobile}) {
-        width: 70%;
+        width: 60%;
+        margin-top: 10%;
     }
-    @media screen and (min-width: ${width.largeDesktop}) {
-        width: 30%;
+
+    @media screen and (min-width: ${width.largeMobile}) {
+        width: 40%;
+        margin-top: 5%;
+    }
+    @media screen and (min-width: ${width.notebook}) {
+        width: 25%;
+        margin-top: 0;
     }
 `;
 
@@ -42,31 +46,24 @@ export const EngCompP = styled.p`
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
     text-align: center;  
     color: #FFFFFF;
     margin: 20px;
 
-    @media screen and (max-width: ${width.largeMobile}) {
-        margin-top: 20%;
-        line-height: 5%;
+    @media screen and (max-width: ${width.tablet}) {
         font-size: 40px;
-    }  
-
-    @media screen and (min-width: 1280px){
-        font-size: 70px;
-        line-height: 100px;
-        
     }
 
-    @media screen and (min-width: 1920px) {
-        font-size: 106px;
-        line-height: 120px;
+    @media screen and (min-width: ${width.tablet}) {
+        font-size: 50px;
     }
 
-    @media screen and (min-width: 2048px) {
-        font-size: 110px;
-        line-height: 130px;
+    @media screen and (min-width: ${width.largeDesktop}) {
+        font-size: 100px;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        font-size: 140px;
     }
 `;
 
@@ -281,6 +278,9 @@ export const SlLogoBox = styled.div`
 `;
 
 export const SlLogo = styled.img`
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5%;
 
     @media screen and (max-width: ${width.tablet}){
         width: 50px;

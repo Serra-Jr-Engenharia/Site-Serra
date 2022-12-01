@@ -169,11 +169,14 @@ export const HistoryText2 = styled.span`
     color: black;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
     text-align: justify;
     padding: 20px 30px;
 
     @media screen and (max-width: ${width.tablet}) {
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: ${width.tablet}) {
         font-size: 20px;
     }
 
@@ -197,20 +200,25 @@ export const HistoryTextContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width: ${width.tablet}) {
+    @media screen and (max-width: ${width.notebook}) {
         width: 90%;
     }
 `;
 
 export const HistoryImg = styled.img`
-    width: 25%;
-    height: 25%;
+    width: 35%;
+    height: 35%;
     display: flex;
     justify-self: center;
     align-self: center;
     margin: 40px;
     border-radius: 1rem;
 
+
+    @media screen and (max-width: ${width.notebook}) {
+        width: 75%;
+        height: 75%;
+    }
 
 `;
 

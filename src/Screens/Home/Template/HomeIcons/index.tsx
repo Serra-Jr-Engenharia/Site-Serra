@@ -1,4 +1,5 @@
 import React from 'react';
+import { Device } from '../../../../Config/Device';
 import { HomeIconsStyle, Icon, IconDescription } from './style'
 
 interface IconsProp{
@@ -8,6 +9,7 @@ interface IconsProp{
 }
 
 export const HomeIcons: React.FC<IconsProp> = ({icon, text, alt}) =>{
+
     return (
         <HomeIconsStyle>
             <Icon src={icon} alt={alt} />

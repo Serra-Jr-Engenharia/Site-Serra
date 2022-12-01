@@ -13,6 +13,9 @@ export const SloganTextContainer = styled.div`
         @media screen and (min-width: ${width.largeDesktop}){
             font-size: 60px;
         }
+        @media screen and (min-width: ${width.extraLargeDesktop}){
+            font-size: 80px;
+        }
     }
 
     .writer-cursor{

@@ -56,7 +56,7 @@ const Carousel: React.FC<SliderProps> = (props) => {
 
                     const tamanhoDoTexto = item.content.length
 
-                    console.log(tamanhoDoTexto)
+                    // console.log(tamanhoDoTexto)
 
                     return (
                         <Container key={key}>
