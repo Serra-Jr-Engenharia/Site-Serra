@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import ReactModal from 'react-modal'
-import { width } from '../../Services/config';
-import ImageCarousel from '../ImageCarousel';
+import ImageCarousel from '../../../../Components/ImageCarousel';
 import { ModalLine, ModalContainer, ModalList, ModalListLine, ModalP, ModalTitle, ModalCrossButton, ModalImg, ModalResume, ModalH2, ModalAnchor, ModalHeader, ModalAcess } from './style';
 
 interface ObjectProps{
@@ -34,10 +33,9 @@ const Modal: React.FC<ModalProps> = ({status, setStatus, data}) =>{
           marginRight: '-50%',
           transform: 'translate(-50%, -50%)',
           width: '60vw',
-          height: '70vh',
-          overflow: 'scroll',
+          height: '80vh',
           color: '#001830',
-          paddingTop: 0
+          paddingTop: 0,
         },
 
         overlay: {

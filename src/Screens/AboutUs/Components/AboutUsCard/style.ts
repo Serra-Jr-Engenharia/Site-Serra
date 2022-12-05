@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { width } from "../../../../Services/config";
 
-export const AboutUsCardStyle = styled.div`
+export const Container = styled.div`
     
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ export const AboutUsCardStyle = styled.div`
 
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 23px;
     line-height: 32px;
 
 
@@ -44,7 +44,7 @@ export const AboutUsCardStyle = styled.div`
     
 `;
 
-export const AboutUsTitle = styled.p`
+export const Title = styled.p`
     padding-bottom: 2%;
     border-image: linear-gradient(90deg, rgba(4,173,215,1) 0%, rgba(4,173,215,1) 41%, rgba(255,116,0,1) 69%);
     border-bottom: 5px solid;
@@ -87,7 +87,7 @@ export const Content = styled.p`
     }
 `;
 
-export const AboutUsCardUl = styled.ul`
+export const ListContainer = styled.ul`
 
     @media screen and (min-width: 2048px) {
         font-size: 35px;
@@ -112,28 +112,26 @@ export const List = styled.li`
     }
 `;
 
-export const AboutUsCardImg = styled.img`
+export const Image = styled.img`
     width: 120px;
     height: 100px;
-
-    @media screen and (max-width: ${width.mobile}) {
-        width: 98px;
-        height: 98px;
-    }
 
     @media screen and (max-width: ${width.tablet}) {
         width: 100px;
         height: 100px;
     }
-
+    @media screen and (min-width: ${width.tablet}) {
+        width: 100px;
+        height: 100px;
+    }
     @media screen and (min-width: ${width.largeDesktop}) {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 `;
     

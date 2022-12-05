@@ -4,19 +4,19 @@ import EachService from "../../Components/EachService"
 import Systems from "../../../../Assets/CompPage/desenvolvimento-sistemas.svg"
 import Sites from "../../../../Assets/CompPage/desenvolvimento-sites.svg"
 import Arrow from "../../../../Assets/CompPage/seta.svg"
-import CSS from "../../../../Assets/CompPage/css-icon.svg"
-import HTML from "../../../../Assets/CompPage/html-icon.svg"
-import JS from "../../../../Assets/CompPage/js-icon.svg"
-import REACT from "../../../../Assets/CompPage/react-icon.svg"
-import TS from "../../../../Assets/CompPage/ts-icon.svg"
-import Styled from "../../../../Assets/CompPage/styled-icon.svg"
+import CSS from "../../../../Assets/CompPage/css.svg"
+import HTML from "../../../../Assets/CompPage/html.svg"
+import JS from "../../../../Assets/CompPage/js.svg"
+import REACT from "../../../../Assets/CompPage/react.svg"
+import TS from "../../../../Assets/CompPage/ts.svg"
+import Styled from "../../../../Assets/CompPage/styled.svg"
 
 import {    
     Title,
     ServicesContainer,
     Container,
-    SlLogoContainer,
-    SlLogo
+    LogoContainer,
+    Logo
 } from "./style";
 
 
@@ -44,14 +44,14 @@ const ServiceLetterComp: React.FC = () =>{
                 
             </ServicesContainer>
 
-            <SlLogoContainer>
-                <SlLogo src={HTML} alt="ImagemHtml" />
-                <SlLogo src={CSS} alt="Imagemcss" />
-                <SlLogo src={JS} alt="ImagemJS" />
-                <SlLogo src={TS} alt="ImagemTS" />
-                <SlLogo src={REACT} alt="ImagemREACT" />
-                <SlLogo src={Styled} alt="ImagemStyled" />
-            </SlLogoContainer>
+            <LogoContainer>
+                <Logo src={HTML} alt="ImagemHtml" />
+                <Logo src={CSS} alt="Imagemcss" />
+                <Logo src={JS} alt="ImagemJS" />
+                <Logo src={TS} alt="ImagemTS" />
+                <Logo src={REACT} alt="ImagemREACT" />
+                <Logo src={Styled} alt="ImagemStyled" />
+            </LogoContainer>
         </Container>
     )
 }

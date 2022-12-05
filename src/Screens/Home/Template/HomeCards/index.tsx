@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Card from "../../Components/Card"
-import BottomCard from '../../../../Components/BottomCard'
+import BottomCard from '../../../AboutUs/Components/OurImages'
 
 import monitorIcon from '../../../../Assets/Home/Sites.svg'
 import systemsIcon from '../../../../Assets/Home/sistemas-web.svg'
@@ -10,6 +10,9 @@ import drawIcon from '../../../../Assets/Home/desenho-tecnico.svg'
 import botIcon from '../../../../Assets/Home/braco-robo.svg'
 import printerIcon from '../../../../Assets/Home/impressora-3d.svg'
 import ourHistory from '../../../../Assets/Home/membros-2.svg'
+
+import GradientTitle from '../../../../Components/GradientTitle'
+import OurHistory from '../../Components/OurHistory'
 
 import { 
     HomeStyle, 
@@ -20,7 +23,7 @@ import {
 const HomeCards: React.FC = () =>{
     return(
         <HomeStyle>
-            {/* <Title text="O que fazemos" /> */}
+            <GradientTitle text="O que fazemos" />
             <CardContainer>
                 <Card 
                     title="Projetos de Computação" 
@@ -40,16 +43,11 @@ const HomeCards: React.FC = () =>{
                 />  
             </CardContainer>
         
-            <BottomCard 
+            <OurHistory 
                 title="Nossa História" 
-                buttonTitle="Saiba Mais" 
-                buttonUrl="/quemsomos"
                 color='#001830' 
-                hasButton={true}
                 text="A Serra Jr. Engenharia, criada em 08 de maio de 2002, é uma empresa formada exclusivamente por alunos do curso de graduação de Engenharia Mecânica e de Engenharia de Computação do Instituto Politécnico da Universidade do Estado do Rio de Janeiro – IPRJ/UERJ e tem como objetivo central o incentivo à inserção e desenvolvimento dos alunos na prática empresarial. Teve suas atividades paradas no ano de 2011 devido a tragédia climática que abalou Nova Friburgo. Em 2013, retomou com força total seus projetos. Hoje, está melhor do que nunca oferecendo soluções em engenharia mecânica e computação para todo o mercado."
                 image={ourHistory}
-                alt="Imagem com os membros da Serra Jr. Engenharia"
-                hasCarousel={false}
             />
         </HomeStyle>    
     )

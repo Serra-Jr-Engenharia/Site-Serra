@@ -16,7 +16,7 @@ export const Title = styled.h1`
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 500;
-    font-size: 55px;
+    font-size: 40px;
     line-height: 113px;
     margin-top: 0;
     margin-bottom: 0px;
@@ -43,34 +43,32 @@ export const ServicesContainer = styled.div `
     }
 `;
 
-export const SlLogoContainer = styled.div`
+export const LogoContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
-    @media screen and (max-width: ${width.largeMobile}){
-        padding-bottom: 10%;
-    }
-
-
 `;
 
-export const SlLogo = styled.img`
-    width: 80px;
-    height: 80px;
-    margin-bottom: 5%;
+export const Logo = styled.img`
 
     @media screen and (max-width: ${width.tablet}){
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5%;
+        margin-right: 2%;
+    }
+    @media screen and (min-width: ${width.tablet}){
         width: 50px;
         height: 50px;
         margin-bottom: 5%;
+        margin-right: 2%;
     }
 
-    @media screen and (min-width: ${width.extraLargeDesktop}) {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 2%;
+    @media screen and (min-width: ${width.largeDesktop}) {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 3%;
     }
 `;
 

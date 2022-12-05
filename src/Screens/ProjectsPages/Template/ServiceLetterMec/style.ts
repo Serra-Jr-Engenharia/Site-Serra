@@ -16,7 +16,7 @@ export const Title = styled.h1`
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 500;
-    font-size: 55px;
+    font-size: 40px;
     line-height: 113px;
     margin-top: 0;
     margin-bottom: 0px;

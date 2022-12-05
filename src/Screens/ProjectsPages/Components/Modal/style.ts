@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { width } from "../../Services/config";
+import { width } from "../../../../Services/config";
 
 export const ModalContainer = styled.div`
     display: flex;
@@ -12,6 +12,7 @@ export const ModalContainer = styled.div`
     @media screen and (min-width: ${width.extraLargeDesktop}){
         font-size: 40px;
     }
+    /* overflow: 'scroll', */
 `;
 
 export const ModalHeader = styled.div`

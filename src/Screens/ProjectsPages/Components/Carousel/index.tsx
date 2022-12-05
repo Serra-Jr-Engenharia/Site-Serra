@@ -17,7 +17,7 @@ import {
     SectionButton,
     SliderContainer
 } from "./style"
-import Title from "../Title";
+import GradientTitle from "../../../../Components/GradientTitle";
 
 
 interface ObjectProps{
@@ -54,16 +54,12 @@ const Carousel: React.FC<SliderProps> = (props) => {
             <Slider {...settings}>
                 { props.carouselData.map((item, key) => {
 
-                    const tamanhoDoTexto = item.content.length
-
-                    // console.log(tamanhoDoTexto)
-
                     return (
                         <Container key={key}>
                             <Wrapper>
                                 <ContainerSection>
                                     <ContainerSectionTitle>
-                                        <Title text={item.title}/>
+                                        <GradientTitle text={item.title}/>
                                     </ContainerSectionTitle>
 
                                     <ContainerSectionContainer>
@@ -71,7 +67,7 @@ const Carousel: React.FC<SliderProps> = (props) => {
                                             <Logo src={item.image[0]} alt={item.title} style={{width: item.imageWidth}}/>
                                         </ContainerLogo>
                                         <ContainerSectionContent>
-                                            <SectionSpan tamanhoDoTexto={tamanhoDoTexto}>{item.content}</SectionSpan>
+                                            <SectionSpan>{item.content}</SectionSpan>
 
                                             <SectionButton onClick={() => {
                                                 setStatusModal(!statusModal)

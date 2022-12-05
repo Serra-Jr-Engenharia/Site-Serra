@@ -1,6 +1,6 @@
 import React from "react"
 
-import Carousel from "../../../../Components/Carousel"
+import Carousel from "../../Components/Carousel"
 import Banner from "../../Components/Banner"
 import ServiceLetter from "../ServiceLetterMec"
 import ContactButton from "../../Components/ContactButton"

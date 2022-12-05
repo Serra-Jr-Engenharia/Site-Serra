@@ -8,33 +8,34 @@ export const InformationSpan = styled.span`
     font-style: normal;
     font-weight: 300;
     font-size: 25px;
-    line-height: 25px;
     color: #000000;
     margin-left: 5%;
 
+    @media screen and (max-width: ${width.tablet}) {
+        font-size: 17px;
+    }
+
     @media screen and (min-width: ${width.tablet}) {
         font-size: 20px;
-        line-height: 20px;
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {
         font-weight: 300;
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 35px;
     }
     
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         font-weight: 300;
-        font-size: 60px;
-        line-height: 100px;
+        font-size: 50px;
     }
 
 `;
 
 export const InformationImg = styled.img`
-
-    width: 3em;
-    height: 3em;
+    @media screen and (max-width: ${width.tablet}) {
+        width: 2em;
+        height: 2em;
+    }
 
     @media screen and (min-width: ${width.tablet}) {
         width: 4em;
@@ -47,8 +48,8 @@ export const InformationImg = styled.img`
     }
     
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        width: 10em;
-        height: 10em;
+        width: 8em;
+        height: 8em;
     }
    
 `;

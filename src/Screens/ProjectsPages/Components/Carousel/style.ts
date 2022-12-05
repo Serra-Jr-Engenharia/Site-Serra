@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { width } from "../../Services/config";
+import { width } from "../../../../Services/config";
 
 interface Props{
     containerWidth?: string
@@ -114,32 +114,37 @@ interface SectionSpanProps {
 }
 
 
-export const SectionSpan = styled.span<SectionSpanProps>`
+export const SectionSpan = styled.span`
     width: 90%;
-    /* height: 20vh; */
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--blue);
 
-    @media screen and (max-width: ${width.notebook}) {
+    @media screen and (max-width: ${width.largeMobile}) {
         width: 85%;
         font-size: 1rem;
-        color: var(--blue);
-        /* ${ ({tamanhoDoTexto}) => tamanhoDoTexto && (tamanhoDoTexto > 350) ? css`font-size: 0.7rem`: css`font-size: 0.9rem`} */
+        height: 50vh;
+    }
+
+    @media screen and (min-width: ${width.tablet}) {
+        width: 85%;
+        font-size: 1rem;
+        height: 20vh;
     }
 
     @media screen and (min-width: ${width.notebook}) {
-        height: 30vh;
+        height: 23vh;
+        
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {
         font-size: 2.0rem;
-        height: 15vh;
+        height: 20vh;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        font-size: 3.5rem;
-        height: 25vh;
+        font-size: 3.0rem;
+        height: 20vh;
     }
 
     

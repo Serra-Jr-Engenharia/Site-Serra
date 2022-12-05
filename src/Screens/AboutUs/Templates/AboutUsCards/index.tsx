@@ -1,7 +1,7 @@
 import React from 'react'
 import { aboutUsData } from '../../../../Services/aboutUsData'
 import AboutUsCard from '../../Components/AboutUsCard'
-import BottomCard from '../../../../Components/BottomCard'
+import OurImages from '../../Components/OurImages'
 
 import { 
     Content,
@@ -45,11 +45,9 @@ const AboutUsCards: React.FC = () => {
 
             </Content>
 
-            <BottomCard 
+            <OurImages
                 title='Quem Somos' 
                 color='#001830' 
-                hasButton={false} 
-                hasCarousel={true}
             />
         </Container>
     )

@@ -1,12 +1,14 @@
 import React from "react"
-import Title from "../../../../Components/Title"
+
 import { 
-    AboutUsCardStyle, 
-    AboutUsCardImg, 
+
+    Container,
     Content, 
-    List, 
-    AboutUsCardUl,
-    AboutUsTitle
+    Image, 
+    List,
+    ListContainer,
+    Title, 
+    
 } from './style'
 
 interface AboutUsCardProps{
@@ -20,19 +22,19 @@ interface AboutUsCardProps{
 
 export const AboutUsCard: React.FC<AboutUsCardProps> = ({image, titleText, imageAlt, hasList, content, list}) => {
     return (
-        <AboutUsCardStyle>
-            <AboutUsCardImg src={image} alt={imageAlt} />
+        <Container>
+            <Image src={image} alt={imageAlt} />
             
-            <AboutUsTitle>{titleText}</AboutUsTitle>
+            <Title>{titleText}</Title>
             
             {hasList ?
-                <AboutUsCardUl>
+                <ListContainer>
                     {list ? list.map((listElement, key) => <List key={key}>{listElement}</List>) : null}
-                </AboutUsCardUl>
+                </ListContainer>
                 :
                 <Content>{content}</Content>
             }
-        </AboutUsCardStyle>
+        </Container>
     )
 }
 

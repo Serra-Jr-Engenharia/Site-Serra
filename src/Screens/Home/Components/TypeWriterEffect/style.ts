@@ -6,10 +6,12 @@ export const SloganTextContainer = styled.div`
 
     .writer{
         font-family: 'Courier Prime';
-        font-size: 45px;
+        font-size: 40px;
         color: #001830;
         font-weight: 700;
-
+        @media screen and (max-width: ${width.largeMobile}){
+            font-size: 30px;
+        }
         @media screen and (min-width: ${width.largeDesktop}){
             font-size: 60px;
         }

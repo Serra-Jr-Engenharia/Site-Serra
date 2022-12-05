@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Title from "../../../Components/Title";
 import Mapa from "../Templates/Map";
 
 import emailjs from '@emailjs/browser';
@@ -28,6 +27,7 @@ import { Information,
      InformationIconText,
      CaptchaContainer
 } from './style';
+import GradientTitle from "../../../Components/GradientTitle";
 
 const Contact: React.FC = () => {
 
@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
 
     return(
         <ContactStyle>
-            <Title titleWidth="40%" text="Entre em contato conosco!" />  
+            <GradientTitle titleWidth="40%" text="Entre em contato conosco!" />
             <All>
                 <Information>
                     <InformationIconText>

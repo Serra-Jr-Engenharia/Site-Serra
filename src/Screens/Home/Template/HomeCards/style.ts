@@ -26,4 +26,8 @@ export const CardContainer = styled.div`
 
 export const HomeStyle = styled.div`
   background-image: url(${BackgroundIMG});
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: top;
+  width: 100%;
 `;

@@ -1,6 +1,6 @@
 import React from "react"
 
-import Carousel from "../../../../Components/Carousel"
+import Carousel from "../../Components/Carousel"
 import { compData } from "../../../../Services/compData"
 import Banner from "../../Components/Banner"
 import ServiceLetterComp from "../ServiceLetterComp"

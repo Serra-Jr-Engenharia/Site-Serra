@@ -19,11 +19,13 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: ${width.desktop}) {
-    width: ${(Device.Screen.width - 550)/ 2}px;
+    width: calc((100% - 450px)/2);
+    /* width: ${(Device.Screen.width - 550)/ 2}px; */
   }
 
   @media screen and (min-width: ${width.extraLargeDesktop}) {
-    width: ${(Device.Screen.width - 1000)/ 2}px;
+    width: calc((100% - 900px)/2);
+    /* width: ${(Device.Screen.width - 900)/ 2}px; */
   }
 `;
 
@@ -104,6 +106,7 @@ export const Button = styled.button<Props>`
   @media screen and (min-width: ${width.largeDesktop}) {
     font-size: 40px;
     width: 30%;
+    margin-top: 30px;
   }
 `;
 

@@ -14,7 +14,6 @@ export const Presentation = styled.div`
     flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-end;
-    min-height: ${Device.Screen.height * 0.75}px;
   }
 `;
 
@@ -39,11 +38,21 @@ export const Slogan = styled.div`
   justify-content: center;
   flex-direction: column;
   
-  width: 45%;
-  height: 45%;
+  width: 55%;
 
-  @media screen and (max-width: ${width.tablet}) {
+  @media screen and (max-width: ${width.largeMobile}) {
+    height: 200px;
+  }
+  @media screen and (min-width: ${width.largeMobile}) {
+    height: 200px;
+  }
+  @media screen and (min-width: ${width.tablet}) {
     width: 80%;
+    height: 120px;
     margin-top: 4%;
+  }
+  @media screen and (min-width: ${width.notebook}) {
+    width: 45%;
+    height: 45%;
   }
 `;

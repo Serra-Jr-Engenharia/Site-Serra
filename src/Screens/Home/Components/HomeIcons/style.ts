@@ -1,6 +1,21 @@
 import styled from "styled-components";
 import { width } from "../../../../Services/config";
-import { Device } from "../../../../Config/Device";
+
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 250px;
+  
+  @media screen and (min-width: ${width.extraLargeDesktop}) {
+    width: 290px;
+    height: 300px;
+  }
+ 
+`;
 
 export const Icon = styled.img`
   @media screen and (max-width: ${width.notebook}) {
@@ -25,6 +40,7 @@ export const Description = styled.p`
   
   @media screen and (max-width: ${width.notebook}) {
     font-size: 20px;
+    min-height: 60px;
   }
   @media screen and (min-width: ${width.notebook}) {
     font-size: 20px;
@@ -32,14 +48,7 @@ export const Description = styled.p`
   @media screen and (min-width: ${width.largeDesktop}) {
     font-size: 25px;
   }
-`;
-
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  width: 250px;
- 
+  @media screen and (min-width: ${width.extraLargeDesktop}) {
+    font-size: 35px;
+  }
 `;

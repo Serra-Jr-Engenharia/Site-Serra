@@ -8,7 +8,7 @@ interface TitleProps{
     titleWidth?: string
 }
 
-const Title: React.FC<TitleProps> = ({text, fontSize, titleWidth}) => { 
+const GradientTitle: React.FC<TitleProps> = ({text, fontSize, titleWidth}) => { 
     return(
         <TitleStyle>
             <TitleContainer>
@@ -19,4 +19,4 @@ const Title: React.FC<TitleProps> = ({text, fontSize, titleWidth}) => {
     )
 }
 
-export default Title
+export default GradientTitle

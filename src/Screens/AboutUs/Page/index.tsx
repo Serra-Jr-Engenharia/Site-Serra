@@ -1,7 +1,7 @@
 import React from 'react'
 
 import imageAboutUs from '../../../Assets/AboutUs/presentation-image.svg'
-import AboutUsList from '../Templates/AboutUsCards'
+import AboutUsCards from '../Templates/AboutUsCards'
 
 import { 
     PresentationMain,
@@ -20,7 +20,7 @@ const AboutUs: React.FC = () => {
                 </PresentationMain>
             </PresentationContainer>  
 
-            <AboutUsList />
+            <AboutUsCards />
         </>
     )
 }
