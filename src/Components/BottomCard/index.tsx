@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import AboutUsCarousel from '../../Screens/AboutUs/Templates/AboutUsCarousel'
+import AboutUsCarousel from '../../Screens/AboutUs/Components/AboutUsCarousel'
 import { aboutUsData } from '../../Services/aboutUsData'
 
 import { 

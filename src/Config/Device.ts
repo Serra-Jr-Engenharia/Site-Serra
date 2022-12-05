@@ -12,4 +12,10 @@ export const Device = {
     large: window.innerHeight * 0.024,
     xLarge: window.innerHeight * 0.035,
   },
+
+  Color: {
+    lightBlue: '#04ADD7',
+    darkBlue: '#001830',
+    orange: '#FF7400'
+  }
 };
