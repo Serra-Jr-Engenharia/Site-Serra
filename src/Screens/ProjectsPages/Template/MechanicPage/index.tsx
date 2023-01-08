@@ -7,7 +7,7 @@ import ContactButton from "../../Components/ContactButton"
 
 import { mechanicData } from "../../../../Services/mechanicData"
 import ScrollUp from "../../../../Assets/Global/arrow-up.svg"
-import presentationImg from '../../../../Assets/MechanicPage/presentation-image.svg'
+import presentationImg from '../../../../Assets/MechanicPage/presentation-image.webp'
 
 import {    
     Scroll,

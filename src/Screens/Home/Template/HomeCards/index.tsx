@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Card from "../../Components/Card"
-import BottomCard from '../../../AboutUs/Components/OurImages'
 
 import monitorIcon from '../../../../Assets/Home/Sites.svg'
 import systemsIcon from '../../../../Assets/Home/sistemas-web.svg'
@@ -9,7 +8,7 @@ import repairIcon from '../../../../Assets/Home/manutencao.svg'
 import drawIcon from '../../../../Assets/Home/desenho-tecnico.svg'
 import botIcon from '../../../../Assets/Home/braco-robo.svg'
 import printerIcon from '../../../../Assets/Home/impressora-3d.svg'
-import ourHistory from '../../../../Assets/Home/membros-2.svg'
+import ourHistory from '../../../../Assets/Home/membros-2.webp'
 
 import GradientTitle from '../../../../Components/GradientTitle'
 import OurHistory from '../../Components/OurHistory'

@@ -20,12 +20,15 @@ export const Container = styled.div`
 export const Icon = styled.img`
   @media screen and (max-width: ${width.notebook}) {
     height: 8vh;
+    width: 20vw;
   }
   @media screen and (min-width: ${width.notebook}) {
     height: 10vh;
+    width: 8vw;
   }
   @media screen and (min-width: ${width.largeDesktop}) {
-    height: 7vh;
+    height: 8vh;
+    width: 7vw;
   }
 `;
 

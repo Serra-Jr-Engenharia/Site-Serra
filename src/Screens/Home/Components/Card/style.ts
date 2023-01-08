@@ -15,17 +15,20 @@ export const Container = styled.div`
     width: 90%;
   }
   @media screen and (min-width: ${width.tablet}) {
+    width: 90%;
+  }
+  @media screen and (min-width: ${width.notebook}) {
+    width: 60%;
+  }
+  @media screen and (min-width: ${width.desktop}) {
     width: 50%;
   }
-
-  @media screen and (min-width: ${width.desktop}) {
-    width: calc((100% - 450px)/2);
-    /* width: ${(Device.Screen.width - 550)/ 2}px; */
+  @media screen and (min-width: ${width.largeDesktop}) {
+    width: calc((100% - 500px)/2);
   }
 
   @media screen and (min-width: ${width.extraLargeDesktop}) {
     width: calc((100% - 900px)/2);
-    /* width: ${(Device.Screen.width - 900)/ 2}px; */
   }
 `;
 

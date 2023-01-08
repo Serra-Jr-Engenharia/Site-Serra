@@ -84,23 +84,23 @@ export const Text = styled.span`
     padding-bottom: 6%;
 
     @media screen and (max-width: ${width.tablet}) {
-        font-size: 16px;
-        padding-left: 1%;
+        font-size: 18px;
     }
+
     @media screen and (min-width: ${width.tablet}) {
         font-size: 18px;
     }
 
     @media screen and (min-width: ${width.desktop}) {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        font-size: 40px;
+        font-size: 48px;
     }
 `;
 

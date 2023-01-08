@@ -17,6 +17,7 @@ import {
     LinksSpan,
     LinksP,
     ContentDivision,
+    Copywrite,
 } from './style';
 
 import facebookIcon from '../../../Assets/Global/facebook.svg'
@@ -62,8 +63,8 @@ const Footer: React.FC = () =>{
                 </Row>
                 <ContentDivision />
                 <FooterBottomRow>
-                    <span>© Serra Jr. Engenharia 2022</span>
-                    <span>Todos os direitos reservados</span>
+                    <Copywrite>© Serra Jr. Engenharia 2022</Copywrite>
+                    <Copywrite>Todos os direitos reservados</Copywrite>
                 </FooterBottomRow>
             </ContentContainer>
         </FooterStyle>

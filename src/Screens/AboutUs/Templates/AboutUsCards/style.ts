@@ -12,7 +12,7 @@ export const Content = styled.div`
     margin-top: 5%;
     margin-bottom: 5%;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: ${width.tablet}) {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap; 
@@ -23,19 +23,24 @@ export const Content = styled.div`
 
 export const ContentDivision = styled.div`
     border: 1px solid #001830;
-    height: 80vh;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: ${width.tablet}) {
         transform: rotate(90deg);
         margin: 0px;
-        height: 10vh;
-        
+        height: 8vh;   
     }
-
+    @media screen and (min-width: ${width.tablet}) {
+        height: 40vh;   
+    }
+    @media screen and (min-width: ${width.notebook}) {
+        height: 70vh;   
+    }
+    @media screen and (min-width: ${width.desktop}) {
+        height: 60vh;   
+    }
     @media screen and (min-width: ${width.largeDesktop}) {
-        height: 45vh;
+        height: 50vh;
     }
-
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         height: 50vh;
     }

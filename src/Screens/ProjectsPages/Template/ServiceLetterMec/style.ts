@@ -34,13 +34,9 @@ export const ServicesContainer = styled.div `
     display: flex;
     justify-content: space-around;
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: ${width.tablet}) {
         flex-direction: column;
     }  
-    
-    @media screen and (min-width: ${width.extraLargeDesktop}) {
-        margin-left: 10%;
-    }
 `;
 
 

@@ -1,5 +1,5 @@
-import membersImage1 from '../Assets/AboutUs/membros-1.svg'
-import membersImage2 from '../Assets/AboutUs/membros-2.svg'
+import membersImage1 from '../Assets/AboutUs/membros-1.webp'
+import membersImage2 from '../Assets/AboutUs/membros-2.webp'
 
 import missionIcon from '../Assets/AboutUs/missao-icon.svg'
 import visionIcon from '../Assets/AboutUs/visao-icon.svg'

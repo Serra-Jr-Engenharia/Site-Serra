@@ -7,7 +7,6 @@ export const PresentationMain = styled.div`
     display: flex;
     justify-content: space-around;
     border-radius: 0px 0px 0px 100px;
-    min-height: 50vh;
     
     @media screen and (max-width: 390px) {
         order: 1;
@@ -71,7 +70,7 @@ export const PresentationAboutUsImg = styled.img`
         margin-top: 5%;
     }
     @media screen and (min-width: ${width.notebook}) {
-        width: 25%;
+        width: 30%;
         margin-top: 0;
     }
 `;

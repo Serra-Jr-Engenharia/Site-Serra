@@ -1,7 +1,7 @@
 import React from 'react'
 
 import TypeWriterEffect from '../TypeWriterEffect'
-import presentationImage from '../../../../Assets/Home/presentation-image.png'
+import presentationImage from '../../../../Assets/Home/presentation-image.svg'
 
 import { 
     Presentation, 

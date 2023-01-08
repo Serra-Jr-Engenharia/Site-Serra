@@ -1,11 +1,6 @@
 import styled, { css } from "styled-components";
 import { width } from "../../../../Services/config";
 
-interface Props{
-    containerWidth?: string
-}
-
-
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
@@ -43,7 +38,14 @@ export const ContainerSection = styled.section`
     margin-bottom: 3%;
   
     background-color: lightgrey;
-    border-radius: 3rem;    
+    border-radius: 3rem;
+
+    @media screen and (min-width: ${width.desktop}) {    
+        width: 75%;
+    }
+    @media screen and (min-width: ${width.extraLargeDesktop}) {    
+        width: 65%;
+    }
 `;
 
 export const ContainerSectionTitle = styled.div`
@@ -80,17 +82,31 @@ export const ContainerSectionContainer = styled.div`
 
 
 export const Logo = styled.img`
-    height: 30vh;
     border-radius: 20px;
 
-    @media screen and (max-width: ${width.tablet}) {    
-        height: 15vh;
-        border-radius: 20px;
+    @media screen and (max-width: ${width.largeMobile}) {   
+        width: 200px;
+        height: 200px;
     }
-
+    @media screen and (min-width: ${width.largeMobile}) {    
+        width: 300px;
+        height: 200px;
+    }
+    @media screen and (min-width: ${width.notebook}) {    
+        width: 350px;
+        height: 200px;
+    }
+    @media screen and (min-width: ${width.desktop}) {    
+        width: 400px;
+        height: 300px;
+    }
     @media screen and (min-width: ${width.largeDesktop}) {    
-        height: 20vh;
-        border-radius: 20px;
+        width: 450px;
+        height: 350px;
+    }
+    @media screen and (min-width: ${width.extraLargeDesktop}) {    
+        width: 700px;
+        height: 500px;
     }
 `;
 
@@ -99,6 +115,7 @@ export const ContainerLogo = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2%;
 
     @media screen and (max-width: ${width.notebook}) {    
         width: 100%;
@@ -109,45 +126,31 @@ export const ContainerLogo = styled.div`
     }
 `;
 
-interface SectionSpanProps {
-    tamanhoDoTexto: number;
-}
-
-
 export const SectionSpan = styled.span`
     width: 90%;
-    font-size: 1.2rem;
-    font-weight: 500;
     color: var(--blue);
 
     @media screen and (max-width: ${width.largeMobile}) {
         width: 85%;
-        font-size: 1rem;
-        height: 50vh;
+        font-size: 15px;
     }
-
-    @media screen and (min-width: ${width.tablet}) {
+    @media screen and (min-width: ${width.largeMobile}) {
         width: 85%;
-        font-size: 1rem;
-        height: 20vh;
+        font-size: 16px;
     }
-
     @media screen and (min-width: ${width.notebook}) {
-        height: 23vh;
-        
+        font-size: 20px;
     }
-
+    @media screen and (min-width: ${width.desktop}) {
+        font-size: 24px;
+    }
     @media screen and (min-width: ${width.largeDesktop}) {
-        font-size: 2.0rem;
-        height: 20vh;
+        font-size: 28px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        font-size: 3.0rem;
-        height: 20vh;
-    }
-
-    
+        font-size: 45px;
+    }  
 `;
 
 export const SectionButton = styled.button`
@@ -194,16 +197,6 @@ export const ContainerSectionContent = styled.div`
         justify-content: center;
         align-items: center;
         width: 100%;
-    }
-    
-`;
-
-export const SliderContainer = styled.div<Props>`
-    display: inline-block;
-    ${({containerWidth}) => containerWidth ?
-        `width: ${containerWidth}`
-        :
-        `width: 100%`
     }
     
 `;

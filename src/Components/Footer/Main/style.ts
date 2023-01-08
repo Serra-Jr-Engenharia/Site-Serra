@@ -162,6 +162,13 @@ export const Partners = styled.div`
     flex-direction: column;
 `;
 
+export const Copywrite = styled.span`
+    margin: 12px;   
+    margin-top: 0;
+    margin-bottom: 0;
+    
+`;
+
 
 
 

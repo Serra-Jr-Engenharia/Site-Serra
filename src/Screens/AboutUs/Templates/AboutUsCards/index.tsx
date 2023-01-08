@@ -19,8 +19,9 @@ const AboutUsCards: React.FC = () => {
                     list={aboutUsData.icons[0].list}
                     hasList={aboutUsData.icons[0].hasList} 
                     content={aboutUsData.icons[0].content}
-                    titleText= {aboutUsData.icons[0].titleText} 
+                    titleText= {aboutUsData.icons[0].titleText}
                 />
+
                 <ContentDivision />
                 
                 <AboutUsCard
@@ -29,10 +30,11 @@ const AboutUsCards: React.FC = () => {
                     list={aboutUsData.icons[1].list}
                     hasList={aboutUsData.icons[1].hasList} 
                     content={aboutUsData.icons[1].content}
-                    titleText= {aboutUsData.icons[1].titleText} 
+                    titleText= {aboutUsData.icons[1].titleText}
                 />
 
                 <ContentDivision />
+
 
                 <AboutUsCard
                     image={aboutUsData.icons[2].image}
@@ -40,7 +42,7 @@ const AboutUsCards: React.FC = () => {
                     list={aboutUsData.icons[2].list}
                     hasList={aboutUsData.icons[2].hasList} 
                     content={aboutUsData.icons[2].content}
-                    titleText= {aboutUsData.icons[2].titleText} 
+                    titleText= {aboutUsData.icons[2].titleText}
                 />
 
             </Content>

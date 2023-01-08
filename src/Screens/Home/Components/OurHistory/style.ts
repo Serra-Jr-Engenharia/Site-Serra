@@ -101,18 +101,18 @@ export const Text = styled.span`
     font-style: normal;
     font-weight: 400;
     text-align: justify;
-    padding: 20px 30px;
+    padding: 20px 20px;
 
     @media screen and (max-width: ${width.tablet}) {
         font-size: 20px;
     }
 
     @media screen and (min-width: ${width.tablet}) {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     @media screen and (min-width: ${width.desktop}) {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {
@@ -131,18 +131,29 @@ export const Image = styled.img`
     margin: 40px;
     border-radius: 1rem;
 
-
-    @media screen and (max-width: ${width.notebook}) {
-        width: 75%;
-        height: 75%;
+    @media screen and (max-width: ${width.largeMobile}) {
+        width: 85%;
+        height: 85%;
+    }
+    @media screen and (min-width: ${width.largeMobile}) {
+        width: 65%;
+        height: 65%;
     }
     @media screen and (min-width: ${width.notebook}) {
-        width: 35%;
-        height: 35%;
+        width: 33%;
+        height: 33%;
+    }
+    @media screen and (min-width: ${width.desktop}) {
+        width: 28%;
+        height: 28%;
     }
     @media screen and (min-width: ${width.largeDesktop}) {
         width: 25%;
         height: 25%;
+    }
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+        width: 28%;
+        height: 28%;
     }
 
 `;

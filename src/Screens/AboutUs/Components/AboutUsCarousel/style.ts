@@ -33,8 +33,24 @@ export const Wrapper = styled.div`
 
 
 export const Logo = styled.img`
-    height: 40vh;
     border-radius: 20px;
+
+    @media screen and (max-width: ${width.tablet}) {
+        height: 40vh;
+        width: 90vw;
+    }
+
+    @media screen and (min-width: ${width.tablet}) {
+        height: 40vh;
+    }
+
+    @media screen and (min-width: ${width.largeDesktop}) {
+        height: 30vh;
+    }
+
+    @media screen and (min-width: ${width.extraLargeDesktop}) {
+       height: 40vh;
+    }
 `;
 
 export const SliderContainer = styled.div<Props>`

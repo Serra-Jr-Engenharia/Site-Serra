@@ -1,6 +1,6 @@
 import React from 'react'
 
-import imageAboutUs from '../../../Assets/AboutUs/presentation-image.svg'
+import imageAboutUs from '../../../Assets/AboutUs/presentation-image.webp'
 import AboutUsCards from '../Templates/AboutUsCards'
 
 import { 

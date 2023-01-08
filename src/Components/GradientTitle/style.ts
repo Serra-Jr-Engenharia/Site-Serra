@@ -12,14 +12,17 @@ export const TitleText = styled.p`
     text-align: center;
     color: #001830;
     margin-bottom: 10px;
-    width: 80%;
+    /* width: 80%; */
 
     @media screen and (max-width: ${width.tablet}) {
-        font-size: 40px;
+        font-size: 25px;
+    }
+    @media screen and (min-width: ${width.tablet}) {
+        font-size: 25px;
     }
 
     @media screen and (min-width: ${width.notebook}) {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     @media screen and (min-width: ${width.largeDesktop}) {

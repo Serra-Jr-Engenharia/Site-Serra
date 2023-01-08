@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ReactModal from 'react-modal'
 import ImageCarousel from '../../../../Components/ImageCarousel';
+import { Device } from '../../../../Config/Device';
 import { ModalLine, ModalContainer, ModalList, ModalListLine, ModalP, ModalTitle, ModalCrossButton, ModalImg, ModalResume, ModalH2, ModalAnchor, ModalHeader, ModalAcess } from './style';
 
 interface ObjectProps{
@@ -63,7 +64,7 @@ const Modal: React.FC<ModalProps> = ({status, setStatus, data}) =>{
                     
                     <ModalH2>Resumo do projeto</ModalH2>
                     <ModalResume>
-                        {data.image.length > 1 ?
+                        {data.image.length > 1 && Device.Screen.width > 780 ?
                             <ImageCarousel carouselData={data.image} alt={`Imagens do ${data.title}`} imageSize={data.imageSize} hasArrows={true}/>
                             :
                             <ModalImg src={data.image[0]} alt={data.title} style={{height: data.imageSize}}/>

@@ -8,40 +8,42 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin: 10px;
-    width: 30%;
-    min-height: 50vh;
 
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
     line-height: 32px;
-
-
+    font-weight: 400;
 
     @media screen and (max-width: ${width.largeMobile}) {
+        width: 80%;
         font-size: 16px;
         line-height: 25px;
-        margin: 2px;
-        padding: 2px;
         text-align: justify;
-        width: 70%;
-        min-height: 10vh;
     }
-
-    @media screen and (max-width: ${width.tablet}) {
-        font-size: 16px;
-        line-height: 25px;
-        margin: 2px;
-        padding: 2px;
-        text-align: justify;
-        width: 70%;
+    @media screen and (min-width: ${width.largeMobile}){
+        width: 80%;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    @media screen and (min-width: ${width.tablet}) {
+        width: 30%;
+        margin: 10px;
+        border: 0;
+    }
+    @media screen and (min-width: ${width.desktop}) {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    @media screen and (min-width: ${width.largeDesktop}) {
+        font-size: 30px;
+        line-height: 35px;
     }
 
     @media screen and (min-width: ${width.extraLargeDesktop}) {
-        width: 30%;
+        font-size: 40px;
+        line-height: 45px;
     }
-    
 `;
 
 export const Title = styled.p`
@@ -74,31 +76,10 @@ export const Title = styled.p`
 export const Content = styled.p`
     width: 95%;
     text-align: justify;
-
-    @media screen and (min-width: 2048px) {
-        font-size: 35px;
-        line-height: 40px;
-        text-align: justify;
-    }
-
-    @media screen and (min-width: ${width.extraLargeDesktop}) {
-        font-size: 3.2rem;
-        line-height: 70px;
-    }
 `;
 
 export const ListContainer = styled.ul`
-
-    @media screen and (min-width: 2048px) {
-        font-size: 35px;
-        line-height: 40px;
-        
-    }
-
-    @media screen and (min-width: ${width.extraLargeDesktop}) {
-        font-size: 3.2rem;
-        line-height: 70px;
-    }
+    width: 100%;
 `;
 
 export const List = styled.li`

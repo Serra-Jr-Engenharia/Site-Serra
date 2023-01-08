@@ -6,7 +6,7 @@ import Banner from "../../Components/Banner"
 import ServiceLetterComp from "../ServiceLetterComp"
 import ContactButton from "../../Components/ContactButton"
 
-import presentationImg from "../../../../Assets/CompPage/presentation-image.svg"
+import presentationImg from "../../../../Assets/CompPage/presentation-image.webp"
 import ScrollUp from "../../../../Assets/Global/arrow-up.svg"
 
 import {

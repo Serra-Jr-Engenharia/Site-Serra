@@ -145,7 +145,7 @@ export const HeaderUlContainer = styled.div`
     margin-right: 10%;
     margin-top: 0%;
 
-    @media screen and (max-width: ${width.notebook}){
+    @media screen and (max-width: 1023px){
         display: none;
     }
 `;

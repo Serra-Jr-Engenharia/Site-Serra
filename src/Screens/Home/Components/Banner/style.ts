@@ -18,18 +18,22 @@ export const Presentation = styled.div`
 `;
 
 export const PresentationImg = styled.img`
+ 
   @media screen and (max-width: ${width.largeMobile}) {
     width: 60%;
     margin-top: 10%;
+    margin-bottom: 20px;
   }
 
   @media screen and (min-width: ${width.largeMobile}) {
     width: 40%;
     margin-top: 5%;
+    margin-bottom: 20px;
   }
   @media screen and (min-width: ${width.notebook}) {
     width: 25%;
     margin-top: 0;
+    margin-bottom: 0;
   }
 `;
 

@@ -15,7 +15,6 @@ import {
     Logo,
     SectionSpan,
     SectionButton,
-    SliderContainer
 } from "./style"
 import GradientTitle from "../../../../Components/GradientTitle";
 
@@ -33,7 +32,6 @@ interface ObjectProps{
 
 interface SliderProps{
     carouselData: Array<ObjectProps>
-    width?: string
 }
 
 const Carousel: React.FC<SliderProps> = (props) => {    
@@ -50,40 +48,38 @@ const Carousel: React.FC<SliderProps> = (props) => {
     const [modalData, setModalData] = useState<ObjectProps>()
     
     return(
-        <SliderContainer containerWidth={props.width}>
-            <Slider {...settings}>
-                { props.carouselData.map((item, key) => {
+        <Slider {...settings}>
+            { props.carouselData.map((item, key) => {
 
-                    return (
-                        <Container key={key}>
-                            <Wrapper>
-                                <ContainerSection>
-                                    <ContainerSectionTitle>
-                                        <GradientTitle text={item.title}/>
-                                    </ContainerSectionTitle>
+                return (
+                    <Container key={key}>
+                        <Wrapper>
+                            <ContainerSection>
+                                <ContainerSectionTitle>
+                                    <GradientTitle text={item.title}/>
+                                </ContainerSectionTitle>
 
-                                    <ContainerSectionContainer>
-                                        <ContainerLogo>
-                                            <Logo src={item.image[0]} alt={item.title} style={{width: item.imageWidth}}/>
-                                        </ContainerLogo>
-                                        <ContainerSectionContent>
-                                            <SectionSpan>{item.content}</SectionSpan>
+                                <ContainerSectionContainer>
+                                    <ContainerLogo>
+                                        <Logo src={item.image[0]} alt={item.title}/>
+                                    </ContainerLogo>
+                                    <ContainerSectionContent>
+                                        <SectionSpan>{item.content}</SectionSpan>
 
-                                            <SectionButton onClick={() => {
-                                                setStatusModal(!statusModal)
-                                                setModalData(item)
-                                            }}>Saiba Mais</SectionButton>
+                                        <SectionButton onClick={() => {
+                                            setStatusModal(!statusModal)
+                                            setModalData(item)
+                                        }}>Saiba Mais</SectionButton>
 
-                                            <Modal data={modalData} status={statusModal} setStatus={setStatusModal}/>
-                                        </ContainerSectionContent>
-                                    </ContainerSectionContainer>
-                                </ContainerSection>
-                            </Wrapper>
-                        </Container>
-                    )
-                })}
-            </Slider>
-        </SliderContainer>
+                                        <Modal data={modalData} status={statusModal} setStatus={setStatusModal}/>
+                                    </ContainerSectionContent>
+                                </ContainerSectionContainer>
+                            </ContainerSection>
+                        </Wrapper>
+                    </Container>
+                )
+            })}
+        </Slider>
     )
 }
 
