@@ -16,5 +16,5 @@ Projeto para o site da próprio da Serra Jr. Engenharia
 - Thiago Paixão
 - Manoel Rodrigues
 
-## Acesse no GitHib Pages
-https://serrajrengenharia.github.io/Site-Serra/
+## Acesse no GitHub Pages
+https://serrajrengenharia.github.io/siteserra-project/
