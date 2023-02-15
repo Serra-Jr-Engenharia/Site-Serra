@@ -11,5 +11,5 @@ export default defineConfig({
     alias: [{ find: '@', replacement: resolve(__dirname, './src') }],
   },
   // Base URL for PRODUCTION
-  base: "/Site-Serra/",
+  base: "",
 })

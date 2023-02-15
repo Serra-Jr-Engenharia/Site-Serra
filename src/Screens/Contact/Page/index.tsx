@@ -9,8 +9,7 @@ import Email from "../../../Assets/Contact/email.svg";
 import Localization from "../../../Assets/Contact/localizacao.svg"; 
 import Phone from "../../../Assets/Contact/telefone.svg"; 
 
-import { Information,
-     MapBox, 
+import { Information, 
      Form, 
      Inputs, 
      All, 
@@ -21,7 +20,6 @@ import { Information,
      InformationImg,
      InformationSpan,
      FormContainer,
-     MapBoxContainer,
      ContactStyle,
      ButtonContainer,
      InformationIconText,
@@ -158,11 +156,7 @@ const Contact: React.FC = () => {
                 </FormContainer>
             </All>
 
-            <MapBoxContainer>
-                <MapBox>
-                    <Mapa />
-                </MapBox>
-            </MapBoxContainer>
+            <Mapa />
             
         </ContactStyle>
     );

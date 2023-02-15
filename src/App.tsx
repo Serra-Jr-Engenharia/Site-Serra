@@ -13,7 +13,7 @@ import ProjectsPages from './Screens/ProjectsPages/Page';
 function App() {
   return (
     <div className='App'>
-      <Router basename="/Site-Serra">
+      <Router basename="">
         <Header />
 
         <Routes>

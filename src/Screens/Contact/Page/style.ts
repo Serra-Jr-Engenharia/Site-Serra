@@ -81,30 +81,6 @@ export const Information = styled.div`
     
 `;
 
-export const MapBox = styled.div`
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`;
-
-export const MapBoxContainer = styled.div`
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 7%;
-
-    @media screen and (max-width: 390px) {
-        width: 80%;
-    }
-
-    @media screen and (max-width: 500px) {
-        width: 80%;
-    }
-`;
-
 export const All = styled.div`
     display: flex;
     margin-top: 5%;
