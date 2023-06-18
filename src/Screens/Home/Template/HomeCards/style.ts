@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BackgroundIMG from "../../../../Assets/Home/background-image.svg";
+import BackgroundIMG from "../../../../Assets/Home/background-image.png";
 
 
 export const CardContainer = styled.div`

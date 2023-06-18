@@ -108,7 +108,7 @@ export const LinkStyle = styled.div`
     }
 `;
 
-export const HeaderLi = styled.div`
+export const HeaderLi = styled.li`
     display: flex;
     justify-content: center;
     align-items: center;

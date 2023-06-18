@@ -42,7 +42,7 @@ const Footer: React.FC = () =>{
                     <SocialMediaContainer>
                         <SocialMediaA href="https://pt-br.facebook.com/pg/serrajreng/posts/" target="_blank"> <SocialMediaIMG src={facebookIcon}  alt="Facebook Serra.Jr" /></SocialMediaA>
                         <SocialMediaA href="https://www.instagram.com/serrajreng/" target="_blank"> <SocialMediaIMG src={instagramIcon} alt="Instagram Serra.Jr" /></SocialMediaA>
-                        <SocialMediaA href="https://www.linkedin.com/company/serrajreng/?originalSubdomain=br" target="_blank"> <SocialMediaIMG src={linkedinIcon} alt="" /> </SocialMediaA>
+                        <SocialMediaA href="https://www.linkedin.com/company/serrajreng/?originalSubdomain=br" target="_blank"> <SocialMediaIMG src={linkedinIcon} alt="Linkdin Serra.Jr" /> </SocialMediaA>
                     </SocialMediaContainer> 
                     
                     <LinksContainer>

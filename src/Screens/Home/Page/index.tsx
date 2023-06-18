@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Banner from '../Components/Banner'
-import CardList from '../Template/HomeCards'
+import HomeCards from '../Template/HomeCards'
 
 import { Content } from './style'
 
@@ -12,7 +12,7 @@ const Home: React.FC = () =>{
             <Banner />
 
             <Content>
-                <CardList />
+                <HomeCards />
             </Content>
         </>    
     )

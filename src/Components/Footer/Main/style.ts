@@ -57,6 +57,7 @@ export const LinksContainer = styled.div`
 
 export const SocialMediaIMG = styled.img`
     width: 1.2rem;
+    height: 1.0rem;;
     margin-right: 0.8rem;
     
     @media screen and (max-width: ${width.mobile}) {
@@ -64,9 +65,11 @@ export const SocialMediaIMG = styled.img`
     }
     @media screen and (min-width: ${width.desktop}) {
         width: 2rem;
+        height: 1.8rem;;
     }
     @media screen and (min-width: ${width.extraLargeDesktop}) {
         width: 3.5rem;
+        height: 3.3rem;;
     }
 `;
 
