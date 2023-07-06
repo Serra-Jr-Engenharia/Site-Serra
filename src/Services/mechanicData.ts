@@ -10,11 +10,20 @@ import soledadeImage from '../Assets/MechanicPage/soledade.svg'
 import soledadeImage2 from '../Assets/MechanicPage/soledade-2.svg'
 import chassiImage from '../Assets/MechanicPage/chassi.svg'
 import chassiImage2 from '../Assets/MechanicPage/chassi-2.svg'
+import baleLiteralImage from '../Assets/MechanicPage/baleLiteral.svg'
 
 export const mechanicData = {
 
     // Adiciona novos projetos no carrosel da página de mecânica
     mechanicsProjects: [
+        {
+            title:"Projeto Balé Literal",
+            image: [baleLiteralImage],
+            imageSize: '30vh',
+            content: "Projeto desenvolvido para a exposição Balé Literal da artista Laura Lima, que entrou em exposição em maio de 2023 no Museu de Arte Contemporânea de Barcelona (MACBA). A Serra prestou consultoria e atuou na programação dos movimentos de algumas das peças expostas usando componentes eletrônicos como Arduino, servomotores e motor de passo. Além disso, algumas peças e caixas de redução foram impressas pela própria Serra Jr. usando suas impressoras 3D.",
+            summary: "Projeto desenvolvido para a exposição Balé Literal da artista Laura Lima, que entrou em exposição em maio de 2023 no Museu de Arte Contemporânea de Barcelona (MACBA). A Serra prestou consultoria e atuou na programação dos movimentos de algumas das peças expostas usando componentes eletrônicos como Arduino, servomotores e motor de passo. Além disso, algumas peças e caixas de redução foram impressas pela própria Serra Jr. usando suas impressoras 3D.",
+            members: ['Vinicius Monnerat', 'Kauan Peçanha', 'Fellipe Moraes']
+        },
         {
             title:"Projeto Marmitex",
             image: [marmitexImage],
